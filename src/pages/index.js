@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import ConvertkitEmailForm from '@/components/ConvertkitEmailForm'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           alt='Roads Logo'
         />
         <h1>Roads</h1>
+        <ConvertkitEmailForm />
       </main>
     </>
   )
