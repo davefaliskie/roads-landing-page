@@ -1,10 +1,29 @@
+$section_headline_height: 70vh;
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
   /* background-color: #215f4a; */
   /* color: #ffffff; */
+}
+
+.phone_shadow {
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5))
+}
+
+
+#section_headline {
+  height: $section_headline_height;
+  width: 100vw;
+  background: rgb(22,130,94);
+  background: radial-gradient(circle, rgba(22,130,94,1) 0%, rgba(18,122,87,1) 30%, rgba(33,95,74,1) 100%);
+  
+  h1 {
+    padding-top: 3rem;
+    font-size: 4em;
+    font-weight: 600;
+  }
 }
