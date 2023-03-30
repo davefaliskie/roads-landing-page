@@ -1,5 +1,6 @@
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
 import { Montserrat } from 'next/font/google'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
