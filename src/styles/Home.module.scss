@@ -14,6 +14,9 @@ $section_headline_height: 70vh;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5))
 }
 
+#section_headline_container {
+  min-height: 100vh;
+}
 
 #section_headline {
   position: relative;
@@ -72,5 +75,33 @@ $section_headline_height: 70vh;
   .node_sm2 {
     top: 60vh;
     left: -6px;
+  }
+}
+
+#section_features {
+  min-height: 100vh;
+
+  h2 {
+    font-weight: 600;
+  }
+
+  .backsplash_container {
+    position: relative;
+  }
+
+  .backsplash {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 250px;
+    background: rgb(33,95,74);
+    background: linear-gradient(90deg, rgba(33,95,74,1) 0%, rgba(31,133,99,1) 100%);
+    border-radius: 20px;
+  }
+
+  .backsplash_image {
+    position: relative;
   }
 }
