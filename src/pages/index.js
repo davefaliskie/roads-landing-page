@@ -20,32 +20,56 @@ export default function Home() {
         <ConvertkitEmailForm /> */}
         
         <NodeOverlay />
+
         <div id={styles.section_headline}>
+          <span className={styles.vLine1}>
+            <Image 
+              src="/images/node-bright.svg" 
+              width={15} 
+              height={15} 
+              alt="Background Circle Image"
+              className={styles.node_sm1}
+            />
+          </span>
+          <span className={styles.vLine2}></span>
+          <span className={styles.vLine3}></span>
+          <span className={styles.vLine4}></span>
+          <span className={styles.vLine5}></span>
+          <span className={styles.vLine6}>
+            <Image 
+              src="/images/node-bright.svg" 
+              width={15} 
+              height={15} 
+              alt="Background Circle Image"
+              className={styles.node_sm2}
+            />
+          </span>
+
           <div className='text-center text-light'>
             <h1>Interact with audio</h1>
             <p>Record short podcasts on any topic and receive audio comments from other users.</p>
           </div>
 
-          <div className='text-center mt-5'>
+          <div className={`${styles.cover_imgs_container} text-center`}>
             <Image 
               src="/images/phone1.png" 
               alt="Screenshot of the app"
-              height={360}
-              width={180}
+              height={400}
+              width={200}
               className={styles.phone_shadow}
             />
             <Image 
               src="/images/phone1.png" 
               alt="Screenshot of the app"
-              height={420}
-              width={210}
+              height={460}
+              width={230}
               className={`${styles.phone_shadow} mx-4`}
             />
             <Image 
               src="/images/phone1.png" 
               alt="Screenshot of the app"
-              height={360}
-              width={180}
+              height={400}
+              width={200}
               className={styles.phone_shadow}
             />
           </div>
