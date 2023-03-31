@@ -81,9 +81,8 @@ export default function Home() {
           <h2 class="my-5 text-center">Features</h2>
 
           <div class="container">
-            <div class="row">
-              <div class={`${styles.backsplash_container} col-7 text-center`} >
-
+            <div class="row justify-content-md-center">
+              <div class={`${styles.backsplash_container} col-4 text-center`} >
                 <div class={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phone1.png" 
@@ -94,8 +93,43 @@ export default function Home() {
                 />
               </div>
 
-              <div class='col my-auto'>
+              <div class='col-4 offset-1 my-auto'>
                 <h3>Feature #1</h3>
+                <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
+              </div>
+            </div>
+            
+            <div class="row my-5 justify-content-md-center">
+              <div class='col-4 my-auto'>
+                <h3>Feature #2</h3>
+                <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
+              </div>
+              <div class={`${styles.backsplash_container} col-4 offset-1 text-center`} >
+                <div class={`${styles.backsplash} mx-auto`}></div>
+                <Image 
+                  src="/images/phone1.png" 
+                  alt="Screenshot of the app"
+                  height={400}
+                  width={200}
+                  class={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                />
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+              <div class={`${styles.backsplash_container} col-4 text-center`} >
+                <div class={`${styles.backsplash} mx-auto`}></div>
+                <Image 
+                  src="/images/phone1.png" 
+                  alt="Screenshot of the app"
+                  height={400}
+                  width={200}
+                  class={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                />
+              </div>
+
+              <div class='col-4 offset-1 my-auto'>
+                <h3>Feature #3</h3>
                 <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
               </div>
             </div>

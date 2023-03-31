@@ -82,6 +82,7 @@ $section_headline_height: 70vh;
   min-height: 100vh;
 
   h2 {
+    font-size: 3em;
     font-weight: 600;
   }
 
@@ -94,8 +95,8 @@ $section_headline_height: 70vh;
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
-    height: 250px;
+    width: 100%;
+    height: 200px;
     background: rgb(33,95,74);
     background: linear-gradient(90deg, rgba(33,95,74,1) 0%, rgba(31,133,99,1) 100%);
     border-radius: 20px;
