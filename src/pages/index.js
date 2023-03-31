@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import NodeOverlay from '@/components/NodeOverlay';
+import UseCase from '@/components/UseCase';
 
 export default function Home() {
   return (
@@ -135,8 +136,22 @@ export default function Home() {
             </div>
 
           </div>
-          
         </div>
+
+        <div id={styles.section_use_cases}>
+          <h2 class="my-5 text-center">Use Cases</h2>
+          <div class="container">
+            <div class="row">
+              <UseCase />
+              <UseCase />
+              <UseCase />
+              <UseCase />
+              <UseCase />
+              <UseCase />
+            </div>
+          </div>
+        </div>
+
       </main>
     </>
   );

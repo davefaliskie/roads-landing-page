@@ -8,6 +8,11 @@ $section_headline_height: 70vh;
   min-height: 100vh;
   /* background-color: #215f4a; */
   /* color: #ffffff; */
+
+  h2 {
+    font-size: 3em;
+    font-weight: 600;
+  }
 }
 
 .phone_shadow {
@@ -81,11 +86,6 @@ $section_headline_height: 70vh;
 #section_features {
   min-height: 100vh;
 
-  h2 {
-    font-size: 3em;
-    font-weight: 600;
-  }
-
   .backsplash_container {
     position: relative;
   }
@@ -105,4 +105,9 @@ $section_headline_height: 70vh;
   .backsplash_image {
     position: relative;
   }
+}
+
+#section_use_cases {
+  min-height: 50vh;
+  width: 100%;
 }

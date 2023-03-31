@@ -1,5 +1,5 @@
 
-.node_one, .node_two {
+.node_one, .node_two, .node_three {
   position: absolute;
   z-index: 3;
 }
@@ -12,4 +12,9 @@
 .node_two {
   top: 90vh;
   left: -150px;
+}
+
+.node_three {
+  top: 275vh;
+  right: -150px;
 }
