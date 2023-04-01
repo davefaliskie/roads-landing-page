@@ -28,7 +28,7 @@ class NodeOverlay extends Component {
           className={styles.node_three}
         />
         <Image 
-          src="/images/node-light.svg" 
+          src="/images/node.svg" 
           width={300} 
           height={300} 
           alt="Background Circle Image"
