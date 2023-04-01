@@ -1,5 +1,5 @@
 
-.node_one, .node_two, .node_three {
+.node_one, .node_two, .node_three, .node_four {
   position: absolute;
   z-index: 3;
 }
@@ -17,4 +17,9 @@
 .node_three {
   top: 275vh;
   right: -150px;
+}
+
+.node_four {
+  top: 375vh;
+  left: -150px;
 }

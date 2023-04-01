@@ -107,7 +107,12 @@ $section_headline_height: 70vh;
   }
 }
 
-#section_use_cases {
+#section_use_cases{
   min-height: 50vh;
+  width: 100%;
+}
+
+#section_faq {
+  min-height: 100vh;
   width: 100%;
 }

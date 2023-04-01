@@ -72,64 +72,64 @@ export default function Home() {
                 alt="Screenshot of the app"
                 height={400}
                 width={200}
-                class={styles.phone_shadow}
+                className={styles.phone_shadow}
               />
             </div>
           </div>
         </div>
 
         <div id={styles.section_features}>
-          <h2 class="my-5 text-center">Features</h2>
+          <h2 className="my-5 text-center">Features</h2>
 
-          <div class="container">
-            <div class="row justify-content-md-center">
-              <div class={`${styles.backsplash_container} col-4 text-center`} >
-                <div class={`${styles.backsplash} mx-auto`}></div>
+          <div className="container">
+            <div className="row justify-content-md-center">
+              <div className={`${styles.backsplash_container} col-4 text-center`} >
+                <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phone1.png" 
                   alt="Screenshot of the app"
                   height={400}
                   width={200}
-                  class={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                 />
               </div>
 
-              <div class='col-4 offset-1 my-auto'>
+              <div className='col-4 offset-1 my-auto'>
                 <h3>Feature #1</h3>
                 <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
               </div>
             </div>
             
-            <div class="row my-5 justify-content-md-center">
-              <div class='col-4 my-auto'>
+            <div className="row my-5 justify-content-md-center">
+              <div className='col-4 my-auto'>
                 <h3>Feature #2</h3>
                 <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
               </div>
-              <div class={`${styles.backsplash_container} col-4 offset-1 text-center`} >
-                <div class={`${styles.backsplash} mx-auto`}></div>
+              <div className={`${styles.backsplash_container} col-4 offset-1 text-center`} >
+                <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phone1.png" 
                   alt="Screenshot of the app"
                   height={400}
                   width={200}
-                  class={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                 />
               </div>
             </div>
 
-            <div class="row justify-content-md-center">
-              <div class={`${styles.backsplash_container} col-4 text-center`} >
-                <div class={`${styles.backsplash} mx-auto`}></div>
+            <div className="row justify-content-md-center">
+              <div className={`${styles.backsplash_container} col-4 text-center`} >
+                <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phone1.png" 
                   alt="Screenshot of the app"
                   height={400}
                   width={200}
-                  class={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                 />
               </div>
 
-              <div class='col-4 offset-1 my-auto'>
+              <div className='col-4 offset-1 my-auto'>
                 <h3>Feature #3</h3>
                 <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
               </div>
@@ -139,9 +139,9 @@ export default function Home() {
         </div>
 
         <div id={styles.section_use_cases}>
-          <h2 class="my-5 text-center">Use Cases</h2>
-          <div class="container">
-            <div class="row">
+          <h2 className="my-5 text-center">Use Cases</h2>
+          <div className="container">
+            <div className="row">
               <UseCase />
               <UseCase />
               <UseCase />
@@ -150,6 +150,56 @@ export default function Home() {
               <UseCase />
             </div>
           </div>
+        </div>
+
+        <div id={styles.section_faq}>
+          <h2 className="my-5 text-center">FAQ&apos;s</h2>
+          <div className="row justify-content-md-center">
+            <div className="col-8">
+              
+              <div className="accordion" id="accordionExample">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit tellus nisl, in sollicitudin dolor tincidunt vel. Sed id venenatis magna, sit amet laoreet est. Etiam consequat nibh vel metus aliquam consectetur. 
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingTwo">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                      Aliquam erat volutpat. Morbi sit amet risus dolor. Suspendisse eu nisl at augue lacinia interdum eu ac justo. Vestibulum bibendum, nunc ut posuere malesuada, mauris mauris placerat enim, nec molestie augue velit non nunc. 
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingThree">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                      Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          
         </div>
 
       </main>
