@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={styles.main}>        
         <NodeOverlay />
         
         <div id={styles.section_headline_container}>
@@ -227,9 +227,25 @@ export default function Home() {
           
         </div>
 
+        <div id={styles.section_wait_list}>
+          <div className="container">
+            <div className="row justify-content-md-center text-center">
+              <div className="col-4">
+                <Image 
+                    src="/images/phone1.png" 
+                    alt="Screenshot of the app"
+                    height={500}
+                    width={250}
+                    className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  />
+              </div>
+              <div className="col-4 my-auto">
+                <h3 className='mb-4'>Secure Your Access Now</h3>
+                <ConvertkitEmailForm />
+              </div>
             </div>
           </div>
-          
+
         </div>
 
       </main>
