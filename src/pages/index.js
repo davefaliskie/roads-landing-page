@@ -7,6 +7,7 @@ import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 
 export default function Home() {
+  const current_year = new Date().getFullYear();
   return (
     <>
       <Head>
@@ -229,7 +230,7 @@ export default function Home() {
 
         <div id={styles.section_wait_list}>
           <div className="container">
-            <div className="row justify-content-md-center text-center">
+            <div className="row justify-content-md-center">
               <div className="col-4">
                 <Image 
                     src="/images/phone1.png" 
@@ -239,13 +240,29 @@ export default function Home() {
                     className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                   />
               </div>
-              <div className="col-4 my-auto">
+              <div className="col-4 my-auto text-center">
                 <h3 className='mb-4'>Secure Your Access Now</h3>
                 <ConvertkitEmailForm />
               </div>
             </div>
           </div>
+        </div>
 
+        <div id={styles.section_footer}>
+          <div className='text-center my-4'>
+            <Link href="https://1manstartup.com/privacy-policy" target="_blank" className='btn btn-link'>
+              Privacy Policy
+            </Link>
+            <span>|</span>
+            <Link href="https://1manstartup.com/terms-and-conditions" target="_blank" className='btn btn-link'>
+              Terms & Conditions
+            </Link>
+            <span>|</span>
+            <Link href="mailto:Roads Audio<dave@1manstartup.com>" className='btn btn-link'>
+              Contact Us
+            </Link>
+            <p>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
+          </div>
         </div>
 
       </main>

@@ -122,3 +122,23 @@ $section_headline_height: 70vh;
   margin-bottom: 5em;
   width: 100%;
 }
+
+#section_footer {
+  width: 100%;
+  background: #215F4A;
+
+  a, span {
+    color: #fff;
+    font-size: .75em;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: #fff;
+    font-size: .5em;
+  }
+}
