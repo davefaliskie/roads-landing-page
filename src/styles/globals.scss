@@ -8,3 +8,15 @@ a {
   color: #f1d37b;
   text-decoration: none;
 }
+
+// Accordion Style overrides
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #212529;
+  border-color: #212529;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
-import styles from '@/styles/components/NodeOverlay.module.scss';
+import styles from '@/styles/NodeOverlay.module.scss';
 
 class NodeOverlay extends Component {
   render() {

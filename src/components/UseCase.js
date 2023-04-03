@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '@/styles/components/UseCase.module.scss';
+import styles from '@/styles/UseCase.module.scss';
 
 class UseCase extends Component {
   render() {

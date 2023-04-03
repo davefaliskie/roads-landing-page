@@ -16,10 +16,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {/* <Image src="/Roads.png" width={300} height={300} alt="Roads Logo" />
-        <h1>Roads</h1>
-        <ConvertkitEmailForm /> */}
-        
         <NodeOverlay />
         
         <div id={styles.section_headline_container}>
@@ -155,47 +151,81 @@ export default function Home() {
         <div id={styles.section_faq}>
           <h2 className="my-5 text-center">FAQ&apos;s</h2>
           <div className="row justify-content-md-center">
-            <div className="col-8">
+            <div className="col-6">
               
-              <div className="accordion" id="accordionExample">
+              <div className="accordion" id="faq_accordion">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                       Collapsible Group Item #1
                     </button>
                   </h2>
-                  <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq_accordion">
                     <div className="accordion-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit tellus nisl, in sollicitudin dolor tincidunt vel. Sed id venenatis magna, sit amet laoreet est. Etiam consequat nibh vel metus aliquam consectetur. 
+                      Aliquam erat volutpat. Morbi sit amet risus dolor. Suspendisse eu nisl at augue lacinia interdum eu ac justo. Vestibulum bibendum, nunc ut posuere malesuada, mauris mauris placerat enim, nec molestie augue velit non nunc. 
                     </div>
                   </div>
                 </div>
+
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingTwo">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Collapsible Group Item #2
                     </button>
                   </h2>
-                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq_accordion">
                     <div className="accordion-body">
                       Aliquam erat volutpat. Morbi sit amet risus dolor. Suspendisse eu nisl at augue lacinia interdum eu ac justo. Vestibulum bibendum, nunc ut posuere malesuada, mauris mauris placerat enim, nec molestie augue velit non nunc. 
                     </div>
                   </div>
                 </div>
+
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingThree">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Collapsible Group Item #3
                     </button>
                   </h2>
-                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
                     <div className="accordion-body">
                       Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
                     </div>
                   </div>
                 </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingFour">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq_accordion">
+                    <div className="accordion-body">
+                      Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingFive">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq_accordion">
+                    <div className="accordion-body">
+                      Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
+                    </div>
+                  </div>
+                </div>
+                
               </div>
 
+
+            </div>
+          </div>
+          
+        </div>
 
             </div>
           </div>
