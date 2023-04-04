@@ -45,8 +45,12 @@ export default function Home() {
             </span>
 
             <div className='text-center text-light'>
-              <h1>Interact with audio</h1>
-              <p>Record short podcasts on any topic and receive audio comments from other users.</p>
+              <h1>Join the Audio Revolution</h1>
+              <div className='row justify-content-center'>
+                <p className='col-6'>
+                  Discover the future of interactive audio with Roads. The first app that let you experience dynamic audio conversations.
+                </p>
+              </div>
             </div>
 
             <div className={`${styles.cover_imgs_container} text-center`}>
@@ -92,15 +96,16 @@ export default function Home() {
               </div>
 
               <div className='col-4 offset-1 my-auto'>
-                <h3>Feature #1</h3>
-                <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
+                <h3>Talk Asynchronously</h3>
+                  <p>Create audio comments while listening to an episode.</p>
+                  <p>The comments will branch off the main recording, creating a dynamic conversation over time.</p>
               </div>
             </div>
             
             <div className="row my-5 justify-content-md-center">
               <div className='col-4 my-auto'>
-                <h3>Feature #2</h3>
-                <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
+                <h3>Control Access</h3>
+                <p>You control who has access to your recordings through channels. Only invited members can listen and collaborate on your episodes.</p>
               </div>
               <div className={`${styles.backsplash_container} col-4 offset-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
@@ -127,8 +132,8 @@ export default function Home() {
               </div>
 
               <div className='col-4 offset-1 my-auto'>
-                <h3>Feature #3</h3>
-                <p>This feature description will be max two sentances. and will highlight what is shown in the image.</p>
+                <h3>Record Audio</h3>
+                <p>Record audio in a whole new way. As a message to yourself, a conversation with a friend, or a group discussion.</p>
               </div>
             </div>
 
@@ -139,12 +144,30 @@ export default function Home() {
           <h2 className="my-5 text-center">Use Cases</h2>
           <div className="container">
             <div className="row">
-              <UseCase />
-              <UseCase />
-              <UseCase />
-              <UseCase />
-              <UseCase />
-              <UseCase />
+              <UseCase 
+                imagePath="/images/icons/mic.svg"
+                title="Record voice notes for yourself"
+              />
+              <UseCase 
+                imagePath="/images/icons/mic.svg"
+                title="Chat with a friend asynchronously"
+              />
+              <UseCase 
+                imagePath="/images/icons/mic.svg"
+                title="Create a virtual book club"
+              />
+              <UseCase 
+                imagePath="/images/icons/mic.svg"
+                title="Record a lecture and answer questions"
+              />
+              <UseCase 
+                imagePath="/images/icons/mic.svg"
+                title="Share weekly updates with your team"
+              />
+              <UseCase 
+                imagePath="/images/icons/mic.svg"
+                title="Co-create podcasts with others"
+              />
             </div>
           </div>
         </div>
