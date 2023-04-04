@@ -5,6 +5,7 @@ import Image from 'next/image';
 import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
+import FaqItem from '@/components/FaqItem';
 
 export default function Home() {
   const current_year = new Date().getFullYear();
@@ -80,7 +81,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_features}>
-          <h2 className="my-5 text-center">Features</h2>
+          <h2 className="my-5 text-center">How Roads Is Unique?</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
@@ -96,16 +97,15 @@ export default function Home() {
               </div>
 
               <div className='col-4 offset-1 my-auto'>
-                <h3>Talk Asynchronously</h3>
-                  <p>Create audio comments while listening to an episode.</p>
-                  <p>The comments will branch off the main recording, creating a dynamic conversation over time.</p>
+                <h3>A New Way to Talk</h3>
+                  <p>While listening to an episode you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
               </div>
             </div>
             
             <div className="row my-5 justify-content-md-center">
               <div className='col-4 my-auto'>
-                <h3>Control Access</h3>
-                <p>You control who has access to your recordings through channels. Only invited members can listen and collaborate on your episodes.</p>
+                <h3>Discuss on Your Time</h3>
+                <p>When a comment is created, get notified and create a response to keep the conversation going.</p>
               </div>
               <div className={`${styles.backsplash_container} col-4 offset-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
@@ -132,8 +132,8 @@ export default function Home() {
               </div>
 
               <div className='col-4 offset-1 my-auto'>
-                <h3>Record Audio</h3>
-                <p>Record audio in a whole new way. As a message to yourself, a conversation with a friend, or a group discussion.</p>
+                <h3>Control Access</h3>
+                <p>You control who has access to your recordings through channels. Only invited members can listen and collaborate on your episodes.</p>
               </div>
             </div>
 
@@ -178,71 +178,41 @@ export default function Home() {
             <div className="col-6">
               
               <div className="accordion" id="faq_accordion">
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Collapsible Group Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq_accordion">
-                    <div className="accordion-body">
-                      Aliquam erat volutpat. Morbi sit amet risus dolor. Suspendisse eu nisl at augue lacinia interdum eu ac justo. Vestibulum bibendum, nunc ut posuere malesuada, mauris mauris placerat enim, nec molestie augue velit non nunc. 
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Collapsible Group Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq_accordion">
-                    <div className="accordion-body">
-                      Aliquam erat volutpat. Morbi sit amet risus dolor. Suspendisse eu nisl at augue lacinia interdum eu ac justo. Vestibulum bibendum, nunc ut posuere malesuada, mauris mauris placerat enim, nec molestie augue velit non nunc. 
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Collapsible Group Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
-                    <div className="accordion-body">
-                      Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Collapsible Group Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq_accordion">
-                    <div className="accordion-body">
-                      Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFive">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      Collapsible Group Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq_accordion">
-                    <div className="accordion-body">
-                      Quisque sed efficitur mauris. Integer dictum mauris vitae felis ultricies, vel efficitur eros ultricies. Aenean a dolor in nisi consectetur tempor. Integer et ligula eu metus aliquam efficitur. 
-                    </div>
-                  </div>
-                </div>
-                
+                <FaqItem 
+                  itemNum="one"
+                  question="How do I create an episode on Roads?"
+                  answer="You simply hit record in the app and start talking. After you finish recording you'll be able to name the episode and add it to channels so others can listen."
+                />
+                <FaqItem 
+                  itemNum="two"
+                  question="Who can join my channels?"
+                  answer="Channels can be joined by anyone the channel owner chooses. If you are friends with someone on Roads you can add them to a channel automatically, if not you can send them a channel invite link. The channel owner controls who is in the channel."
+                />
+                <FaqItem 
+                  itemNum="three"
+                  question="How do I listen to comments that have been added to an episode?"
+                  answer="When listening to an episode if there was a comment left you'll have to option to listen via a pop up. If you decide to listen, when the comment is complete playing the original episode will continue."
+                />
+                <FaqItem 
+                  itemNum="four"
+                  question="What is the maximum length for an episode or comment?"
+                  answer="Episodes and comments can be any length."
+                />
+                <FaqItem 
+                  itemNum="five"
+                  question="Can I edit or delete a comment?"
+                  answer="There will be no support for editing audio comments in the initial version. However, you can always delete a comment or episode that you create. "
+                />
+                <FaqItem 
+                  itemNum="six"
+                  question="When will Roads be available?"
+                  answer="Roads is expected to launch for iOS and Android in June 2023. A web version will be released at a later time."
+                />
+                <FaqItem 
+                  itemNum="seven"
+                  question="Does the app offer a free trial or a freemium version?"
+                  answer="Roads will always have a free version where all the core features will be available. Premium features will also be made available for a small fee."
+                />
               </div>
 
 
