@@ -145,27 +145,27 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <UseCase 
-                imagePath="/images/icons/mic.svg"
+                imagePath="/images/icons/note.svg"
                 title="Record voice notes for yourself"
               />
               <UseCase 
-                imagePath="/images/icons/mic.svg"
+                imagePath="/images/icons/chat.svg"
                 title="Chat with a friend asynchronously"
               />
               <UseCase 
-                imagePath="/images/icons/mic.svg"
+                imagePath="/images/icons/book.svg"
                 title="Create a virtual book club"
               />
               <UseCase 
-                imagePath="/images/icons/mic.svg"
+                imagePath="/images/icons/lecture.svg"
                 title="Record a lecture and answer questions"
               />
               <UseCase 
-                imagePath="/images/icons/mic.svg"
+                imagePath="/images/icons/team.svg"
                 title="Share weekly updates with your team"
               />
               <UseCase 
-                imagePath="/images/icons/mic.svg"
+                imagePath="/images/icons/podcast.svg"
                 title="Co-create podcasts with others"
               />
             </div>
@@ -255,7 +255,7 @@ export default function Home() {
             </Link>
             <span>|</span>
             <Link href="mailto:Roads Audio<dave@1manstartup.com>" className='btn btn-link'>
-              Contact Us
+              Contact
             </Link>
             <p>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
           </div>
