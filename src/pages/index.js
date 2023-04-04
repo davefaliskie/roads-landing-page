@@ -81,7 +81,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_features}>
-          <h2 className="my-5 text-center">How Roads Is Unique?</h2>
+          <h2 className="my-lg text-center">How Roads Is Unique?</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_use_cases}>
-          <h2 className="my-5 text-center">Use Cases</h2>
+          <h2 className="my-lg text-center">Ways To Use Roads</h2>
           <div className="container">
             <div className="row">
               <UseCase 
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_faq}>
-          <h2 className="my-5 text-center">FAQ&apos;s</h2>
+          <h2 className="my-lg text-center">FAQ&apos;s</h2>
           <div className="row justify-content-md-center">
             <div className="col-6">
               
@@ -222,7 +222,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <div className="container">
+          <div className="container my-lg">
             <div className="row justify-content-md-center">
               <div className="col-4">
                 <Image 
@@ -233,8 +233,11 @@ export default function Home() {
                     className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                   />
               </div>
-              <div className="col-4 my-auto text-center">
-                <h3 className='mb-4'>Secure Your Access Now</h3>
+              <div className="col-4 my-auto ">
+                <h4>Be the first to experience Roads</h4>
+                <p className='text-left text-sm'>
+                  Join the wait list and be notified as soon as the app launches.
+                </p>
                 <ConvertkitEmailForm />
               </div>
             </div>
