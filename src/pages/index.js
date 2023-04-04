@@ -245,7 +245,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_footer}>
-          <div className='text-center my-4'>
+          <div className='text-center py-4'>
             <Link href="https://1manstartup.com/privacy-policy" target="_blank" className='btn btn-link'>
               Privacy Policy
             </Link>

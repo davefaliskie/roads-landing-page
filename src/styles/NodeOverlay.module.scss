@@ -1,12 +1,13 @@
 
 .node_one, .node_two, .node_three, .node_four {
   position: absolute;
-  z-index: 3;
+  z-index: 0;
 }
 
 .node_one {
   top: -150px;
   right: -150px;
+  z-index: 2;
 }
 
 .node_two {
