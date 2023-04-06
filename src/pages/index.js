@@ -67,7 +67,7 @@ export default function Home() {
               <h1 className='px-3 pb-3'>Join The Audio Revolution</h1>
               <div className='row justify-content-center px-3'>
                 <p className='col-md-6'>
-                  Discover the future of interactive audio with Roads. The first app that let you experience dynamic audio conversations.
+                  Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations.
                 </p>
               </div>
             </div>
