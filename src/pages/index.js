@@ -1,14 +1,13 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
-import Link from 'next/link';
 import Image from 'next/image';
 import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
+import Footer from '@/components/Footer';
 
 export default function Home() {
-  const current_year = new Date().getFullYear();
   return (
     <>
       <Head>
@@ -260,22 +259,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id={styles.section_footer}>
-          <div className='text-center py-4'>
-            <Link href="https://1manstartup.com/privacy-policy" target="_blank" className='btn btn-link'>
-              Privacy
-            </Link>
-            <span>|</span>
-            <Link href="https://1manstartup.com/terms-and-conditions" target="_blank" className='btn btn-link'>
-              Terms
-            </Link>
-            <span>|</span>
-            <Link href="mailto:Roads Audio<dave@1manstartup.com>" className='btn btn-link'>
-              Contact
-            </Link>
-            <p>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
-          </div>
-        </div>
+        <Footer />
 
       </main>
     </>
