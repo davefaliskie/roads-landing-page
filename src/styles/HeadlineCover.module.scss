@@ -1,0 +1,75 @@
+$section_headline_height: 70vh;
+
+#section_headline_container {
+  display: inline-block;
+  min-height: 100vh;
+}
+
+#section_headline {
+  position: relative;
+  height: $section_headline_height;
+  width: 100vw;
+  background: rgb(22,130,94);
+  background: radial-gradient(circle, rgba(22,130,94,1) 0%, rgba(18,122,87,1) 30%, rgba(33,95,74,1) 100%);
+
+  h1 {
+    padding-top: 1.5em;
+    font-size: 2.75em;
+    font-weight: 600;
+  }
+  
+  h1, p, img {
+    position: relative;
+    z-index: 3;
+  }
+
+  .cover_imgs_container {
+    padding-top: 1em;
+  }
+
+  .vLine1, .vLine2, .vLine3, .vLine4, .vLine5, .vLine6, .vLine7 {
+    position: absolute;
+    top: 0;
+    height: $section_headline_height;
+    width: 1px;
+    // z-index: 2;
+  }
+  .vLine1, .vLine6 {
+    // outsides
+    background-color: #287058;
+    width: 3px;
+  }
+  .vLine2, .vLine5 {
+    background-color: #127c58;
+    width: 2px;
+  }
+  .vLine3, .vLine4 {
+    // middle
+    background-color: #148761;
+  }
+  .vLine1 {left: 15%;}
+  .vLine2 {left: 29%;}
+  .vLine3 {left: 50%;}
+  .vLine4 {left: 57%;}
+  .vLine5 {left: 71%;}
+  .vLine6 {left: 85%;}
+
+  .node_sm1 {
+    top: 35vh;
+    left: -6px;
+  }
+  .node_sm2 {
+    top: 60vh;
+    left: -6px;
+  }
+}
+
+@media (min-width: 768px) { 
+  #section_headline {
+    h1 {
+      font-size: 4em;
+      padding-top: 1em;
+    }
+    .vLine3 {left: 43%;}
+  }
+}

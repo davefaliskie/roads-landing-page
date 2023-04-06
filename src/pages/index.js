@@ -6,6 +6,7 @@ import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
 import Footer from '@/components/Footer';
+import HeadlineCover from '@/components/HeadlineCover';
 
 export default function Home() {
   return (
@@ -16,65 +17,10 @@ export default function Home() {
       <main className={styles.main}>        
         <NodeOverlay />
         
-        <div id={styles.section_headline_container}>
-          <div id={styles.section_headline}>
-            <span className={styles.vLine1}>
-              <Image 
-                src="/images/node-bright.svg" 
-                width={15} 
-                height={15} 
-                alt="Circle used for background style"
-                className={styles.node_sm1}
-              />
-            </span>
-            <span className={`${styles.vLine2} d-none d-md-block`}></span>
-            <span className={styles.vLine3}></span>
-            <span className={`${styles.vLine4} d-none d-md-block`}></span>
-            <span className={`${styles.vLine5} d-none d-md-block`}></span>
-            <span className={styles.vLine6}>
-              <Image 
-                src="/images/node-bright.svg" 
-                width={15} 
-                height={15} 
-                alt="Circle used for background style"
-                className={styles.node_sm2}
-              />
-            </span>
-
-            <div className='text-center text-light'>
-              <h1 className='px-3 pb-3'>Join The Audio Revolution</h1>
-              <div className='row justify-content-center px-3'>
-                <p className='col-md-6'>
-                  Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations.
-                </p>
-              </div>
-            </div>
-
-            <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center`}>
-                <Image 
-                  src="/images/phones/screen2.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
-                  height={400}
-                  width={200}
-                  className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
-                />
-                <Image 
-                  src="/images/phones/screen1.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
-                  height={500}
-                  width={250}
-                  className={`${styles.phone_shadow} mx-4`}
-                />
-                <Image 
-                  src="/images/phones/screen3.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
-                  height={400}
-                  width={200}
-                  className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
-                />
-            </div>
-          </div>
-        </div>
+        < HeadlineCover 
+          title="Join The Audio Revolution"
+          subtitle="Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations."
+        />
 
         <div id={styles.section_features}>
           <h2 className="my-lg text-center">How Roads Is Unique?</h2>
@@ -88,7 +34,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
-                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
 
@@ -106,7 +52,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
-                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
                <div className='col-md-4 my-auto order-md-first'>
@@ -123,7 +69,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing how to select friends to add to a channel."
                   height={400}
                   width={200}
-                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
 
@@ -224,7 +170,7 @@ export default function Home() {
                     alt="Screenshot of Roads app showing the main player with several comments."
                     height={500}
                     width={250}
-                    className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                    className={`${styles.backsplash_image} phone_shadow`}
                   />
               </div>
               <div className="col-md-6 col-lg-4 mt-5 mt-md-auto my-auto">
