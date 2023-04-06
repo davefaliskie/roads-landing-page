@@ -32,7 +32,7 @@ class NodeOverlay extends Component {
           width={300} 
           height={300} 
           alt="Background Circle Image"
-          className={styles.node_four}
+          className={`${styles.node_four} d-none d-md-block`}
         />
       </>
     );
