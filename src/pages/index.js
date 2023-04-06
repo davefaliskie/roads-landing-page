@@ -1,102 +1,26 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
-import Link from 'next/link';
 import Image from 'next/image';
 import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
+import Footer from '@/components/Footer';
+import HeadlineCover from '@/components/HeadlineCover';
 
 export default function Home() {
-  const current_year = new Date().getFullYear();
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* PRIMARY META */}
         <title>Roads - Discover the Future of Audio</title>
-        <meta name="title" content="Roads - Discover the Future of Audio" />
-        <meta name="description" content="Record, comment, and share your voice on the first app that connects people through dynamic conversations" />
-
-        {/*  Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://roadsaudio.com" />
-        <meta property="og:title" content="Roads - Discover the Future of Audio" />
-        <meta property="og:description" content="Record, comment, and share your voice on the first app that connects people through dynamic conversations" />
-        <meta property="og:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads+Cover+Image.png" />
-
-        {/*  Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://roadsaudio.com" />
-        <meta property="twitter:title" content="Roads - Discover the Future of Audio" />
-        <meta property="twitter:description" content="Record, comment, and share your voice on the first app that connects people through dynamic conversations" />
-        <meta property="twitter:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads+Cover+Image.png"></meta>
       </Head>
       <main className={styles.main}>        
         <NodeOverlay />
         
-        <div id={styles.section_headline_container}>
-          <div id={styles.section_headline}>
-            <span className={styles.vLine1}>
-              <Image 
-                src="/images/node-bright.svg" 
-                width={15} 
-                height={15} 
-                alt="Circle used for background style"
-                className={styles.node_sm1}
-              />
-            </span>
-            <span className={`${styles.vLine2} d-none d-md-block`}></span>
-            <span className={styles.vLine3}></span>
-            <span className={`${styles.vLine4} d-none d-md-block`}></span>
-            <span className={`${styles.vLine5} d-none d-md-block`}></span>
-            <span className={styles.vLine6}>
-              <Image 
-                src="/images/node-bright.svg" 
-                width={15} 
-                height={15} 
-                alt="Circle used for background style"
-                className={styles.node_sm2}
-              />
-            </span>
-
-            <div className='text-center text-light'>
-              <h1 className='px-3 pb-3'>Join The Audio Revolution</h1>
-              <div className='row justify-content-center px-3'>
-                <p className='col-md-6'>
-                  Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations.
-                </p>
-              </div>
-            </div>
-
-            <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center`}>
-                <Image 
-                  src="/images/phones/screen2.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
-                  height={400}
-                  width={200}
-                  className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
-                />
-                <Image 
-                  src="/images/phones/screen1.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
-                  height={500}
-                  width={250}
-                  className={`${styles.phone_shadow} mx-4`}
-                />
-                <Image 
-                  src="/images/phones/screen3.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
-                  height={400}
-                  width={200}
-                  className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
-                />
-            </div>
-          </div>
-        </div>
+        < HeadlineCover 
+          title="Join The Audio Revolution"
+          subtitle="Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations."
+        />
 
         <div id={styles.section_features}>
           <h2 className="my-lg text-center">How Roads Is Unique?</h2>
@@ -110,7 +34,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
-                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
 
@@ -128,7 +52,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
-                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
                <div className='col-md-4 my-auto order-md-first'>
@@ -145,7 +69,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing how to select friends to add to a channel."
                   height={400}
                   width={200}
-                  className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                  className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
 
@@ -246,7 +170,7 @@ export default function Home() {
                     alt="Screenshot of Roads app showing the main player with several comments."
                     height={500}
                     width={250}
-                    className={`${styles.phone_shadow} ${styles.backsplash_image}`}
+                    className={`${styles.backsplash_image} phone_shadow`}
                   />
               </div>
               <div className="col-md-6 col-lg-4 mt-5 mt-md-auto my-auto">
@@ -260,22 +184,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id={styles.section_footer}>
-          <div className='text-center py-4'>
-            <Link href="https://1manstartup.com/privacy-policy" target="_blank" className='btn btn-link'>
-              Privacy
-            </Link>
-            <span>|</span>
-            <Link href="https://1manstartup.com/terms-and-conditions" target="_blank" className='btn btn-link'>
-              Terms
-            </Link>
-            <span>|</span>
-            <Link href="mailto:Roads Audio<dave@1manstartup.com>" className='btn btn-link'>
-              Contact
-            </Link>
-            <p>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
-          </div>
-        </div>
+        <Footer />
 
       </main>
     </>
