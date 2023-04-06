@@ -23,7 +23,7 @@ export default function Home() {
         
         <div id={styles.section_headline_container}>
           <div id={styles.section_headline}>
-            <span className={`${styles.vLine1} d-none d-md-block`}>
+            <span className={styles.vLine1}>
               <Image 
                 src="/images/node-bright.svg" 
                 width={15} 
@@ -33,10 +33,10 @@ export default function Home() {
               />
             </span>
             <span className={`${styles.vLine2} d-none d-md-block`}></span>
-            <span className={`${styles.vLine3} d-none d-md-block`}></span>
+            <span className={styles.vLine3}></span>
             <span className={`${styles.vLine4} d-none d-md-block`}></span>
             <span className={`${styles.vLine5} d-none d-md-block`}></span>
-            <span className={`${styles.vLine6} d-none d-md-block`}>
+            <span className={styles.vLine6}>
               <Image 
                 src="/images/node-bright.svg" 
                 width={15} 

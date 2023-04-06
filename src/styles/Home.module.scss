@@ -70,7 +70,7 @@ $section_headline_height: 70vh;
   }
   .vLine1 {left: 15%;}
   .vLine2 {left: 29%;}
-  .vLine3 {left: 43%;}
+  .vLine3 {left: 50%;}
   .vLine4 {left: 57%;}
   .vLine5 {left: 71%;}
   .vLine6 {left: 85%;}
@@ -153,6 +153,7 @@ $section_headline_height: 70vh;
       font-size: 4em;
       padding-top: 1em;
     }
+    .vLine3 {left: 43%;}
   }
 
   #section_features {
@@ -164,4 +165,5 @@ $section_headline_height: 70vh;
   #section_wait_list {
     margin-top: 5em;
   }
+
 }
