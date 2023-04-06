@@ -45,7 +45,7 @@ export default function Home() {
                 src="/images/node-bright.svg" 
                 width={15} 
                 height={15} 
-                alt="Background Circle Image"
+                alt="Circle used for background style"
                 className={styles.node_sm1}
               />
             </span>
@@ -58,7 +58,7 @@ export default function Home() {
                 src="/images/node-bright.svg" 
                 width={15} 
                 height={15} 
-                alt="Background Circle Image"
+                alt="Circle used for background style"
                 className={styles.node_sm2}
               />
             </span>
@@ -75,21 +75,21 @@ export default function Home() {
             <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center`}>
                 <Image 
                   src="/images/phones/screen2.png" 
-                  alt="Screenshot of the app"
+                  alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
                   className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
                 />
                 <Image 
                   src="/images/phones/screen1.png" 
-                  alt="Screenshot of the app"
+                  alt="Screenshot of Roads app showing the main player with several comments."
                   height={500}
                   width={250}
                   className={`${styles.phone_shadow} mx-4`}
                 />
                 <Image 
                   src="/images/phones/screen3.png" 
-                  alt="Screenshot of the app"
+                  alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
                   className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
@@ -107,7 +107,7 @@ export default function Home() {
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/screen4.png" 
-                  alt="Screenshot of the app"
+                  alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
                   className={`${styles.phone_shadow} ${styles.backsplash_image}`}
@@ -125,7 +125,7 @@ export default function Home() {
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/screen7.png" 
-                  alt="Screenshot of the app"
+                  alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
                   className={`${styles.phone_shadow} ${styles.backsplash_image}`}
@@ -142,7 +142,7 @@ export default function Home() {
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/screen6.png" 
-                  alt="Screenshot of the app"
+                  alt="Screenshot of Roads app showing how to select friends to add to a channel."
                   height={400}
                   width={200}
                   className={`${styles.phone_shadow} ${styles.backsplash_image}`}
@@ -243,7 +243,7 @@ export default function Home() {
               <div className="col-md-6 col-lg-4 text-center">
                 <Image 
                     src="/images/phones/screen5.png" 
-                    alt="Screenshot of the app"
+                    alt="Screenshot of Roads app showing the main player with several comments."
                     height={500}
                     width={250}
                     className={`${styles.phone_shadow} ${styles.backsplash_image}`}

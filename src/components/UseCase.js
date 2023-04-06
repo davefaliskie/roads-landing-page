@@ -12,7 +12,7 @@ class UseCase extends Component {
           <div className='text-center p-3'>
             <Image 
               src={imagePath}
-              alt="Icon"
+              alt="Icon image related to the use case"
               height={75}
               width={75}
             />
