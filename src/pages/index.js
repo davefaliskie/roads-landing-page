@@ -14,7 +14,8 @@ export default function Home() {
       <Head>
         <title>Roads</title>
         <meta name="description" content="A New Way To Experience Audio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>        
@@ -22,7 +23,7 @@ export default function Home() {
         
         <div id={styles.section_headline_container}>
           <div id={styles.section_headline}>
-            <span className={styles.vLine1}>
+            <span className={`${styles.vLine1} d-none d-md-block`}>
               <Image 
                 src="/images/node-bright.svg" 
                 width={15} 
@@ -31,11 +32,11 @@ export default function Home() {
                 className={styles.node_sm1}
               />
             </span>
-            <span className={styles.vLine2}></span>
-            <span className={styles.vLine3}></span>
-            <span className={styles.vLine4}></span>
-            <span className={styles.vLine5}></span>
-            <span className={styles.vLine6}>
+            <span className={`${styles.vLine2} d-none d-md-block`}></span>
+            <span className={`${styles.vLine3} d-none d-md-block`}></span>
+            <span className={`${styles.vLine4} d-none d-md-block`}></span>
+            <span className={`${styles.vLine5} d-none d-md-block`}></span>
+            <span className={`${styles.vLine6} d-none d-md-block`}>
               <Image 
                 src="/images/node-bright.svg" 
                 width={15} 
@@ -46,36 +47,36 @@ export default function Home() {
             </span>
 
             <div className='text-center text-light'>
-              <h1>Join the Audio Revolution</h1>
-              <div className='row justify-content-center'>
-                <p className='col-6'>
+              <h1 className='px-3 pb-3'>Join The Audio Revolution</h1>
+              <div className='row justify-content-center px-3'>
+                <p className='col-md-6'>
                   Discover the future of interactive audio with Roads. The first app that let you experience dynamic audio conversations.
                 </p>
               </div>
             </div>
 
-            <div className={`${styles.cover_imgs_container} text-center`}>
-              <Image 
-                src="/images/phones/screen2.png" 
-                alt="Screenshot of the app"
-                height={400}
-                width={200}
-                className={styles.phone_shadow}
-              />
-              <Image 
-                src="/images/phones/screen1.png" 
-                alt="Screenshot of the app"
-                height={460}
-                width={230}
-                className={`${styles.phone_shadow} mx-4`}
-              />
-              <Image 
-                src="/images/phones/screen3.png" 
-                alt="Screenshot of the app"
-                height={400}
-                width={200}
-                className={styles.phone_shadow}
-              />
+            <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center`}>
+                <Image 
+                  src="/images/phones/screen2.png" 
+                  alt="Screenshot of the app"
+                  height={400}
+                  width={200}
+                  className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
+                />
+                <Image 
+                  src="/images/phones/screen1.png" 
+                  alt="Screenshot of the app"
+                  height={500}
+                  width={250}
+                  className={`${styles.phone_shadow} mx-4`}
+                />
+                <Image 
+                  src="/images/phones/screen3.png" 
+                  alt="Screenshot of the app"
+                  height={400}
+                  width={200}
+                  className={`${styles.phone_shadow} mt-5 d-none d-md-block`}
+                />
             </div>
           </div>
         </div>
@@ -247,11 +248,11 @@ export default function Home() {
         <div id={styles.section_footer}>
           <div className='text-center py-4'>
             <Link href="https://1manstartup.com/privacy-policy" target="_blank" className='btn btn-link'>
-              Privacy Policy
+              Privacy
             </Link>
             <span>|</span>
             <Link href="https://1manstartup.com/terms-and-conditions" target="_blank" className='btn btn-link'>
-              Terms & Conditions
+              Terms
             </Link>
             <span>|</span>
             <Link href="mailto:Roads Audio<dave@1manstartup.com>" className='btn btn-link'>

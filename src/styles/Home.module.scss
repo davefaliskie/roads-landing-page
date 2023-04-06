@@ -12,6 +12,7 @@ $section_headline_height: 70vh;
   }
 
   h1, h2, h3, h4, h5, h6, p, a {
+    position: relative;
     z-index: 3;
   }
 }
@@ -32,8 +33,8 @@ $section_headline_height: 70vh;
   background: radial-gradient(circle, rgba(22,130,94,1) 0%, rgba(18,122,87,1) 30%, rgba(33,95,74,1) 100%);
 
   h1 {
-    padding-top: 1em;
-    font-size: 4em;
+    padding-top: 1.5em;
+    font-size: 2.75em;
     font-weight: 600;
   }
   
@@ -43,7 +44,7 @@ $section_headline_height: 70vh;
   }
 
   .cover_imgs_container {
-    padding-top: 4em;
+    padding-top: 1em;
   }
 
   .vLine1, .vLine2, .vLine3, .vLine4, .vLine5, .vLine6, .vLine7 {
@@ -141,5 +142,14 @@ $section_headline_height: 70vh;
   p {
     color: #fff;
     font-size: .5em;
+  }
+}
+
+@media (min-width: 768px) { 
+  #section_headline {
+    h1 {
+      font-size: 4em;
+      padding-top: 1em;
+    }
   }
 }
