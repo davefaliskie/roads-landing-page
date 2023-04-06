@@ -56,21 +56,21 @@ export default function Home() {
 
             <div className={`${styles.cover_imgs_container} text-center`}>
               <Image 
-                src="/images/phone1.png" 
+                src="/images/phones/screen2.png" 
                 alt="Screenshot of the app"
                 height={400}
                 width={200}
                 className={styles.phone_shadow}
               />
               <Image 
-                src="/images/phone1.png" 
+                src="/images/phones/screen1.png" 
                 alt="Screenshot of the app"
                 height={460}
                 width={230}
                 className={`${styles.phone_shadow} mx-4`}
               />
               <Image 
-                src="/images/phone1.png" 
+                src="/images/phones/screen3.png" 
                 alt="Screenshot of the app"
                 height={400}
                 width={200}
@@ -88,7 +88,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phone1.png" 
+                  src="/images/phones/screen4.png" 
                   alt="Screenshot of the app"
                   height={400}
                   width={200}
@@ -110,7 +110,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-4 offset-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phone1.png" 
+                  src="/images/phones/screen7.png" 
                   alt="Screenshot of the app"
                   height={400}
                   width={200}
@@ -123,7 +123,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phone1.png" 
+                  src="/images/phones/screen6.png" 
                   alt="Screenshot of the app"
                   height={400}
                   width={200}
@@ -226,7 +226,7 @@ export default function Home() {
             <div className="row justify-content-md-center">
               <div className="col-4">
                 <Image 
-                    src="/images/phone1.png" 
+                    src="/images/phones/screen5.png" 
                     alt="Screenshot of the app"
                     height={500}
                     width={250}
