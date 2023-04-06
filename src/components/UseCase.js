@@ -7,7 +7,7 @@ class UseCase extends Component {
   render() {
     const { imagePath, title } = this.props;
     return (
-      <div className="col-4 mb-4">
+      <div className="col-6 col-md-4 mb-4">
         <div className={`${styles.use_case_card} h-100`} >
           <div className='text-center p-3'>
             <Image 

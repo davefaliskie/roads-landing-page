@@ -11,16 +11,30 @@
 }
 
 .node_two {
-  top: 90vh;
+  top: 110vh;
   left: -150px;
 }
 
 .node_three {
-  top: 275vh;
+  top: 375vh;
   right: -150px;
 }
 
 .node_four {
-  top: 375vh;
+  top: 500vh;
   left: -150px;
+}
+
+@media (min-width: 768px) { 
+  .node_two {
+    top: 90vh;
+  }
+
+  .node_three {
+    top: 275vh;
+  }
+
+  .node_four {
+    top: 375vh;
+  }
 }

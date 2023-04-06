@@ -86,7 +86,7 @@ export default function Home() {
 
           <div className="container">
             <div className="row justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-4 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/screen4.png" 
@@ -97,18 +97,14 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-4 offset-1 my-auto'>
+              <div className='col-md-4 offset-md-1 my-auto'>
                 <h3>A New Way to Talk</h3>
                   <p>While listening to an episode you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
               </div>
             </div>
             
             <div className="row my-5 justify-content-md-center">
-              <div className='col-4 my-auto'>
-                <h3>Discuss on Your Time</h3>
-                <p>When a comment is created, get notified and create a response to keep the conversation going.</p>
-              </div>
-              <div className={`${styles.backsplash_container} col-4 offset-1 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-4 offset-md-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/screen7.png" 
@@ -118,10 +114,14 @@ export default function Home() {
                   className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                 />
               </div>
+               <div className='col-md-4 my-auto order-md-first'>
+                <h3>Discuss on Your Time</h3>
+                <p>When a comment is created, get notified and create a response to keep the conversation going.</p>
+              </div>
             </div>
 
             <div className="row justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-4 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/screen6.png" 
@@ -132,7 +132,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-4 offset-1 my-auto'>
+              <div className='col-md-4 offset-md-1 my-auto'>
                 <h3>Control Access</h3>
                 <p>You control who has access to your recordings through channels. Only invited members can listen and collaborate on your episodes.</p>
               </div>
@@ -175,8 +175,8 @@ export default function Home() {
 
         <div id={styles.section_faq}>
           <h2 className="my-lg text-center">FAQ&apos;s</h2>
-          <div className="row justify-content-md-center">
-            <div className="col-6">
+          <div className="row justify-content-center">
+            <div className="col-10 col-md-8 col-lg-6">
               
               <div className="accordion" id="faq_accordion">
                 <FaqItem 
@@ -215,8 +215,6 @@ export default function Home() {
                   answer="Roads will always have a free version where all the core features will be available. Premium features will also be made available for a small fee."
                 />
               </div>
-
-
             </div>
           </div>
           
@@ -224,8 +222,8 @@ export default function Home() {
 
         <div id={styles.section_wait_list}>
           <div className="container my-lg">
-            <div className="row justify-content-md-center">
-              <div className="col-4">
+            <div className="row justify-content-center">
+              <div className="col-md-6 col-lg-4 text-center">
                 <Image 
                     src="/images/phones/screen5.png" 
                     alt="Screenshot of the app"
@@ -234,7 +232,7 @@ export default function Home() {
                     className={`${styles.phone_shadow} ${styles.backsplash_image}`}
                   />
               </div>
-              <div className="col-4 my-auto ">
+              <div className="col-md-6 col-lg-4 mt-5 mt-md-auto my-auto">
                 <h4>Be the first to experience Roads</h4>
                 <p className='text-left text-sm'>
                   Join the wait list and be notified as soon as the app launches.

@@ -5,8 +5,8 @@ body, html {
 }
 
 .my-lg {
-  margin-top: 1.75em;
-  margin-bottom: 1.75em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .text-sm {
@@ -31,4 +31,11 @@ button.accordion-button:not(.collapsed) {
   background-color: transparent;
   color: #212529;
   border-color: #212529;
+}
+
+@media (min-width: 768px) { 
+  .my-lg {
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+  }
 }
