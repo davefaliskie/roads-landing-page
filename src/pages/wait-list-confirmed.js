@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Footer from '@/components/Footer';
-import HeadlineCover from '@/components/HeadlineCover';
+import Hero from '@/components/Hero';
 
 export default function WaitListConfirmed() {
   return (
@@ -10,14 +9,12 @@ export default function WaitListConfirmed() {
       </Head>
       
         
-      < HeadlineCover 
+      < Hero 
         title="You're on the list!"
         subtitle="As soon as Roads is launched you'll be the first to know!"
       />
 
       <div className='my-5'></div>
-
-      <Footer />
     </>
   );
 }

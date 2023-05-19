@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
-import styles from '@/styles/HeadlineCover.module.scss';
+import styles from '@/styles/Hero.module.scss';
 
 
-class HeadlineCover extends Component {
+class Hero extends Component {
   render() {
     const { title, subtitle } = this.props;
     return (
@@ -72,4 +72,4 @@ class HeadlineCover extends Component {
   }
 }
 
-export default HeadlineCover;
+export default Hero;

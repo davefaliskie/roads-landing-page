@@ -5,8 +5,7 @@ import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
-import Footer from '@/components/Footer';
-import HeadlineCover from '@/components/HeadlineCover';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
       <main className={styles.main}>        
         <NodeOverlay />
         
-        < HeadlineCover 
+        < Hero 
           title="Join The Audio Revolution"
           subtitle="Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations."
         />
@@ -183,9 +182,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <Footer />
-
       </main>
     </>
   );

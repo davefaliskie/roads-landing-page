@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/Footer.module.scss';
-
 
 class Footer extends Component {
   render() {
     const current_year = new Date().getFullYear();
     return (
-      <div id={styles.section_footer}>
+      <div id="section_footer">
         <div className='text-center py-4'>
           <Link href="https://1manstartup.com/privacy-policy" target="_blank" className='btn btn-link'>
             Privacy

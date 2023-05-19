@@ -43,3 +43,23 @@ button.accordion-button:not(.collapsed) {
 .phone_shadow {
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5))
 }
+
+#section_footer {
+  width: 100%;
+  background: #215F4A;
+
+  a, span {
+    color: #fff;
+    font-size: .75em;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: #fff;
+    font-size: .5em;
+  }
+}
