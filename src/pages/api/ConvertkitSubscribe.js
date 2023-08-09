@@ -1,6 +1,7 @@
 const API_KEY = process.env.CONVERTKIT_API_KEY;
 const FORM_ID = process.env.CONVERTKIT_FORM_ID;
 const BASE_URL = 'https://api.convertkit.com/v3';
+const email_required_message = 'Email is required';
 const error_message = `There was a problem, please try again.`;
 const success_message = `🎉 You have been added to the wait list! Check your email to confirm your interest.`;
 
@@ -8,7 +9,7 @@ async function convertkitSubscribeHandler(req, res) {
   const email = req.body.email;
 
   if (!email) {
-    return res.status(400).json({ message: 'Email is required' });
+    return res.status(400).json({ message: email_required_message });
   }
 
   try {
