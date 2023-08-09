@@ -47,8 +47,8 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Footer />
       </body>
-      <Footer />
     </Html>
   );
 }
