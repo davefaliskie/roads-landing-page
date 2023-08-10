@@ -33,10 +33,21 @@ button.accordion-button:not(.collapsed) {
   border-color: #212529;
 }
 
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 90%;
+  position: relative;
+  z-index: 3;
+}
+
 @media (min-width: 768px) { 
   .my-lg {
     margin-top: 1.75em;
     margin-bottom: 1.75em;
+  }
+  .youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 60%;
   }
 }
 
@@ -63,3 +74,4 @@ button.accordion-button:not(.collapsed) {
     font-size: .5em;
   }
 }
+

@@ -7,6 +7,7 @@ import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
 
+
 export default function Home() {
   return (
     <>
@@ -17,10 +18,10 @@ export default function Home() {
         <NodeOverlay />
         
         < Hero 
-          title="Join The Audio Revolution"
-          subtitle="Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations."
+          title="Conversations Reinvented"
+          subtitle="Share thoughts and stories with friends worldwide, on your time."
         />
-
+ 
         <div id={styles.section_features}>
           <h2 className="my-lg text-center">How Roads Is Unique?</h2>
 
@@ -79,6 +80,18 @@ export default function Home() {
             </div>
 
           </div>
+        </div>
+
+        <div className='text-center'>
+          <h2 className="my-lg mb-5">Watch The Demo</h2>
+          
+          <iframe 
+            className="youtube-video"
+            src="https://www.youtube.com/embed/9lzJthdMQLc" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            >
+          </iframe>
         </div>
 
         <div id={styles.section_use_cases}>
