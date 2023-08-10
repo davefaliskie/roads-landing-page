@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
 import Image from 'next/image';
-import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
+import AppLinks from '@/components/AppLinks';
+
 
 export default function Home() {
   return (
@@ -17,12 +18,14 @@ export default function Home() {
         <NodeOverlay />
         
         < Hero 
-          title="Join The Audio Revolution"
-          subtitle="Discover the future of interactive audio with Roads. The first app that lets you experience dynamic audio conversations."
+          title="Conversations Reinvented"
+          subtitle="Share thoughts and stories with friends worldwide, on your time."
         />
 
+        < AppLinks />
+ 
         <div id={styles.section_features}>
-          <h2 className="my-lg text-center">How Roads Is Unique?</h2>
+          <h2 className="my-lg text-center">How Roads Is Unique</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
@@ -79,6 +82,18 @@ export default function Home() {
             </div>
 
           </div>
+        </div>
+
+        <div className='text-center'>
+          <h2 className="my-lg my-lg">Watch The Demo</h2>
+          
+          <iframe 
+            className="youtube-video"
+            src="https://www.youtube.com/embed/9lzJthdMQLc" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            >
+          </iframe>
         </div>
 
         <div id={styles.section_use_cases}>
@@ -161,26 +176,8 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <div className="container my-lg">
-            <div className="row justify-content-center">
-              <div className="col-md-6 col-lg-4 text-center">
-                <Image 
-                    src="/images/phones/screen5.png" 
-                    alt="Screenshot of Roads app showing the main player with several comments."
-                    height={500}
-                    width={250}
-                    className={`${styles.backsplash_image} phone_shadow`}
-                  />
-              </div>
-              <div className="col-md-6 col-lg-4 mt-5 mt-md-auto my-auto">
-                <h4>Be the first to experience Roads</h4>
-                <p className='text-left text-sm'>
-                  Join the wait list and be notified as soon as the app launches.
-                </p>
-                <ConvertkitEmailForm />
-              </div>
-            </div>
-          </div>
+          <h2 className='my-lg text-center'>Get Roads Now</h2>
+          < AppLinks />
         </div>
       </main>
     </>
