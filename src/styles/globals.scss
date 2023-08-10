@@ -6,11 +6,15 @@ body, html {
 
 .my-lg {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 
 .text-sm {
   font-size: 0.80em;
+}
+
+h2 {
+  font-size: 30px !important;
 }
 
 a {
@@ -41,9 +45,12 @@ button.accordion-button:not(.collapsed) {
 }
 
 @media (min-width: 768px) { 
+  h2 {
+    font-size: 48px !important;
+  }
   .my-lg {
     margin-top: 1.75em;
-    margin-bottom: 1.75em;
+    margin-bottom: 1em;
   }
   .youtube-video {
     aspect-ratio: 16 / 9;

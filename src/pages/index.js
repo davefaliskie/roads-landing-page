@@ -25,7 +25,7 @@ export default function Home() {
         < AppLinks />
  
         <div id={styles.section_features}>
-          <h2 className="my-lg text-center">How Roads Is Unique?</h2>
+          <h2 className="my-lg text-center">How Roads Is Unique</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         <div className='text-center'>
-          <h2 className="my-lg mb-5">Watch The Demo</h2>
+          <h2 className="my-lg my-lg">Watch The Demo</h2>
           
           <iframe 
             className="youtube-video"
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <h2 className='my-lg text-center'>Start Using Roads Now</h2>
+          <h2 className='my-lg text-center'>Get Roads Now</h2>
           < AppLinks />
         </div>
       </main>
