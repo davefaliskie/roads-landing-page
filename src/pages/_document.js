@@ -17,14 +17,14 @@ export default function Document() {
         <meta property="og:url" content="https://roadsaudio.com" />
         <meta property="og:title" content="Roads - Discover the Future of Audio" />
         <meta property="og:description" content="Record, comment, and share your voice on the first app that connects people through dynamic conversations" />
-        <meta property="og:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads+Cover+Image.png" />
+        <meta property="og:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png" />
 
         {/*  Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://roadsaudio.com" />
         <meta property="twitter:title" content="Roads - Discover the Future of Audio" />
         <meta property="twitter:description" content="Record, comment, and share your voice on the first app that connects people through dynamic conversations" />
-        <meta property="twitter:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads+Cover+Image.png"></meta>
+        <meta property="twitter:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png"></meta>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
