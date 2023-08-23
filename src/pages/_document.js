@@ -25,23 +25,6 @@ export default function Document() {
         <meta property="twitter:title" content="Roads - Discover the Future of Audio" />
         <meta property="twitter:description" content="Record, comment, and share your voice on the first app that connects people through dynamic conversations" />
         <meta property="twitter:image" content="https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png"></meta>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.GTAG_ID}', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
       </Head>
       <body>
         <Main />
