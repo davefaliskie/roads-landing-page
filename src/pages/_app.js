@@ -1,16 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '@/styles/globals.scss';
 import { Montserrat } from 'next/font/google';
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import Head from 'next/head'
-
+import ReactGA from 'react-ga4';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
+  // Initialize Google Analyitics.
+  ReactGA.initialize(`${process.env.NEXT_PUBLIC_GTAG_ID}`)
+
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
+
   return (
     <main className={montserrat.className}>
       <Head>
