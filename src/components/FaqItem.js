@@ -5,7 +5,7 @@ class FaqItem extends Component {
     const { itemNum, question, answer } = this.props;
     return (
       <div className="accordion-item">
-        <h2 className="accordion-header" id={`heading_${itemNum}`}>
+        <h2 className="h2-lg accordion-header" id={`heading_${itemNum}`}>
           <button 
             className="accordion-button collapsed" 
             type="button" 
