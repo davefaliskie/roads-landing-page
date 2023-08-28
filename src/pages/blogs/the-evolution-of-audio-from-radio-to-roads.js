@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Image from 'next/image';
 import AppLinks from '@/components/AppLinks';
 
+// slug: the-evolution-of-audio-from-radio-to-roads
 export default function Blog() {
   return (
     <>
