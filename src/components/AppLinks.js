@@ -16,7 +16,7 @@ class AppLinks extends Component {
     const appleLink = "https://apps.apple.com/us/app/roads-listen-comment-record/id6443961864"
     const googleLink = "https://play.google.com/store/apps/details?id=com.onemanstartup.roads"
     return (
-      <div className="col-md-6 my-3 my-md-5 mx-auto text-center">
+      <div className="my-3 my-md-5 mx-auto text-center">
         <Link href={appleLink} onClick={ () => this.trackClickGA("AppStoreLinkClick") }>
           <Image 
             src="/images/download_apple.png"

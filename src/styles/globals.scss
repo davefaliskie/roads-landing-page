@@ -13,7 +13,7 @@ body, html {
   font-size: 0.80em;
 }
 
-h2 {
+.h2-lg {
   font-size: 30px !important;
 }
 
@@ -31,6 +31,14 @@ a {
   font-weight: 600;
 }
 
+.bg-primary {
+  background-color: #215F4A !important;
+}
+
+.navbar-brand {
+ margin-left: 20px;
+}
+
 button.accordion-button:not(.collapsed) {
   background-color: transparent;
   color: #212529;
@@ -45,7 +53,7 @@ button.accordion-button:not(.collapsed) {
 }
 
 @media (min-width: 768px) { 
-  h2 {
+  .h2-lg {
     font-size: 48px !important;
   }
   .my-lg {

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '@/styles/globals.scss';
+import '@/styles/blogs.scss';
 import { Montserrat } from 'next/font/google';
 import { useEffect } from 'react';
 import Head from 'next/head'
