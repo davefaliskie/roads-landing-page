@@ -1,20 +1,12 @@
 import Navigation from '@/components/Navigation';
 import Image from 'next/image';
 import AppLinks from '@/components/AppLinks';
-import MetaData from '@/components/MetaData';
 
 
 // slug: the-evolution-of-audio-from-radio-to-roads
 export default function Blog() {
   return (
     <>
-      <MetaData 
-        metaTitle = "The Evolution of Audio: From Radio to Roads | Roads Audio App"
-        metaDescription = "Explore the evolution of audio communication, from early radio innovations to the digital age with podcasts, leading up to the transformative Roads app."
-        metaUrl = "https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads"
-        metaImage = "/images/blogs/001/CommunicationReinvented.png"
-      />
-
       <Navigation />
       <div id="blog-content" className='container'>
         <div className='col-md-10 col-lg-8 col-xl-6 mx-auto'>
