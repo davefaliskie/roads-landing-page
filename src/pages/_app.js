@@ -5,6 +5,8 @@ import { Montserrat } from 'next/font/google';
 import { useEffect } from 'react';
 import Head from 'next/head'
 import ReactGA from 'react-ga4';
+import DynamicMeta from '@/components/DynamicMeta';
+
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -17,11 +19,11 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <main className={montserrat.className}>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      </Head>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <DynamicMeta />
+      <main className={montserrat.className}>
+        <Component {...pageProps} />
+      </main>
+    </>
   );
 }

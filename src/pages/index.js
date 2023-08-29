@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
 import Image from 'next/image';
 import NodeOverlay from '@/components/NodeOverlay';
@@ -11,9 +10,6 @@ import AppLinks from '@/components/AppLinks';
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Roads - Discover the Future of Audio</title>
-      </Head>
       <main className={styles.main}>        
         <NodeOverlay />
         
