@@ -1,11 +1,36 @@
 import Navigation from '@/components/Navigation';
 import Image from 'next/image';
 import AppLinks from '@/components/AppLinks';
+import Head from 'next/head';
+
 
 // slug: the-evolution-of-audio-from-radio-to-roads
 export default function Blog() {
+  const meta_title = "The Evolution of Audio: From Radio to Roads | Roads Audio App"
+  const meta_description = "Explore the evolution of audio communication, from early radio innovations to the digital age with podcasts, culminating in the groundbreaking Roads app."
+  const meta_url = "https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads"
+  const meta_image = "/images/blogs/001/HistoryOfRadio.png"
   return (
     <>
+      <Head>
+        <meta name="title" content={meta_title} />
+        <meta name="description" content={meta_description} />
+
+        {/*  Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={meta_url} />
+        <meta property="og:title" content={meta_title} />
+        <meta property="og:description" content={meta_description} />
+        <meta property="og:image" content={meta_image} />
+
+        {/*  Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={meta_url} />
+        <meta property="twitter:title" content={meta_title} />
+        <meta property="twitter:description" content={meta_description} />
+        <meta property="twitter:image" content={meta_image}></meta>
+      </Head>
+      
       <Navigation />
       <div id="blog-content" className='container'>
         <div className='col-md-10 col-lg-8 col-xl-6 mx-auto'>
