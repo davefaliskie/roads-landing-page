@@ -7,9 +7,11 @@ export default function Document() {
       <Head>
       </Head>
       <body>
-        <Main />
-        <NextScript />
-        <Footer />
+        <div id='main-container'>
+          <Main />
+          <NextScript />
+          <Footer />
+        </div>
       </body>
     </Html>
   );
