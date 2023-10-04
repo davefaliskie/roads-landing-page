@@ -87,6 +87,7 @@ export default function Home() {
             className="youtube-video"
             src="https://www.youtube.com/embed/9lzJthdMQLc" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            loading='eager'
             >
           </iframe>
         </div>
