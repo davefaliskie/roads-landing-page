@@ -1,8 +1,8 @@
 const metaConfig = {
   default: {
     title: 'Roads - Discover the Future of Audio',
-    description: 'Record, comment, and share your voice on the first app that connects people through dynamic conversations',
-    image: 'https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png',
+    description: 'Record, comment, and share your voice on the app that connects people through dynamic conversations',
+    image: 'images/meta/Meta_image_V2.png',
   },
   '/blogs/the-evolution-of-audio-from-radio-to-roads': {
     title: 'The Evolution of Audio: From Radio to Roads | Roads Audio App',
