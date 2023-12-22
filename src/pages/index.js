@@ -14,7 +14,7 @@ export default function Home() {
         <NodeOverlay />
         
         < Hero 
-          title="Conversations Reinvented"
+          title="Chatting Evolved"
           subtitle="Share thoughts and stories with friends worldwide, on your time."
         />
 
@@ -28,7 +28,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/screen4.png" 
+                  src="/images/phones/device_15_player_simple2.png" 
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
@@ -37,8 +37,8 @@ export default function Home() {
               </div>
 
               <div className='col-md-4 offset-md-1 my-auto'>
-                <h3>A New Way to Talk</h3>
-                  <p>While listening to an episode you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
+                <h3>Comment With Audio</h3>
+                  <p>While listening to a conversations you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
               </div>
             </div>
             
@@ -46,7 +46,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-4 offset-md-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/screen7.png" 
+                  src="/images/phones/device_15_player_nested.png" 
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
@@ -54,8 +54,8 @@ export default function Home() {
                 />
               </div>
                <div className='col-md-4 my-auto order-md-first'>
-                <h3>Discuss on Your Time</h3>
-                <p>When a comment is created, get notified and create a response to keep the conversation going.</p>
+                <h3>Always Have Context</h3>
+                <p>When listening to a comment know exactly what's being referenced, and easily navigate the asynchronous conversation.</p>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/screen6.png" 
+                  src="/images/phones/device_15_channel_invite.png" 
                   alt="Screenshot of Roads app showing how to select friends to add to a channel."
                   height={400}
                   width={200}
@@ -73,14 +73,14 @@ export default function Home() {
 
               <div className='col-md-4 offset-md-1 my-auto'>
                 <h3>Control Access</h3>
-                <p>You control who has access to your recordings through channels. Only invited members can listen and collaborate on your episodes.</p>
+                <p>You control who has access to your content through channels. Only invited members can listen and collaborate on your conversations.</p>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div className='text-center'>
+        {/* <div className='text-center'>
           <h2 className="h2-lg my-lg my-lg">Watch The Demo</h2>
           
           <iframe 
@@ -90,7 +90,7 @@ export default function Home() {
             loading='eager'
             >
           </iframe>
-        </div>
+        </div> */}
 
         <div id={styles.section_use_cases}>
           <h2 className="h2-lg my-lg text-center">Ways To Use Roads</h2>
@@ -132,8 +132,8 @@ export default function Home() {
               <div className="accordion" id="faq_accordion">
                 <FaqItem 
                   itemNum="one"
-                  question="How do I create an episode on Roads?"
-                  answer="You simply hit record in the app and start talking. After you finish recording you'll be able to name the episode and add it to channels so others can listen."
+                  question="How do I start a conversation on Roads?"
+                  answer="You simply hit record in the app and start talking. After you finish recording you can add a title and share your recording in a channel so others can listen."
                 />
                 <FaqItem 
                   itemNum="two"
@@ -142,23 +142,18 @@ export default function Home() {
                 />
                 <FaqItem 
                   itemNum="three"
-                  question="How do I listen to comments that have been added to an episode?"
-                  answer="When listening to an episode if there was a comment left you'll have to option to listen via a pop up. If you decide to listen, when the comment is complete playing the original episode will continue."
+                  question="How do I listen to comments that have been added to a conversation?"
+                  answer="When listening to a conversation if there is a comment, you'll have to option to take the road and listen to the comment. If you decide to listen, when the comment completes playing the original conversation will continue."
                 />
                 <FaqItem 
                   itemNum="four"
-                  question="What is the maximum length for an episode or comment?"
-                  answer="Episodes and comments can be any length."
+                  question="What is the maximum recording length?"
+                  answer="Conversations and comments can be any length."
                 />
                 <FaqItem 
                   itemNum="five"
-                  question="Can I edit or delete a comment?"
-                  answer="There will be no support for editing audio comments in the initial version. However, you can always delete a comment or episode that you create. "
-                />
-                <FaqItem 
-                  itemNum="six"
-                  question="When will Roads be available?"
-                  answer="Roads is expected to launch for iOS and Android in June 2023. A web version will be released at a later time."
+                  question="Can I edit or delete a my recordings?"
+                  answer="There will be no support for editing audio in the initial version. However, you can always delete a recording that you create."
                 />
                 <FaqItem 
                   itemNum="seven"
