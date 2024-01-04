@@ -28,7 +28,12 @@ const DynamicMeta = () => {
       <meta property="twitter:title" content={currentMeta.title} />
       <meta property="twitter:description" content={currentMeta.description} />
       <meta property="twitter:image" content={currentMeta.image}></meta>
-
+      
+      <meta name="twitter:card" content="app" />
+      <meta name="twitter:app:name:iphone" content="Roads" />
+      <meta name="twitter:app:id:iphone" content="6443961864" />
+      <meta name="twitter:app:name:googleplay" content="Roads" />
+      <meta name="twitter:app:id:com.onemanstartup.roads" />
     </Head>
   );
 };
