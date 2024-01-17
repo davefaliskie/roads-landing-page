@@ -5,6 +5,7 @@ import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
 import AppLinks from '@/components/AppLinks';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -159,6 +160,15 @@ export default function Home() {
                   itemNum="seven"
                   question="Does the app offer a free trial or a freemium version?"
                   answer="Roads will always have a free version where all the core features will be available. Premium features will also be made available for a small fee."
+                />
+                <FaqItem 
+                  itemNum="eight"
+                  question="How can I delete my account and data?"
+                  answer={
+                    <span>
+                      Within the app you can find a <strong>Delete Account</strong> link under settings which will delete your account and all related data. For full instructions <Link href="/delete-account">view this page.</Link>
+                    </span>
+                  }
                 />
               </div>
             </div>

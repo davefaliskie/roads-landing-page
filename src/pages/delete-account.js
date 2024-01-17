@@ -1,14 +1,10 @@
 import Image from 'next/image';
 import Navigation from '@/components/Navigation';
-import Head from 'next/head';
 import Link from 'next/link';
 
 export default function DeleteAccount() {
   return (
     <>
-      <Head>
-        <meta name="robots" content="noindex,nofollow" />
-      </Head>
       <Navigation />
       <div className='col-md-8 mx-auto mt-4'>
 
