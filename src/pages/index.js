@@ -153,7 +153,7 @@ export default function Home() {
                 />
                 <FaqItem 
                   itemNum="five"
-                  question="Can I edit or delete a my recordings?"
+                  question="Can I edit or delete my recordings?"
                   answer="There will be no support for editing audio in the initial version. However, you can always delete a recording that you create."
                 />
                 <FaqItem 
