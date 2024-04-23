@@ -34,6 +34,13 @@ class Hero extends Component {
             </span>
 
             <div className='text-center text-light'>
+              <Image 
+                src="/images/RoadsTextWhite.png"
+                alt="Roads Logo"
+                height={50}
+                width={125}
+                className="mt-3 mt-md-5"
+              />
               <h1 className='px-3 pb-3'>{title}</h1>
               <div className='row justify-content-center px-3'>
                 <p className='col-md-6'>

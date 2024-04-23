@@ -6,6 +6,7 @@ import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
 import AppLinks from '@/components/AppLinks';
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
 
 
 export default function Home() {
@@ -13,10 +14,9 @@ export default function Home() {
     <>
       <main className={styles.main}>        
         <NodeOverlay />
-        
         < Hero 
-          title="Chatting Evolved"
-          subtitle="Share thoughts and stories with friends worldwide, on your time."
+          title="Reimagine Conversations"
+          subtitle="Engage in deep, private podcast-like chats where you can seamlessly comment on audio with your own voice."
         />
 
         < AppLinks />
