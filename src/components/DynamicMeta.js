@@ -33,6 +33,8 @@ const DynamicMeta = () => {
           <meta name="twitter:app:id:iphone" content="6443961864" />
           <meta name="twitter:app:name:googleplay" content="Roads" />
           <meta name="twitter:app:id:com.onemanstartup.roads" />
+          {/* add root canonical */}
+          <link rel="canonical" href="https://roadsaudio.com" />
         </>
       ) : (
         <>
