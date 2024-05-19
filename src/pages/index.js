@@ -67,8 +67,10 @@ export default function Home() {
               </div>
 
               <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
-                <h3>Comment With Audio</h3>
-                  <p>While listening to a conversations you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
+                <h3>Interactive Conversations</h3>
+                  <p>
+                    Comment on audio with your voice, creating a completely new layered communication experience.
+                  </p>
               </div>
             </div>
             
