@@ -35,6 +35,10 @@ a {
   background-color: #215F4A !important;
 }
 
+.text-primary {
+  color: #215F4A !important;
+}
+
 .navbar-brand {
  margin-left: 20px;
 }
@@ -90,3 +94,18 @@ button.accordion-button:not(.collapsed) {
   }
 }
 
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}

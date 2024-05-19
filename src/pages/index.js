@@ -6,8 +6,7 @@ import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
 import AppLinks from '@/components/AppLinks';
 import Link from 'next/link';
-import Navigation from '@/components/Navigation';
-
+import Review from '@/components/Review';
 
 export default function Home() {
   return (
@@ -15,18 +14,48 @@ export default function Home() {
       <main className={styles.main}>        
         <NodeOverlay />
         < Hero 
-          title="Reimagine Conversations"
-          subtitle="Engage in deep, private podcast-like chats where you can seamlessly comment on audio with your own voice."
+          title="Have Deeper Conversations"
+          subtitle="Roads Audio brings you closer to your friends through deep, podcast-like conversations, letting you connect meaningfully on your time."
         />
 
-        < AppLinks />
+        <div id={styles.section_use_cases}>
+          <h2 className="h2-lg my-lg text-center">Talk To Real People</h2>
+          <div className="container">
+            <div className="row">
+              <Review 
+                body="Roads allows you to use your voice to stay connected with the world. The app is designed beautifully and is really intuitive."
+                name="Nolanmakatche"
+              />
+              <Review 
+                body="I first started using this app with a friend and it's a lot of fun. We use this app now instead of texting or voicemails since we are both traveling and it makes keeping up with each other a lot easier."
+                name="Sethconner10"
+              />
+              <Review 
+                body="One of the coolest apps I've used in a long time. A great way to communicate with family and friends."
+                name="neenu17"
+              />
+              <Review 
+                body="A game changer, the interactive audio comments bring conversations to life. It's been super fun chatting with my friends from all around the world on Roads."
+                name="makk1ntosh"
+              />
+              <Review 
+                body="I've tried a lot of chat apps and didn't think Roads would be any different. Glad I gave it a chance because it's much better than I expected!"
+                name="LFO16"
+              />
+              <Review 
+                body="I was not expecting to use this app as much as I have. It really pulls you in once you start using it!"
+                name="Jengla11"
+              />
+            </div>
+          </div>
+        </div>
  
         <div id={styles.section_features}>
           <h2 className="h2-lg my-lg text-center">How Roads Is Unique</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-md-4 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/device_15_player_simple2.png" 
@@ -37,14 +66,16 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-md-4 offset-md-1 my-auto'>
-                <h3>Comment With Audio</h3>
-                  <p>While listening to a conversations you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
+              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
+                <h3>Interactive Conversations</h3>
+                  <p>
+                    Comment on audio with your voice, creating a completely new layered communication experience.
+                  </p>
               </div>
             </div>
             
             <div className="row my-5 justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-md-4 offset-md-1 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-6 col-lg-4 offset-lg-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/device_15_player_nested.png" 
@@ -54,14 +85,14 @@ export default function Home() {
                   className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
-               <div className='col-md-4 my-auto order-md-first'>
+               <div className='col-md-6 col-lg-4 my-auto order-md-first'>
                 <h3>Always Have Context</h3>
                 <p>When listening to a comment know exactly what's being referenced, and easily navigate the asynchronous conversation.</p>
               </div>
             </div>
 
             <div className="row justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-md-4 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/device_15_channel_invite.png" 
@@ -72,7 +103,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-md-4 offset-md-1 my-auto'>
+              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
                 <h3>Control Access</h3>
                 <p>You control who has access to your content through channels. Only invited members can listen and collaborate on your conversations.</p>
               </div>
@@ -177,7 +208,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <h2 className='h2-lg my-lg text-center'>Get Roads Now</h2>
+          <h2 className='h2-lg my-lg text-center text-primary'>Do More With Your Voice</h2>
           < AppLinks />
         </div>
       </main>

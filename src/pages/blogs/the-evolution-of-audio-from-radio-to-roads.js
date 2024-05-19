@@ -257,7 +257,9 @@ export default function Blog() {
             So, here's to the past, the present, and the thrilling future of sound. If you're ready for the next leap in audio then download Roads now.
           </p>
 
-          < AppLinks />
+          <div className="pt-4">
+            < AppLinks />
+          </div>
 
         </div>
       </div>

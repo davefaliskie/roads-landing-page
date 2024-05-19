@@ -1,11 +1,11 @@
 const metaConfig = {
   default: {
-    title: 'Roads - Discover the Future of Audio',
-    description: 'Record, comment, and share your voice on the app that connects people through dynamic conversations',
+    title: 'Roads Audio - Have Deeper Conversations',
+    description: 'Roads Audio brings you closer to your friends through deep, podcast-like conversations, letting you connect meaningfully on your time.',
     image: 'https://roadsaudioassets.s3.amazonaws.com/Roads_Cover_V2.png',
   },
   '/delete-account': {
-    title: 'The Evolution of Audio: How to delete your account',
+    title: 'Roads Audio - How to delete your account',
     description: 'See how to delete your account and data from Roads.',
     image: 'https://roadsaudioassets.s3.amazonaws.com/Roads_Cover_V2.png',
   },

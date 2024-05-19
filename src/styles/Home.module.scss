@@ -42,7 +42,6 @@
 }
 
 #section_use_cases{
-  min-height: 50vh;
   width: 100%;
 }
 
@@ -54,6 +53,10 @@
   margin-top: 3em;
   margin-bottom: 5em;
   width: 100%;
+
+  h2{
+    font-weight: 800;
+  }
 }
 
 @media (min-width: 768px) { 
