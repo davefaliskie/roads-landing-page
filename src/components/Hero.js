@@ -66,7 +66,7 @@ class Hero extends Component {
               < AppLinks />
             </div>
 
-            <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center`}>
+            <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center animate-slide-up`}>
                 <Image 
                   src="/images/phones/device_15_home_feed2.png" 
                   alt="Screenshot of Roads app showing the main player with several comments."
