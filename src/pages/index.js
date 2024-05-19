@@ -23,7 +23,7 @@ export default function Home() {
 
           <div className="container">
             <div className="row justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-md-4 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/device_15_player_simple2.png" 
@@ -34,14 +34,14 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-md-4 offset-md-1 my-auto'>
+              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
                 <h3>Comment With Audio</h3>
                   <p>While listening to a conversations you can add an audio comment, which will branch off the main recording. Creating a more dynamic conversation over time.</p>
               </div>
             </div>
             
             <div className="row my-5 justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-md-4 offset-md-1 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-6 col-lg-4 offset-lg-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/device_15_player_nested.png" 
@@ -51,14 +51,14 @@ export default function Home() {
                   className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
-               <div className='col-md-4 my-auto order-md-first'>
+               <div className='col-md-6 col-lg-4 my-auto order-md-first'>
                 <h3>Always Have Context</h3>
                 <p>When listening to a comment know exactly what's being referenced, and easily navigate the asynchronous conversation.</p>
               </div>
             </div>
 
             <div className="row justify-content-md-center">
-              <div className={`${styles.backsplash_container} col-md-4 text-center`} >
+              <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/device_15_channel_invite.png" 
@@ -69,7 +69,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-md-4 offset-md-1 my-auto'>
+              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
                 <h3>Control Access</h3>
                 <p>You control who has access to your content through channels. Only invited members can listen and collaborate on your conversations.</p>
               </div>

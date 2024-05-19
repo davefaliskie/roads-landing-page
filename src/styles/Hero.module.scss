@@ -79,3 +79,10 @@ $section_headline_height: 80vh;
     .vLine3 {left: 43%;}
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your styles for medium screens only */
+  #section_headline_container {
+    min-height: 70vh;
+  }
+}

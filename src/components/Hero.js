@@ -59,7 +59,7 @@ class Hero extends Component {
             <div className='text-center text-light'>
               <h1 className='pt-1 px-3 pb-3'>{title}</h1>
               <div className='row justify-content-center px-3'>
-                <p className='col-md-6'>
+                <p className='col-md-10 col-lg-6'>
                   {subtitle}
                 </p>
               </div>
