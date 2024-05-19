@@ -6,7 +6,7 @@ import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
 import AppLinks from '@/components/AppLinks';
 import Link from 'next/link';
-
+import Review from '@/components/Review';
 
 export default function Home() {
   return (
@@ -17,6 +17,38 @@ export default function Home() {
           title="Have Deeper Conversations"
           subtitle="Roads Audio brings you closer to your friends through deep, podcast-like conversations, letting you connect meaningfully on your time."
         />
+
+        <div id={styles.section_use_cases}>
+          <h2 className="h2-lg my-lg text-center">Talk To Real People</h2>
+          <div className="container">
+            <div className="row">
+              <Review 
+                body="Roads allows you to use your voice to stay connected with the world. The app is designed beautifully and is really intuitive."
+                name="Nolanmakatche"
+              />
+              <Review 
+                body="I first started using this app with a friend and it's a lot of fun. We use this app now instead of texting or voicemails since we are both traveling and it makes keeping up with each other a lot easier."
+                name="Sethconner10"
+              />
+              <Review 
+                body="One of the coolest apps I've used in a long time. A great way to communicate with family and friends."
+                name="neenu17"
+              />
+              <Review 
+                body="A game changer, the interactive audio comments bring conversations to life. It's been super fun chatting with my friends from all around the world on Roads."
+                name="makk1ntosh"
+              />
+              <Review 
+                body="I've tried a lot of chat apps and didn't think Roads would be any different. Glad I gave it a chance because it's much better than I expected!"
+                name="LFO16"
+              />
+              <Review 
+                body="I was not expecting to use this app as much as I have. It really pulls you in once you start using it!"
+                name="Jengla11"
+              />
+            </div>
+          </div>
+        </div>
  
         <div id={styles.section_features}>
           <h2 className="h2-lg my-lg text-center">How Roads Is Unique</h2>
