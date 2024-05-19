@@ -6,11 +6,14 @@ import { useEffect } from 'react';
 import Head from 'next/head'
 import ReactGA from 'react-ga4';
 import DynamicMeta from '@/components/DynamicMeta';
+import useDropShadow from '@/hooks/useDropShadow';
+import Layout from '@/components/Layout';
 
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
+  useDropShadow();
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap.bundle.min.js');
 
@@ -22,7 +25,9 @@ export default function App({ Component, pageProps }) {
     <>
       <DynamicMeta />
       <main className={montserrat.className}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </main>
     </>
   );
