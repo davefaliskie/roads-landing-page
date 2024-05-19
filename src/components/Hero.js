@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Hero.module.scss';
-
+import Link from 'next/link';
+import AppLinks from '@/components/AppLinks';
 
 class Hero extends Component {
   render() {
@@ -10,6 +11,15 @@ class Hero extends Component {
       <>
         <div id={styles.section_headline_container}>
           <div id={styles.section_headline}>
+            <div id={styles.qr_code} className={`d-none d-lg-block`}>
+                <Image 
+                  src="/images/RoadsAppQR.png"
+                  alt="Roads Logo"
+                  height={100}
+                  width={100}
+                  className="pr-3"
+                />
+              </div>
             <span className={styles.vLine1}>
               <Image 
                 src="/images/node-bright.svg" 
@@ -32,21 +42,28 @@ class Hero extends Component {
                 className={styles.node_sm2}
               />
             </span>
+            
+            <nav className="navbar text-center text-md-left">
+              <Link className="navbar-brand mx-auto mx-md-4" href="/">
+                <Image 
+                  src="/images/RoadsTextWhite.png"
+                  alt="Roads Logo"
+                  height={50}
+                  width={125}
+                  className=""
+                />
+              </Link>
+            </nav>
+
 
             <div className='text-center text-light'>
-              <Image 
-                src="/images/RoadsTextWhite.png"
-                alt="Roads Logo"
-                height={50}
-                width={125}
-                className="mt-3 mt-md-5"
-              />
-              <h1 className='px-3 pb-3'>{title}</h1>
+              <h1 className='pt-1 px-3 pb-3'>{title}</h1>
               <div className='row justify-content-center px-3'>
                 <p className='col-md-6'>
                   {subtitle}
                 </p>
               </div>
+              < AppLinks />
             </div>
 
             <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center`}>

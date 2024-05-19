@@ -6,7 +6,6 @@ import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
 import AppLinks from '@/components/AppLinks';
 import Link from 'next/link';
-import Navigation from '@/components/Navigation';
 
 
 export default function Home() {
@@ -15,11 +14,9 @@ export default function Home() {
       <main className={styles.main}>        
         <NodeOverlay />
         < Hero 
-          title="Reimagine Conversations"
-          subtitle="Engage in deep, private podcast-like chats where you can seamlessly comment on audio with your own voice."
+          title="Have Deeper Conversations"
+          subtitle="Roads Audio brings you closer to your friends through deep, podcast-like conversations, letting you connect meaningfully on your time."
         />
-
-        < AppLinks />
  
         <div id={styles.section_features}>
           <h2 className="h2-lg my-lg text-center">How Roads Is Unique</h2>
@@ -177,7 +174,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <h2 className='h2-lg my-lg text-center'>Get Roads Now</h2>
+          <h2 className='h2-lg my-lg text-center text-primary'>Do More With Your Voice</h2>
           < AppLinks />
         </div>
       </main>

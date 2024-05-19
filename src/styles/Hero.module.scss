@@ -1,4 +1,4 @@
-$section_headline_height: 70vh;
+$section_headline_height: 80vh;
 
 #section_headline_container {
   display: inline-block;
@@ -11,6 +11,12 @@ $section_headline_height: 70vh;
   width: 100vw;
   background: rgb(22,130,94);
   background: radial-gradient(circle, rgba(22,130,94,1) 0%, rgba(18,122,87,1) 30%, rgba(33,95,74,1) 100%);
+
+  #qr_code {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 
   h1 {
     padding-top: 0.6em;
@@ -67,7 +73,7 @@ $section_headline_height: 70vh;
 @media (min-width: 768px) { 
   #section_headline {
     h1 {
-      font-size: 4em;
+      font-size: 3.5em;
       padding-top: .5em;
     }
     .vLine3 {left: 43%;}
