@@ -26,7 +26,7 @@ class Hero extends Component {
                 width={15} 
                 height={15} 
                 alt="Circle used for background style"
-                className={styles.node_sm1}
+                className={`${styles.node_sm1} d-none d-md-block`}
               />
             </span>
             <span className={`${styles.vLine2} d-none d-md-block`}></span>

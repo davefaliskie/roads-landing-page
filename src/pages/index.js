@@ -41,10 +41,12 @@ export default function Home() {
               <Review 
                 body="I've tried a lot of chat apps and didn't think Roads would be any different. Glad I gave it a chance because it's much better than I expected!"
                 name="LFO16"
+                className="d-none d-md-block"
               />
               <Review 
                 body="I was not expecting to use this app as much as I have. It really pulls you in once you start using it!"
                 name="Jengla11"
+                className="d-none d-md-block"
               />
             </div>
           </div>
@@ -66,7 +68,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
+              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto text-center text-md-start'>
                 <h3>Interactive Conversations</h3>
                   <p>
                     Comment on audio with your voice, creating a completely new layered communication experience.
@@ -85,7 +87,7 @@ export default function Home() {
                   className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
-               <div className='col-md-6 col-lg-4 my-auto order-md-first'>
+               <div className='col-md-6 col-lg-4 my-auto order-md-first text-center text-md-start'>
                 <h3>Always Have Context</h3>
                 <p>When listening to a comment know exactly what's being referenced, and easily navigate the asynchronous conversation.</p>
               </div>
@@ -103,7 +105,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto'>
+              <div className='col-md-6 col-lg-4 offset-lg-1 my-auto text-center text-md-start'>
                 <h3>Control Access</h3>
                 <p>You control who has access to your content through channels. Only invited members can listen and collaborate on your conversations.</p>
               </div>
