@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '@/styles/UseCase.module.scss';
+import styles from '@/styles/Cards.module.scss';
 import Image from 'next/image';
 
 class Review extends Component {
@@ -7,7 +7,7 @@ class Review extends Component {
     const { body, name, className } = this.props;
     return (
       <div className={`col-md-6 col-lg-4 mb-4 ${className}`}>
-        <div className={`${styles.use_case_card} h-100 d-flex flex-column`} >
+        <div className={`${styles.review_card} h-100 d-flex flex-column`} >
           <div className='p-4 pb-2 flex-grow-1'>
             <div className='text-center'>
               <Image 

@@ -54,6 +54,7 @@ button.accordion-button:not(.collapsed) {
   width: 90%;
   position: relative;
   z-index: 3;
+  border-radius: 20px;
 }
 
 @media (min-width: 768px) { 

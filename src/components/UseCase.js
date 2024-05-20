@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '@/styles/UseCase.module.scss';
+import styles from '@/styles/Cards.module.scss';
 import Image from 'next/image';
 
 
