@@ -15,7 +15,7 @@ class Footer extends Component {
             Terms
           </Link>
           <span>|</span>
-          <Link href="mailto:Roads<dave@roadsaudio.com>" className='btn btn-link'>
+          <Link href="mailto:Roads Audio<dave@roadsaudio.com>" className='btn btn-link'>
             Contact
           </Link>
           <p>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>

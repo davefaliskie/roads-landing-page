@@ -28,7 +28,7 @@ export default function DeleteAccount() {
               Once you confirm the deletion of you account, all your data will be permanently removed, and this action cannot be undone.
             </p>
             <p>
-              If you encounter any issues or have any questions during this process, <Link href="mailto:Roads<dave@roadsaudio.com>" className='btn btn-link p-0'>contact us directly</Link>.
+              If you encounter any issues or have any questions during this process, <Link href="mailto:Roads Audio<dave@roadsaudio.com>" className='btn btn-link p-0'>contact us directly</Link>.
             </p>
 
             <hr className='m-0'></hr>
