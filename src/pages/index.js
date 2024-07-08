@@ -23,7 +23,7 @@ export default function Home() {
           
           <iframe 
             className="youtube-video"
-            src="https://www.youtube.com/embed/CWx75pwHCR0" 
+            src="https://www.youtube.com/embed/w_H7ooZYnAY" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             loading='eager'
             >
