@@ -62,6 +62,10 @@ button.accordion-button:not(.collapsed) {
   background: radial-gradient(circle, rgba(22, 130, 94, 1) 0%, rgba(18, 122, 87, 1) 30%, rgba(33, 95, 74, 1) 100%);
 }
 
+.social-icon svg:hover {
+  color: #cee1d8;
+}
+
 @media (min-width: 768px) { 
   .h2-lg {
     font-size: 48px !important;
