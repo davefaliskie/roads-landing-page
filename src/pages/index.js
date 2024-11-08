@@ -15,7 +15,7 @@ export default function Home() {
         <NodeOverlay />
         < Hero 
           title="Private Podcasts With Friends"
-          subtitle="Roads Audio brings you closer to your friends and family through meaningful, podcast-like conversations, allowing you to connect without scheduling conflicts."
+          subtitle="Roads Audio connects you with friends and family through meaningful, podcast-like conversations without scheduling conflicts."
         />
 
         <div className='text-center'>
