@@ -14,8 +14,8 @@ export default function Home() {
       <main className={styles.main}>        
         <NodeOverlay />
         < Hero 
-          title="Have Deeper Conversations"
-          subtitle="Roads Audio brings you closer to your friends through deep, podcast-like conversations, letting you connect meaningfully on your time."
+          title="Private Podcasts With Friends"
+          subtitle="Roads Audio connects you with friends and family through meaningful, podcast-like conversations without scheduling conflicts."
         />
 
         <div className='text-center'>
