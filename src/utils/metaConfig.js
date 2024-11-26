@@ -1,7 +1,7 @@
 const metaConfig = {
   default: {
-    title: 'Roads Audio - Private Podcasts With Friends',
-    description: 'Roads Audio connects you with friends and family through meaningful, podcast-like conversations without scheduling conflicts.',
+    title: 'Roads Audio - Private Communities, Powered By Voice',
+    description: 'Roads Audio helps you build deeper connections through flexible, on-your-time voice conversations that fit your busy life.',
     image: 'https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png',
   },
   '/delete-account': {
