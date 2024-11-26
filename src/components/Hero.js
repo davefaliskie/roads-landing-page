@@ -57,12 +57,21 @@ class Hero extends Component {
 
 
             <div className='text-center text-light'>
+
+              <div id={styles.alert} className='justify-content-center row'>
+                <div className="alert alert-warning p-2 bg-dark border-dark text-light col-10 col-lg-6 col-xl-5">
+                  <p className='m-0'><strong>✨ 50% OFF Roads Audio Plus ✨</strong></p>
+                  <p className="text-sm m-0">Automatically applied from November 29th to December 2nd in the app.</p>
+                </div>
+              </div>
+
               <h1 className='pt-1 px-3 pb-3'>{title}</h1>
               <div className='row justify-content-center px-3'>
                 <p className='col-md-10 col-lg-6 col-xl-5'>
                   {subtitle}
                 </p>
               </div>
+              
               < AppLinks />
             </div>
 
