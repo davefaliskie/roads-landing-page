@@ -12,4 +12,5 @@ npm run dev
 
 ## Blog Links Until I add a /blogs page
 
-1. The Evolution of Audio: From Radio to Roads https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads
+1. [The Evolution of Audio: From Radio to Roads](https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads)
+2. [How to Start a Private Micro Podcast](https://roadsaudio.com/blogs/how-to-start-a-private-micro-podcast)
