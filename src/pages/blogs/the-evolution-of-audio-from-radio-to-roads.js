@@ -10,7 +10,7 @@ export default function Blog() {
       <Navigation />
       <div id="blog-content" className='container'>
         <div className='col-md-10 col-lg-8 col-xl-6 mx-auto'>
-          <h1>The Evolution of Audio: From Radio to Roads</h1>
+          <h1>The Evolution of Audio: From Radio to Roads Audio</h1>
 
           <p className='text-sm'>
             Published on August 28, 2023 by Dave Faliskie
@@ -18,7 +18,7 @@ export default function Blog() {
 
           <Image 
             src="/images/blogs/001/CommunicationReinvented.png" 
-            alt="Radio on the left, Roads app on the right"
+            alt="Radio on the left, Roads Audio app on the right"
             width={0}
             height={0}
             sizes="100vw"
@@ -186,7 +186,7 @@ export default function Blog() {
 
           <Image 
             src="/images/blogs/001/RoadsCover.png" 
-            alt="Three screenshots of the Roads app, showing the uniquie player"
+            alt="Three screenshots of the Roads Audio app, showing the uniquie player"
             width={0}
             height={0}
             sizes="100vw"
@@ -226,7 +226,7 @@ export default function Blog() {
 
           <Image 
             src="/images/blogs/001/RoadsHowItWorks.png" 
-            alt="Three screenshots of the Roads app, showing how to record and listent to audio"
+            alt="Three screenshots of the Roads Audio app, showing how to record and listen to audio"
             width={0}
             height={0}
             sizes="100vw"
