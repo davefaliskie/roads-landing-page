@@ -17,12 +17,14 @@ export default function Blog() {
           </p>
 
           <Image 
-            src="/images/blogs/001/CommunicationReinvented.png" 
-            alt="Radio on the left, Roads app on the right"
+            src="/images/blogs/002/microPodcasting.png" 
+            alt="Image With Microphone saying 'No Mic, No Problem'"
             width={0}
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
+            className='rounded'
+            priority
           />
 
           <p className='my-4 lead hightlight'>
@@ -65,7 +67,14 @@ export default function Blog() {
             </li>
           </ul>
 
-          {/* IMAGE? */}
+          <Image 
+            src="/images/blogs/002/podcastComparison.png" 
+            alt="Comparison between traditional podcasting and micro podcasting"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+          />
 
           <h2>The Growing Demand for Private Podcasting</h2>
           <p>
@@ -101,12 +110,24 @@ export default function Blog() {
             </li>
           </ul>
 
-          {/* IMAGE? */}
-
           <h2>How Roads Audio is the Perfect Solution for Private Micro Podcasts</h2>
+          
+          <Image 
+            src="/images/blogs/002/theNewStudio.png" 
+            alt="Recording studio showing the Roads Audio App at the center, suggesting that Roads Audio is the new Podcasting Studio"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+            className='rounded my-3'
+          />
 
           <p>
-            Most podcasting platforms are designed for public distribution, but Roads Audio allows you to create secure, private micro podcasts for an engaged audience.
+            Most podcasting platforms are built for public distribution. They require hosts to invest in recording equipment, soundproofing, editing software, and a hosting service just to get their voice heard. 
+          </p>
+
+          <p>
+            Roads Audio flips the script. It replaces the traditional podcasting studio by turning your phone into a fully functional private micro podcasting platform. Instead of worrying about audio engineering, production, or complex distribution, Roads lets you focus on what matters most. Your voice and your message.
           </p>
 
           <h3>Private, Invite-Only Access</h3>
@@ -152,8 +173,15 @@ export default function Blog() {
             </li>
           </ul>
 
-          {/* IMAGE? */}
-
+          <Image 
+            src="/images/blogs/002/playerExample.png" 
+            alt="Roads Audio Player showing audio comments in context"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+            className='rounded'
+          />
 
           <h2>Step-by-Step Guide to Starting a Private Micro Podcast on Roads Audio</h2>
           
@@ -172,8 +200,6 @@ export default function Blog() {
               Add a cover image to make your channel stand out
             </li>
           </ol>
-
-          {/* IMAGE? */}
 
           <h3>Step 2: Record Your First Conversation</h3>
           <ol>
@@ -198,7 +224,16 @@ export default function Blog() {
             </li>
           </ol>
 
-          {/* IMAGE? */}
+           <Image 
+            src="/images/blogs/002/newChannelExample.png" 
+            alt="Example showing how to create a new private channel on Roads Audio"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+            className='rounded'
+          />
+
           
           <h2>Examples of Private Micro Podcasts You Can Create</h2>
 
@@ -222,7 +257,7 @@ export default function Blog() {
             </li>
           </ul>
 
-          <h3>Private Coaching and Education</h3>
+          <h3>Private Coaching</h3>
           <ul>
             <li>
               Daily mindset or productivity lessons
@@ -241,6 +276,36 @@ export default function Blog() {
               Voice-based roundtable discussions
             </li>
           </ul>
+
+          <h3>Staying Connected with Friends</h3>
+          <ul>
+            <li>
+              Share voice updates and stories without scheduling calls
+            </li>
+            <li>
+              Keep conversations going asynchronously, no matter the time zone
+            </li>
+          </ul>
+
+          <h3>Classroom Discussions</h3>
+          <ul>
+            <li>
+              Professors share lecture recaps and discussion prompts
+            </li>
+            <li>
+              Students respond with voice notes for deeper engagement
+            </li>
+          </ul>
+
+          <Image 
+            src="/images/blogs/002/channelExample.png" 
+            alt="Example of a Philosophy Class using Roads Audio for a private discussion channel with topics like 'The Trolley Problem'"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+            className='rounded'
+          />
 
 
           <h2>How to Grow and Monetize Your Private Micro Podcast</h2>

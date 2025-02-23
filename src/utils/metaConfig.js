@@ -14,6 +14,11 @@ const metaConfig = {
     description: 'Explore the evolution of audio communication, from early radio innovations to the digital age with podcasts, leading up to the transformative Roads app.',
     image: '/images/blogs/001/CommunicationReinvented.png',
   },
+  '/blogs/how-to-start-a-private-micro-podcast': {
+    title: 'How to Start a Private Micro Podcast With Roads Audio',
+    description: 'Skip the expensive studio setup and get the benefits of podcasting effortlessly. Perfect for businesses, creators, and communities looking for secure, invite-only audio discussions.',
+    image: '/images/blogs/002/microPodcasting.png',
+  },
 };
 
 export default metaConfig;
