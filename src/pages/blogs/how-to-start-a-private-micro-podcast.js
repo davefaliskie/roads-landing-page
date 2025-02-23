@@ -23,7 +23,6 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            className='rounded'
             priority
           />
 
@@ -74,6 +73,7 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
+            className='not-round'
           />
 
           <h2>The Growing Demand for Private Podcasting</h2>
@@ -119,7 +119,7 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            className='rounded my-3'
+            className='my-3'
           />
 
           <p>
@@ -180,7 +180,6 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            className='rounded'
           />
 
           <h2>Step-by-Step Guide to Starting a Private Micro Podcast on Roads Audio</h2>
@@ -231,7 +230,6 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            className='rounded'
           />
 
           
@@ -304,7 +302,6 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            className='rounded'
           />
 
 

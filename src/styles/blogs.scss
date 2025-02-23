@@ -24,4 +24,12 @@
     border-left: solid thick #215F4A;
     padding-left: 10px;;
   }
+
+  img {
+    border-radius: 12px;
+  }
+  
+  .not-round {
+    border-radius: 0px !important;
+  }
 }
