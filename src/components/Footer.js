@@ -50,8 +50,20 @@ class Footer extends Component {
             </Link>
           </div>
 
-          <p>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
+
+          <div>
+            <Link href="/blogs/the-evolution-of-audio-from-radio-to-roads" className='btn btn-link'>
+              The Evolution of Audio
+            </Link>
+            <Link href="/blogs/how-to-start-a-private-micro-podcast" className='btn btn-link'>
+              How to Start a Micro Podcast
+            </Link>
+          </div>
+
+          <p className='mt-4'>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
         </div>
+
+        
       </div>
     );
   }
