@@ -14,4 +14,4 @@ npm run dev
 
 1. [The Evolution of Audio: From Radio to Roads](https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads)
 2. [How to Start a Private Micro Podcast](https://roadsaudio.com/blogs/how-to-start-a-private-micro-podcast)
-3. [Audio App for Blind Users](https://roadsaudio.com/blogs/audio-app-for-blind-users)
+3. [Audio App for Blind and Visually Impaired](https://roadsaudio.com/blogs/audio-app-for-blind-users)

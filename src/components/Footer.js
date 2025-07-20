@@ -57,7 +57,7 @@ class Footer extends Component {
               How to Start a Micro Podcast
             </Link>
             <Link href="/blogs/audio-app-for-blind-users" className='btn btn-link'>
-              Audio App For Blind Users
+              Audio App for Blind and Visually Impaired
             </Link>
           </div>
 
