@@ -9,7 +9,7 @@ export default function Blog() {
     <Navigation />
     <div id="blog-content" className='container'>
       <div className='col-md-10 col-lg-8 col-xl-6 mx-auto'>
-        <h1>Audio App for Blind Users: Why Voice-Only Communication is the Future of Accessible Messaging</h1>
+        <h1>Audio App for Blind and Visually Impaired: Why Voice-Only Communication is the Future of Accessible Messaging</h1>
           <p className='text-sm'>
             Published on July 20, 2025
           </p>
