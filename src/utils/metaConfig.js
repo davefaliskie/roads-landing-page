@@ -19,6 +19,12 @@ const metaConfig = {
     description: 'Skip the expensive studio setup and get the benefits of podcasting effortlessly. Perfect for businesses, creators, and communities looking for secure, invite-only audio discussions.',
     image: '/images/blogs/002/microPodcasting.png',
   },
+  '/blogs/audio-app-for-blind-users': {
+    title: 'Audio App for Blind Users: Voice Messaging for Visually Impaired | Roads Audio',
+    description: "Discover the best audio app for blind and visually impaired users. Roads Audio offers voice-only messaging that's faster than text, works perfectly with screen readers, and connects blind users with everyone.",
+    image: '/images/blogs/003/blindUserHero.png',
+  },
+  
 };
 
 export default metaConfig;
