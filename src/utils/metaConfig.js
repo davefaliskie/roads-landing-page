@@ -29,9 +29,11 @@ const metaConfig = {
     description: "Learn how grandparents can easily use voice messages instead of texting. No tiny keyboards, just press and talk. Simple setup guide for staying connected with family.",
     image: '/images/blogs/004/grandparentHero.png',
   },
-
-  
-  
+  '/blogs/military-families-voice-messages-deployment': {
+    title: 'Military Family Communication Apps for Deployment | Roads Audio',
+    description: "Stay connected through deployment with voice messages. Perfect for military families across time zones. Secure, private channels for sharing moments that matter.",
+    image: '/images/blogs/005/militaryFamilyHero.png',
+  },
 };
 
 export default metaConfig;
