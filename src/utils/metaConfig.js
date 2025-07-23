@@ -24,6 +24,13 @@ const metaConfig = {
     description: "Discover the best audio app for blind and visually impaired users. Roads Audio offers voice-only messaging that's faster than text, works perfectly with screen readers, and connects blind users with everyone.",
     image: '/images/blogs/003/blindUserHero.png',
   },
+  '/blogs/voice-messaging-for-grandparents-simple-guide': {
+    title: 'Voice Messaging for Grandparents: Simple Guide | Roads Audio',
+    description: "Learn how grandparents can easily use voice messages instead of texting. No tiny keyboards, just press and talk. Simple setup guide for staying connected with family.",
+    image: '/images/blogs/004/grandparentHero.png',
+  },
+
+  
   
 };
 
