@@ -98,7 +98,6 @@ export default function Blog() {
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            className='not-round'
           />
 
           <h3>Community-Focused Features</h3>

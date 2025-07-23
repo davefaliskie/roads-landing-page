@@ -28,15 +28,21 @@ const DynamicMeta = () => {
 
       {/*  Twitter */}
       {isRootPath ? (
-        // show "download app link"
         <>
-          <meta name="twitter:card" content="app" />
+          {/* add root canonical */}
+          <link rel="canonical" href="https://roadsaudio.com" />
+
+          {/* show "download app link" */}
+          {/* <meta name="twitter:card" content="app" />
           <meta name="twitter:app:name:iphone" content="Roads" />
           <meta name="twitter:app:id:iphone" content="6443961864" />
           <meta name="twitter:app:name:googleplay" content="Roads" />
-          <meta name="twitter:app:id:com.onemanstartup.roads" />
-          {/* add root canonical */}
-          <link rel="canonical" href="https://roadsaudio.com" />
+          <meta name="twitter:app:id:com.onemanstartup.roads" /> */}
+          
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:title" content={currentMeta.title} />
+          <meta property="twitter:description" content={currentMeta.description} />
+          <meta property="twitter:image" content={currentMeta.image} />
         </>
       ) : (
         <>

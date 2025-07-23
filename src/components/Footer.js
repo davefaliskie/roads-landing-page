@@ -59,6 +59,9 @@ class Footer extends Component {
             <Link href="/blogs/audio-app-for-blind-users" className='btn btn-link'>
               Audio App for Blind and Visually Impaired
             </Link>
+            <Link href="/blogs/voice-messaging-for-grandparents-simple-guide" className='btn btn-link'>
+              Audio Messaging for Grandparents
+            </Link>
           </div>
 
           <p className='mt-4'>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>
