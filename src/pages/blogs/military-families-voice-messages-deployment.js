@@ -13,7 +13,7 @@ export default function Blog() {
           <h1>Military Families: Stay Connected Through Deployment with Voice Messages</h1>
 
           <p className='text-sm'>
-            Published on July 24, 2025
+            Published on July 25, 2025
           </p>
 
           <Image 
