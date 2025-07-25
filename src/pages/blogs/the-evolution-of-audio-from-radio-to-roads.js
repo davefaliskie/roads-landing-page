@@ -25,7 +25,7 @@ export default function Blog() {
             style={{ width: '100%', height: 'auto' }}
           />
 
-          <p className='my-4 lead hightlight'>
+          <p className='my-4 lead highlight'>
             In the ever-evolving soundscape of human communication, audio has transformed from a one-way broadcast medium to an intimate, interactive experience. In this article we'll go back to the beginning of audio communication and discuss the history of radio and how lead to the groundbreaking Roads app, which is redefining the way we share and engage with voice. This is not just a story of technological advancement but a testament to humanity's insatiable desire for connection, understanding, and evolution.
           </p>
 

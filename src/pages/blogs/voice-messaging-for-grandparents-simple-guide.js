@@ -26,7 +26,7 @@ export default function Blog() {
             priority
           />
 
-          <p className='my-4 lead hightlight'>
+          <p className='my-4 lead highlight'>
             If you're a grandparent who finds texting frustrating, you're not alone. Those tiny keyboards, autocorrect mishaps, and endless typing can make staying in touch feel like a chore. Voice messaging offers a simpler, more natural way to connect with your loved ones. This guide will show you exactly how to get started.
           </p>
 

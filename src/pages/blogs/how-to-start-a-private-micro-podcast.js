@@ -26,7 +26,7 @@ export default function Blog() {
             priority
           />
 
-          <p className='my-4 lead hightlight'>
+          <p className='my-4 lead highlight'>
             Roads Audio is the perfect platform for hosting a private micro podcast. It allows you to create, share, and engage with listeners in a secure, invite-only environment.
           </p>
 

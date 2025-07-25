@@ -24,7 +24,7 @@ export default function Blog() {
             priority
           />
 
-          <p className='my-4 lead hightlight'>
+          <p className='my-4 lead highlight'>
             For millions of blind and visually impaired individuals worldwide, traditional messaging apps present a daily challenge. Roads Audio offers a new solution: a true voice-first platform designed with the blind community in mind.
           </p>
 
