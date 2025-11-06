@@ -4,12 +4,18 @@ import Link from 'next/link';
 import ReactGA from 'react-ga4';
 
 class AppLinks extends Component {
-  trackClickGA = (event_name) => {
+  trackClick = (event_name) => {
     // Add event tracking here, but ensure it only runs when the button is clicked
     ReactGA.event({
       category: 'Button Click',
       action: event_name,
     });
+
+    // Reddit Pixel event (only if pixel is available)
+    if (typeof window !== 'undefined' && window.rdt && typeof window.rdt === 'function') {
+      const rdt = window.rdt;
+      rdt('track', event_name);
+    }
   };
 
   render() {
@@ -18,7 +24,7 @@ class AppLinks extends Component {
     const googleLink = "https://play.google.com/store/apps/details?id=com.onemanstartup.roads"
     return (
       <div className="my-3 mx-auto text-center">
-        <Link href={appleLink} onClick={ () => this.trackClickGA("AppStoreLinkClick") }>
+        <Link href={appleLink} onClick={ () => this.trackClick("AppStoreLinkClick") }>
           <Image 
             src="/images/download_apple.png"
             alt="Download Roads on the App Store"
@@ -27,7 +33,7 @@ class AppLinks extends Component {
             className="m-2"
           />
         </Link>
-        <Link href={googleLink} onClick={ () => this.trackClickGA("GooglePlayLinkClick") }>
+        <Link href={googleLink} onClick={ () => this.trackClick("GooglePlayLinkClick") }>
           <Image 
             src="/images/download_google.png"
             alt="Download Roads on the Play Store"
