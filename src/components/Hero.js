@@ -15,8 +15,8 @@ class Hero extends Component {
                 <Image 
                   src="/images/RoadsAppQR.png"
                   alt="Roads Logo"
-                  height={100}
-                  width={100}
+                  height={120}
+                  width={120}
                   className="pr-3"
                 />
               </div>
