@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>        
-        <NodeOverlay />
+        {/* <NodeOverlay /> */}
         < Hero 
           title="Stay close even when life gets busy"
           subtitle="Share voice messages with people you care about. Talk when it works for you, without scheduling or pressure."
@@ -63,20 +63,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className='text-center py-5 mt-5 bg-graident'>
-          <Link href="https://www.f6s.com/roads-audio" target="_blank">
-            <Image 
-              src="/images/f6s.png"
-              alt="Top Telecom startups in Virginia"
-              height={60}
-              width={291}
-            />
-          </Link>
-        </div>
  
         <div id={styles.section_features}>
-          <h2 className="h2-lg my-lg text-center">Why Roads feels more personal than other voice apps</h2>
+          <h2 className="h2-lg my-lg text-center">Why Roads feels more personal</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
@@ -111,7 +100,7 @@ export default function Home() {
                 />
               </div>
                <div className='col-md-6 col-lg-4 my-auto order-md-first text-center text-md-start'>
-                <h3>Replies stay where they belong</h3>
+                <h3>Smart reply placement</h3>
                 <p>Each response is tied to the exact part of the audio it refers to. Listening feels effortless.</p>
               </div>
             </div>
