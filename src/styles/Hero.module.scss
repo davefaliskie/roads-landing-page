@@ -90,7 +90,7 @@ $hero-max-width: 1200px;
 #qr_code {
   position: absolute;
   bottom: 1.75rem;
-  right: 2rem;
+  left: 2.2rem;
   z-index: 3;
 }
 
@@ -112,7 +112,7 @@ $hero-max-width: 1200px;
 }
 
 .heroTitle {
-  margin: 0.4em 0 0.2em;
+  margin-top: 2rem;
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 1.1;
@@ -173,6 +173,10 @@ $hero-max-width: 1200px;
     gap: 4rem;
   }
 
+  .heroTitle {
+    margin-top: 0px;
+  }
+
   .textColumn {
     text-align: left;
     margin: 0;
@@ -200,6 +204,11 @@ $hero-max-width: 1200px;
 
   .subtitle {
     font-size: 1.15rem;
+  }
+
+  #qr_code{
+    left: auto;
+    right: 2em;
   }
 }
 

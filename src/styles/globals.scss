@@ -36,11 +36,11 @@ a {
 }
 
 .bg-primary {
-  background-color: #215F4A !important;
+  background-color: #0D2538 !important;
 }
 
 .text-primary {
-  color: #215F4A !important;
+  color: #0D2538 !important;
 }
 
 .navbar-brand {
@@ -59,11 +59,6 @@ button.accordion-button:not(.collapsed) {
   position: relative;
   z-index: 3;
   border-radius: 20px;
-}
-
-.bg-graident {
-  background: rgb(22, 130, 94);
-  background: radial-gradient(circle, rgba(22, 130, 94, 1) 0%, rgba(18, 122, 87, 1) 30%, rgba(33, 95, 74, 1) 100%);
 }
 
 .social-icon svg:hover {
@@ -90,7 +85,7 @@ button.accordion-button:not(.collapsed) {
 
 #section_footer {
   width: 100%;
-  background: #215F4A;
+  background: #0D2538;
 
   a, span {
     color: #fff;
