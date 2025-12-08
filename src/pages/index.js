@@ -70,7 +70,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/device_15_player_simple2.png" 
+                  src="/images/phones/device_15_player_response.png" 
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
@@ -90,7 +90,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 offset-lg-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/device_15_player_nested.png" 
+                  src="/images/phones/device_15_player_simple.png" 
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
@@ -107,8 +107,8 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/device_15_channel_invite.png" 
-                  alt="Screenshot of Roads app showing how to select friends to add to a channel."
+                  src="/images/phones/device_15_channel.png" 
+                  alt="Screenshot of Roads app showing private channel titled 'Friends from way back'"
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image} phone_shadow`}
