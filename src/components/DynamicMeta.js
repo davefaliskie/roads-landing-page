@@ -45,6 +45,8 @@ const DynamicMeta = () => {
       <meta property="og:title" content={currentMeta.title} />
       <meta property="og:description" content={currentMeta.description} />
       <meta property="og:image" content={currentMeta.image} />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:site_name" content="Roads Audio" />
 
       <meta name="apple-itunes-app" content="app-id=6443961864"></meta>
 

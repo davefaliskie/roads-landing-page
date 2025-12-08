@@ -1,13 +1,13 @@
 const metaConfig = {
   default: {
-    title: 'Roads Audio - Private Communities, Powered By Voice',
-    description: 'Roads Audio helps you build deeper connections through flexible, on-your-time voice conversations that fit your busy life.',
-    image: 'https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png',
+    title: 'Roads Audio - Stay Close, Even When Life Gets Busy',
+    description: 'Send meaningful voice messages that feel more personal than texting. Roads helps you stay close to friends, partners, and family by letting you talk when it works for you.',
+    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
   },
   '/delete-account': {
     title: 'Roads Audio - How to delete your account',
     description: 'See how to delete your account and data from Roads.',
-    image: 'https://roadsaudioassets.s3.amazonaws.com/Roads_Cover.png',
+    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
   },
   '/blogs/the-evolution-of-audio-from-radio-to-roads': {
     title: 'The Evolution of Audio: From Radio to Roads | Roads Audio App',
