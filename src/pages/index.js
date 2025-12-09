@@ -1,6 +1,5 @@
 import styles from '@/styles/Home.module.scss';
 import Image from 'next/image';
-import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
 import FaqItem from '@/components/FaqItem';
 import Hero from '@/components/Hero';
@@ -12,13 +11,12 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>        
-        <NodeOverlay />
         < Hero 
-          title="Private Communities, Powered By Voice"
-          subtitle="Roads Audio helps you build deeper connections through flexible, on-your-time voice conversations that fit your busy life."
+          title="Stay close even when life gets busy"
+          subtitle="Share voice messages with people you care about. Talk when it works for you, without scheduling or pressure."
         />
 
-        <div className='text-center'>
+        {/* <div className='text-center'>
           <h2 className="h2-lg my-lg my-lg">Watch The Demo</h2>
           
           <iframe 
@@ -28,7 +26,7 @@ export default function Home() {
             loading='eager'
             >
           </iframe>
-        </div>
+        </div> */}
 
          <div id={styles.section_reviews}>
           <h2 className="h2-lg my-lg text-center">What People Are Saying</h2>
@@ -63,27 +61,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className='text-center py-5 mt-5 bg-graident'>
-          <Link href="https://www.f6s.com/roads-audio" target="_blank">
-            <Image 
-              src="/images/f6s.png"
-              alt="Top Telecom startups in Virginia"
-              height={60}
-              width={291}
-            />
-          </Link>
-        </div>
  
         <div id={styles.section_features}>
-          <h2 className="h2-lg my-lg text-center">How Roads Is Unique</h2>
+          <h2 className="h2-lg my-lg text-center">Why Roads feels more personal</h2>
 
           <div className="container">
             <div className="row justify-content-md-center">
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/device_15_player_simple2.png" 
+                  src="/images/phones/device_15_player_response.png" 
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
@@ -92,9 +79,9 @@ export default function Home() {
               </div>
 
               <div className='col-md-6 col-lg-4 offset-lg-1 my-auto text-center text-md-start'>
-                <h3>Interactive Conversations</h3>
+                <h3>Talk like you're together</h3>
                   <p>
-                    Comment on audio with your voice, creating a completely new layered communication experience.
+                    Comment on any moment in a voice message. Keep the conversation natural and connected.
                   </p>
               </div>
             </div>
@@ -103,7 +90,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 offset-lg-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/device_15_player_nested.png" 
+                  src="/images/phones/device_15_player_simple.png" 
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
@@ -111,8 +98,8 @@ export default function Home() {
                 />
               </div>
                <div className='col-md-6 col-lg-4 my-auto order-md-first text-center text-md-start'>
-                <h3>Always Have Context</h3>
-                <p>When listening to a comment know exactly what's being referenced, and easily navigate the asynchronous conversation.</p>
+                <h3>Smart reply placement</h3>
+                <p>Each response is tied to the exact part of the audio it refers to. Listening feels effortless.</p>
               </div>
             </div>
 
@@ -120,8 +107,8 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/device_15_channel_invite.png" 
-                  alt="Screenshot of Roads app showing how to select friends to add to a channel."
+                  src="/images/phones/device_15_channel.png" 
+                  alt="Screenshot of Roads app showing private channel titled 'Friends from way back'"
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image} phone_shadow`}
@@ -129,8 +116,8 @@ export default function Home() {
               </div>
 
               <div className='col-md-6 col-lg-4 offset-lg-1 my-auto text-center text-md-start'>
-                <h3>Control Access</h3>
-                <p>You control who has access to your content through channels. Only invited members can listen and collaborate on your conversations.</p>
+                <h3>You decide who listens</h3>
+                <p>Create private voice spaces for your friends or family. Only the people you invite can join.</p>
               </div>
             </div>
 
@@ -138,7 +125,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_use_cases}>
-          <h2 className="h2-lg my-lg text-center">Ways To Use Roads</h2>
+          <h2 className="h2-lg my-lg text-center">Stay connected in a way that feels natural</h2>
           <div className="container">
             <div className="row">
               <UseCase 
@@ -147,23 +134,23 @@ export default function Home() {
               />
               <UseCase 
                 imagePath="/images/icons/chat.svg"
-                title="Chat with a friend asynchronously"
+                title="Stay in touch with a friend on a different schedule"
               />
               <UseCase 
                 imagePath="/images/icons/book.svg"
-                title="Create a virtual book club"
+                title="Run a virtual book club"
               />
               <UseCase 
                 imagePath="/images/icons/lecture.svg"
-                title="Record a lecture and answer questions"
+                title="Share lectures or answer student questions"
               />
               <UseCase 
                 imagePath="/images/icons/team.svg"
-                title="Share weekly updates with your team"
+                title="Send weekly life updates to your family"
               />
               <UseCase 
                 imagePath="/images/icons/podcast.svg"
-                title="Co-create podcasts with others"
+                title="Create a collaborative audio journal or podcast"
               />
             </div>
           </div>
@@ -177,40 +164,40 @@ export default function Home() {
               <div className="accordion" id="faq_accordion">
                 <FaqItem 
                   itemNum="one"
-                  question="How do I start a conversation on Roads?"
-                  answer="You simply hit record in the app and start talking. After you finish recording you can add a title and share your recording in a channel so others can listen."
+                  question="How do I start a voice thread?"
+                  answer="Tap record and start talking. Then add a title and post it in your channel."
                 />
                 <FaqItem 
                   itemNum="two"
-                  question="Who can join my channels?"
-                  answer="Channels can be joined by anyone the channel owner chooses. If you are friends with someone on Roads you can add them to a channel automatically, if not you can send them a channel invite link. The channel owner controls who is in the channel."
+                  question="Who can hear my recordings?"
+                  answer="Only people you invite. Your channels are private."
                 />
                 <FaqItem 
                   itemNum="three"
-                  question="How do I listen to comments that have been added to a conversation?"
-                  answer="When listening to a conversation if there is a comment, you'll have to option to take the road and listen to the comment. If you decide to listen, when the comment completes playing the original conversation will continue."
+                  question="Can I reply to a specific part of a message?"
+                  answer="Yes. You can respond to any moment, and the reply stays linked to that part."
                 />
                 <FaqItem 
                   itemNum="four"
-                  question="What is the maximum recording length?"
-                  answer="Conversations and comments can be any length."
+                  question="Is there a time limit for messages?"
+                  answer="No. You can record as long as you like."
                 />
                 <FaqItem 
                   itemNum="five"
-                  question="Can I edit or delete my recordings?"
-                  answer="There will be no support for editing audio in the initial version. However, you can always delete a recording that you create."
+                  question="Can I delete or edit my recordings?"
+                  answer="You can delete anything you've made. Editing isn't available yet."
                 />
                 <FaqItem 
                   itemNum="seven"
-                  question="Does the app offer a free trial or a freemium version?"
-                  answer="Roads will always have a free version where all the core features will be available. Premium features will also be made available for a small fee."
+                  question="Is it free to use?"
+                  answer="Yes. All core features are free. Additional premium tools are available as part of Roads Audio Plus."
                 />
                 <FaqItem 
                   itemNum="eight"
-                  question="How can I delete my account and data?"
+                  question="How do I delete my account?"
                   answer={
                     <span>
-                      Within the app you can find a <strong>Delete Account</strong> link under settings which will delete your account and all related data. For full instructions <Link href="/delete-account">view this page.</Link>
+                      Go to Settings and tap Delete Account. Your data will be removed.For full instructions <Link href="/delete-account">view this page.</Link>
                     </span>
                   }
                 />
@@ -221,7 +208,8 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <h2 className='h2-lg my-lg text-center text-primary'>Do More With Your Voice</h2>
+          <h2 className='h2-lg text-center text-primary mx-1'>Do More With Your Voice</h2>
+          <p className='text-center mx-1'>Start your first voice thread today and feel closer to the people who matter.</p>
           < AppLinks />
         </div>
       </main>
