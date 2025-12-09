@@ -208,7 +208,7 @@ export default function Home() {
         </div>
 
         <div id={styles.section_wait_list}>
-          <h2 className='h2-lg text-center text-primary'>Do More With Your Voice</h2>
+          <h2 className='h2-lg text-center text-primary mx-1'>Do More With Your Voice</h2>
           <p className='text-center mx-1'>Start your first voice thread today and feel closer to the people who matter.</p>
           < AppLinks />
         </div>
