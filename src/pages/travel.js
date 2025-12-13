@@ -8,6 +8,9 @@ import Link from 'next/link';
 import Review from '@/components/Review';
 
 export default function Travel() {
+  const appleStoreUrl = 'https://apps.apple.com/us/app/roads-audio-voice-threads/id6443961864?ppid=22dd30d4-c186-402e-82a9-6dec5fda81f6';
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.onemanstartup.roads&listing=travel';
+
   return (
     <>
       <main className={styles.main}>        
@@ -15,6 +18,8 @@ export default function Travel() {
           title="Go far without losing touch"
           subtitle="Even with time zones and long distances, Roads makes staying close feel simple. Talk when it fits your day, and hear back when it fits theirs."
           deviceImage="/images/phones/travel/device_15_player_full.png"
+          appleStoreUrl={appleStoreUrl}
+          googlePlayUrl={googlePlayUrl}
         />
 
          <div id={styles.section_reviews}>
@@ -199,7 +204,7 @@ export default function Travel() {
         <div id={styles.section_wait_list}>
           <h2 className='h2-lg text-center text-primary mx-1'>Keep your circle close, wherever you go</h2>
           <p className='text-center mx-1'>Start a voice thread today and stay connected across time zones.</p>
-          < AppLinks />
+          < AppLinks appleStoreUrl={appleStoreUrl} googlePlayUrl={googlePlayUrl} />
         </div>
       </main>
     </>
