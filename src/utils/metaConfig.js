@@ -7,7 +7,7 @@ const metaConfig = {
   '/travel': {
     title: 'Roads Audio - Stay Connected While Traveling',
     description: 'Roads is a voice messaging app that helps you stay close to friends and family — even across time zones. Record and share audio updates from anywhere.',
-    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
+    image: '/images/RoadsAudio-GoFarStayClose.jpg',
   },
   '/delete-account': {
     title: 'Roads Audio - How to delete your account',
