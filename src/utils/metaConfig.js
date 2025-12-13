@@ -4,6 +4,11 @@ const metaConfig = {
     description: 'Send meaningful voice messages that feel more personal than texting. Roads helps you stay close to friends, partners, and family by letting you talk when it works for you.',
     image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
   },
+  '/travel': {
+    title: 'Roads Audio - Stay Connected While Traveling',
+    description: 'Roads is a voice messaging app that helps you stay close to friends and family — even across time zones. Record and share audio updates from anywhere.',
+    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
+  },
   '/delete-account': {
     title: 'Roads Audio - How to delete your account',
     description: 'See how to delete your account and data from Roads.',

@@ -13,7 +13,7 @@ export default function Travel() {
       <main className={styles.main}>        
         < Hero 
           title="Go far without losing touch"
-          subtitle="Even with time zones and long distances, Roads makes staying close feel simple. Talk when it fits your day, and hear back when it fits theirs."
+          subtitle="Even in different time zones, Roads helps you stay close. Talk when it fits your day, and hear back when it fits theirs."
           deviceImage="/images/phones/travel/device_15_player_full.png"
         />
 
