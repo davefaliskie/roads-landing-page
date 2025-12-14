@@ -20,12 +20,16 @@ class AppLinks extends Component {
   };
 
   render() {
-    const { leftAlign } = this.props;
+    const {
+      leftAlign,
+      appleStoreUrl = APPLE_STORE_URL,
+      googlePlayUrl = GOOGLE_PLAY_URL,
+    } = this.props;
     const alignment = leftAlign ? 'text-left' : 'text-center mx-auto my-3'
 
     return (
       <div className={alignment}>
-        <Link href={APPLE_STORE_URL} onClick={() => this.trackClick('AppStoreLinkClick')}>
+        <Link href={appleStoreUrl} onClick={() => this.trackClick('AppStoreLinkClick')}>
           <Image 
             src="/images/download_apple.png"
             alt="Download Roads on the App Store"
@@ -34,7 +38,7 @@ class AppLinks extends Component {
             className={leftAlign ? 'm-0' : 'm-2'}
           />
         </Link>
-        <Link href={GOOGLE_PLAY_URL} onClick={() => this.trackClick('GooglePlayLinkClick')}>
+        <Link href={googlePlayUrl} onClick={() => this.trackClick('GooglePlayLinkClick')}>
           <Image 
             src="/images/download_google.png"
             alt="Download Roads on the Play Store"

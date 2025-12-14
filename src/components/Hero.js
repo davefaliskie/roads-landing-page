@@ -6,7 +6,14 @@ import AppLinks from '@/components/AppLinks';
 
 class Hero extends Component {
   render() {
-    const { title, subtitle } = this.props;
+    const {
+      title,
+      subtitle,
+      deviceImage,
+      appleStoreUrl,
+      googlePlayUrl,
+    } = this.props;
+    const deviceImagePath = deviceImage || '/images/phones/device_15_player_full.png';
     return (
       <>
         <div id={styles.section_headline_container}>
@@ -36,13 +43,17 @@ class Hero extends Component {
                 <h1 className={styles.heroTitle}>{title}</h1>
                 <p className={styles.subtitle}>{subtitle}</p>
                 <div className={styles.ctaGroup}>
-                  <AppLinks leftAlign='true'/>
+                  <AppLinks
+                    leftAlign='true'
+                    appleStoreUrl={appleStoreUrl}
+                    googlePlayUrl={googlePlayUrl}
+                  />
                 </div>
               </div>
 
               <div className={styles.imageColumn}>
                 <Image
-                  src="/images/phones/device_15_player_full.png"
+                  src={deviceImagePath}
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={800}
                   width={400}

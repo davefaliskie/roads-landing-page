@@ -2,6 +2,13 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import metaConfig from '@/utils/metaConfig';
 
+const BASE_URL = 'https://roadsaudio.com';
+
+const buildAbsoluteUrl = (url) => {
+  if (!url) return BASE_URL;
+  return url.startsWith('http') ? url : `${BASE_URL}${url}`;
+};
+
 const DynamicMeta = () => {
   const router = useRouter();
   const currentMeta = metaConfig[router.pathname] || metaConfig.default;
@@ -14,6 +21,7 @@ const DynamicMeta = () => {
     cleanPath === "/" 
       ? "https://roadsaudio.com"
       : `https://roadsaudio.com${cleanPath}`;
+  const metaImage = buildAbsoluteUrl(currentMeta.image);
 
   return (
     <Head>
@@ -44,9 +52,10 @@ const DynamicMeta = () => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={currentMeta.title} />
       <meta property="og:description" content={currentMeta.description} />
-      <meta property="og:image" content={currentMeta.image} />
+      <meta property="og:image" content={metaImage} />
       <meta property="og:url" content={canonical} />
       <meta property="og:site_name" content="Roads Audio" />
+      <meta itemProp="image" content={metaImage} />
 
       <meta name="apple-itunes-app" content="app-id=6443961864"></meta>
 
@@ -67,7 +76,7 @@ const DynamicMeta = () => {
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content={currentMeta.title} />
           <meta property="twitter:description" content={currentMeta.description} />
-          <meta property="twitter:image" content={currentMeta.image} />
+          <meta property="twitter:image" content={metaImage} />
         </>
       )}
     </Head>
