@@ -1,8 +1,21 @@
-# Roads
+# Roads Audio
 
 This is the landing page for Roads, the social audio app that lets you have asynchronous conversations.
 
 ![Roads Cover Photo](https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg)
+
+## License & Usage Notes
+
+This repository contains the open-source marketing and landing page for Roads Audio.
+
+The source code in this repository is provided under the MIT License and may be reused freely.
+
+**Important**: This license applies to the code only.
+All brand assets and content included in this repository, including logos, icons, images, illustrations, screenshots, written content (such as blog posts or marketing copy), and the Roads Audio name and branding, are not licensed for reuse. Roads Audio is a trademark of its creator.
+
+The Roads Audio mobile applications and backend services are proprietary and are not included in this repository.
+
+This project is shared publicly primarily for educational purposes and to accompany a [build-in-public YouTube series](https://youtu.be/BhZTvTlSW9s).
 
 ## Run Development Server
 
