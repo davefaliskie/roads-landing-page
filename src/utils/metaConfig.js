@@ -15,7 +15,7 @@ const metaConfig = {
     image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
   },
   '/blogs/the-evolution-of-audio-from-radio-to-roads': {
-    title: 'The Evolution of Audio: From Radio to Roads | Roads Audio App',
+    title: 'The Evolution of Audio: From Radio to Roads',
     description: 'Explore the evolution of audio communication, from early radio innovations to the digital age with podcasts, leading up to the transformative Roads app.',
     image: '/images/blogs/001/CommunicationReinvented.png',
   },
@@ -30,14 +30,19 @@ const metaConfig = {
     image: '/images/blogs/003/blindUserHero.png',
   },
   '/blogs/voice-messaging-for-grandparents-simple-guide': {
-    title: 'Voice Messaging for Grandparents: Simple Guide | Roads Audio',
+    title: 'Voice Messaging for Grandparents: Simple Guide',
     description: "Learn how grandparents can easily use voice messages instead of texting. No tiny keyboards, just press and talk. Simple setup guide for staying connected with family.",
     image: '/images/blogs/004/grandparentHero.png',
   },
   '/blogs/military-families-voice-messages-deployment': {
-    title: 'Military Family Communication Apps for Deployment | Roads Audio',
+    title: 'Military Family Communication Apps for Deployment',
     description: "Stay connected through deployment with voice messages. Perfect for military families across time zones. Secure, private channels for sharing moments that matter.",
     image: '/images/blogs/005/militaryFamilyHero.png',
+  },
+  '/blogs/questions-to-ask-to-get-to-know-someone': {
+    title: '50 Questions to Ask Someone to Get to Know Them Better | Roads Audio',
+    description: "Use these 50 questions to get to know someone better, reconnect with a friend, and start more meaningful conversations through short voice messages or thoughtful replies.",
+    image: '/images/blogs/006/50Questions.png',
   },
 };
 
