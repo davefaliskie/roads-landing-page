@@ -65,6 +65,9 @@ class Footer extends Component {
             <Link href="/blogs/military-families-voice-messages-deployment" className='btn btn-link'>
               Voice Messaging for Military Families
             </Link>
+            <Link href="/blogs/questions-to-ask-to-get-to-know-someone" className='btn btn-link'>
+              50 Questions to Ask Someone
+            </Link>
           </div>
 
           <p className='mt-4'>Copyright © {current_year}, 1ManStartup LLC. All Rights Reserved.</p>

@@ -30,3 +30,4 @@ npm run dev
 3. [Audio App for Blind and Visually Impaired](https://roadsaudio.com/blogs/audio-app-for-blind-users)
 4. [Voice Messaging for Grandparents](https://roadsaudio.com/blogs/voice-messaging-for-grandparents-simple-guide)
 5. [Military Families: Voice Messaging During Deployment](https://roadsaudio.com/blogs/military-families-voice-messages-deployment)
+6. [50 Questions to Ask Someone to Get to Know Them Better](https://roadsaudio.com/blogs/questions-to-ask-to-get-to-know-someone)
