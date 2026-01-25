@@ -18,7 +18,7 @@ export default function College() {
         < Hero 
           title="Stay close to your college friends"
           subtitle="Even as life gets busy after college, Roads makes staying close feel simple. Share voice updates when it fits your day, and hear back when it fits theirs."
-          deviceImage="/images/phones/travel/device_15_player_full.png"
+          deviceImage="/images/phones/college/device_15_player_full.png"
           appleStoreUrl={appleStoreUrl}
           googlePlayUrl={googlePlayUrl}
         />

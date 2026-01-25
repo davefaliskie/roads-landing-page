@@ -19,8 +19,8 @@ class Hero extends Component {
         <div id={styles.section_headline_container}>
           <div id={styles.section_headline}>
             
-            <nav className={`${styles.heroNav} navbar text-center text-md-left`}>
-              <Link className="navbar-brand mx-auto mx-md-0" href="/">
+            <nav className={`${styles.heroNav} navbar text-center text-lg-left`}>
+              <Link className="navbar-brand mx-auto mx-lg-0" href="/">
                 <Image 
                   src="/images/RoadsLogoRound.png"
                   alt="Roads Icon"
