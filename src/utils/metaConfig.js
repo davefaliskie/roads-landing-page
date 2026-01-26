@@ -9,6 +9,11 @@ const metaConfig = {
     description: 'Roads is a voice messaging app that helps you stay close to friends and family — even across time zones. Record and share audio updates from anywhere.',
     image: '/images/RoadsAudio-GoFarStayClose.jpg',
   },
+   '/college': {
+    title: 'Roads Audio - Stay Connected with College Friends',
+    description: 'Roads is a voice messaging app that helps you stay close to your college friends as life gets busy. Send voice updates and catch up on your own time.',
+    image: '/images/RoadsAudio-StayCloseToCollegeFriends.jpg',
+  },
   '/delete-account': {
     title: 'Roads Audio - How to delete your account',
     description: 'See how to delete your account and data from Roads.',
