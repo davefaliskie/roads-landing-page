@@ -8,9 +8,8 @@ import Link from 'next/link';
 import Review from '@/components/Review';
 
 export default function College() {
-  // todo need to update the links
-  const appleStoreUrl = 'https://apps.apple.com/us/app/roads-audio-voice-threads/id6443961864?ppid=22dd30d4-c186-402e-82a9-6dec5fda81f6';
-  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.onemanstartup.roads&listing=travel';
+  const appleStoreUrl = 'https://apps.apple.com/us/app/roads-audio-voice-threads/id6443961864?ppid=71c0158b-dcfd-4138-80d2-50f0a6afd3f9';
+  const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.onemanstartup.roads&listing=college';
 
   return (
     <>
