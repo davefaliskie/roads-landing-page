@@ -189,8 +189,13 @@ $hero-max-width: 1200px;
     margin: 0;
   }
 
+  .subtitle {
+    margin: 1.2rem 0 0.75rem;
+  }
+
   .ctaGroup {
     justify-content: flex-start;
+    margin-bottom: 20px;
   }
 
   .imageColumn {
