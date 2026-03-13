@@ -5,7 +5,7 @@ const useDropShadow = () => {
   useEffect(() => {
     const applyDropShadow = () => {
       const images = document.querySelectorAll('.phone_shadow');
-      images.forEach(image => {
+      images.forEach((image) => {
         image.onload = () => {
           image.style.filter = 'drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5))';
         };

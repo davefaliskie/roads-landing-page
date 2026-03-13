@@ -53,13 +53,11 @@ class ConvertkitEmailForm extends Component {
         >
           Join The Wait List
         </button>
-        {
-          (this.state.message.length > 0) && 
-          <p id="newsletter-message" className={"text-left text-sm mt-3 alert alert-warning"}>
+        {this.state.message.length > 0 && (
+          <p id="newsletter-message" className={'text-left text-sm mt-3 alert alert-warning'}>
             {this.state.message}
           </p>
-        }
-        
+        )}
       </form>
     );
   }

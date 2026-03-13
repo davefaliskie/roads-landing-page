@@ -6,29 +6,22 @@ import AppLinks from '@/components/AppLinks';
 
 class Hero extends Component {
   render() {
-    const {
-      title,
-      subtitle,
-      deviceImage,
-      appleStoreUrl,
-      googlePlayUrl,
-    } = this.props;
+    const { title, subtitle, deviceImage, appleStoreUrl, googlePlayUrl } = this.props;
     const deviceImagePath = deviceImage || '/images/phones/device_15_player_full.png';
     return (
       <>
         <div id={styles.section_headline_container}>
           <div id={styles.section_headline}>
-            
             <nav className={`${styles.heroNav} navbar text-center text-lg-left`}>
               <Link className="navbar-brand mx-auto mx-lg-0" href="/">
-                <Image 
+                <Image
                   src="/images/RoadsLogoRound.png"
                   alt="Roads Icon"
                   height={32}
                   width={32}
                   className="m-2"
                 />
-                <Image 
+                <Image
                   src="/images/RoadsTextBlack.png"
                   alt="Roads Logo"
                   height={30}
@@ -44,7 +37,7 @@ class Hero extends Component {
                 <p className={styles.subtitle}>{subtitle}</p>
                 <div className={styles.ctaGroup}>
                   <AppLinks
-                    leftAlign='true'
+                    leftAlign="true"
                     appleStoreUrl={appleStoreUrl}
                     googlePlayUrl={googlePlayUrl}
                   />
