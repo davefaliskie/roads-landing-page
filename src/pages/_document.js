@@ -4,10 +4,12 @@ import Footer from '@/components/Footer';
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-      </Head>
+      <Head></Head>
       <body>
-        <div id='main-container'>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+        <div id="main-container">
           <Main />
           <NextScript />
           <Footer />

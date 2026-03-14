@@ -15,12 +15,10 @@ const DynamicMeta = () => {
   const isDownloadPath = router.pathname === '/download';
 
   const path = router.asPath;
-  const cleanPath = path.split("?")[0].split("#")[0];
+  const cleanPath = path.split('?')[0].split('#')[0];
 
   const canonical =
-    cleanPath === "/" 
-      ? "https://roadsaudio.com"
-      : `https://roadsaudio.com${cleanPath}`;
+    cleanPath === '/' ? 'https://roadsaudio.com' : `https://roadsaudio.com${cleanPath}`;
   const metaImage = buildAbsoluteUrl(currentMeta.image);
 
   return (
@@ -28,7 +26,7 @@ const DynamicMeta = () => {
       {/* PRIMARY META */}
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      
+
       {/* Favicon icons */}
       <link rel="icon" href="/favicon/favicon2.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
@@ -60,7 +58,7 @@ const DynamicMeta = () => {
       <meta name="apple-itunes-app" content="app-id=6443961864"></meta>
 
       <link rel="canonical" href={canonical} />
-      
+
       {/*  Twitter */}
       {isDownloadPath ? (
         <>
