@@ -76,6 +76,14 @@ const metaConfig = {
     datePublished: '2026-01-11',
     cluster: 'Family Connection',
   },
+  '/blogs/how-blind-people-stay-connected': {
+    title: 'How Blind People Stay Connected with Friends and Family | Roads Audio',
+    description:
+      'Discover how blind and visually impaired users are staying close to friends and family with voice-first messaging. No typing, no screen reader fatigue, just real connection through voice.',
+    image: '/images/blogs/007/blindConnectionHero.png',
+    datePublished: '2026-03-15',
+    cluster: 'Blind/VI',
+  },
 };
 
 export default metaConfig;
