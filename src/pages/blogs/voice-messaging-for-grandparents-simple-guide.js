@@ -4,6 +4,7 @@ import AppLinks from '@/components/AppLinks';
 import Head from 'next/head';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 // slug: voice-messaging-for-grandparents-simple-guide
 export default function Blog() {
@@ -18,6 +19,8 @@ export default function Blog() {
     datePublished: meta.datePublished,
   });
 
+  const formattedDate = formatDate(meta.datePublished);
+
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export default function Blog() {
           <div className="col-md-10 col-lg-8 col-xl-6 mx-auto">
             <h1>How Grandparents Can Use Voice Messages Instead of Texting: A Simple Guide</h1>
 
-            <p className="text-sm">Published on July 22, 2025</p>
+            <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
               src="/images/blogs/004/grandparentHero.png"

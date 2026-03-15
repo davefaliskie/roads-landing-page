@@ -4,6 +4,7 @@ import AppLinks from '@/components/AppLinks';
 import Head from 'next/head';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 // slug: audio-app-for-blind-users
 export default function Blog() {
@@ -18,6 +19,8 @@ export default function Blog() {
     datePublished: meta.datePublished,
   });
 
+  const formattedDate = formatDate(meta.datePublished);
+
   return (
     <>
       <Head>
@@ -31,7 +34,7 @@ export default function Blog() {
               Audio App for Blind and Visually Impaired: Why Voice-Only Communication is the Future
               of Accessible Messaging
             </h1>
-            <p className="text-sm">Published on July 20, 2025</p>
+            <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
               src="/images/blogs/003/blindUserHero.png"

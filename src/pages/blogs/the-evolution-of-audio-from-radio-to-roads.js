@@ -4,6 +4,7 @@ import AppLinks from '@/components/AppLinks';
 import Head from 'next/head';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 // slug: the-evolution-of-audio-from-radio-to-roads
 export default function Blog() {
@@ -18,6 +19,8 @@ export default function Blog() {
     datePublished: meta.datePublished,
   });
 
+  const formattedDate = formatDate(meta.datePublished);
+
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export default function Blog() {
           <div className="col-md-10 col-lg-8 col-xl-6 mx-auto">
             <h1>The Evolution of Audio: From Radio to Roads Audio</h1>
 
-            <p className="text-sm">Published on August 28, 2023 by Dave Faliskie</p>
+            <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
               src="/images/blogs/001/CommunicationReinvented.png"

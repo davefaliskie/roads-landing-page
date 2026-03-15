@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 // slug: how-blind-people-stay-connected
 export default function Blog() {
@@ -19,6 +20,8 @@ export default function Blog() {
     datePublished: meta.datePublished,
   });
 
+  const formattedDate = formatDate(meta.datePublished);
+
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export default function Blog() {
         <div id="blog-content" className="container">
           <div className="col-md-10 col-lg-8 col-xl-6 mx-auto">
             <h1>How Blind People Stay Connected with Friends and Family in 2026</h1>
-            <p className="text-sm">Published on March 15, 2026</p>
+            <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
               src="/images/blogs/007/blindConnectionHero.png"

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AppLinks from '@/components/AppLinks';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 export default function BlogsIndex() {
   // Helper function to clean title (remove "| Roads Audio" suffix)
@@ -52,11 +53,7 @@ export default function BlogsIndex() {
                     </div>
                     <div className="blog-card-content p-3">
                       <p className="text-sm text-muted mb-2">
-                        {new Date(post.datePublished).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
+                        {formatDate(post.datePublished)}
                       </p>
                       <h2 className="h5 mb-2">{post.cleanTitle}</h2>
                       <p className="text-sm">{post.description}</p>

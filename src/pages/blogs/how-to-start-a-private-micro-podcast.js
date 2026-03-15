@@ -4,6 +4,7 @@ import AppLinks from '@/components/AppLinks';
 import Head from 'next/head';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 // slug: how-to-start-a-private-micro-podcast
 export default function Blog() {
@@ -18,6 +19,8 @@ export default function Blog() {
     datePublished: meta.datePublished,
   });
 
+  const formattedDate = formatDate(meta.datePublished);
+
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export default function Blog() {
           <div className="col-md-10 col-lg-8 col-xl-6 mx-auto">
             <h1>How to Start a Private Micro Podcast</h1>
 
-            <p className="text-sm">Published on February 21, 2024 by Dave Faliskie</p>
+            <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
               src="/images/blogs/002/microPodcasting.png"

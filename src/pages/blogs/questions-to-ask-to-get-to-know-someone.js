@@ -4,6 +4,7 @@ import AppLinks from '@/components/AppLinks';
 import Head from 'next/head';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
+import { formatDate } from '@/utils/dateUtils';
 
 // slug: questions-to-ask-to-get-to-know-someone
 export default function Blog() {
@@ -18,6 +19,8 @@ export default function Blog() {
     datePublished: meta.datePublished,
   });
 
+  const formattedDate = formatDate(meta.datePublished);
+
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export default function Blog() {
           <div className="col-md-10 col-lg-8 col-xl-6 mx-auto">
             <h1>50 Questions to Ask Someone to Get to Know Them Better</h1>
 
-            <p className="text-sm">Published on January 11, 2026</p>
+            <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
               src="/images/blogs/006/50Questions.png"
