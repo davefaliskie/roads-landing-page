@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { generateArticleSchema, renderSchemaScript } from '@/utils/schema';
 import metaConfig from '@/utils/metaConfig';
 import { formatDate } from '@/utils/dateUtils';
+import Link from 'next/link';
 
 // slug: audio-app-for-blind-users
 export default function Blog() {
@@ -100,6 +101,14 @@ export default function Blog() {
               <li>Gesture-based controls that work with VoiceOver and TalkBack</li>
               <li>Consistent interface patterns throughout the app</li>
             </ul>
+
+            <p>
+              Understanding{' '}
+              <Link href="/blogs/voiceover-compatible-apps">
+                what makes an app truly VoiceOver compatible
+              </Link>{' '}
+              helps when evaluating which apps will actually work well with a screen reader.
+            </p>
 
             <Image
               src="/images/blogs/003/simpleInterface.png"

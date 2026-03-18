@@ -84,6 +84,14 @@ const metaConfig = {
     datePublished: '2026-03-15',
     cluster: 'Blind/VI',
   },
+  '/blogs/voiceover-compatible-apps': {
+    title: 'VoiceOver Compatible Apps: What That Actually Means | Roads Audio',
+    description:
+      'Learn what makes an app truly VoiceOver compatible versus just technically functional. Discover the difference between accessibility as a checkbox and accessibility that works.',
+    image: '/images/blogs/008/voiceoverHero.png',
+    datePublished: '2026-03-18',
+    cluster: 'Blind/VI',
+  },
 };
 
 export default metaConfig;
