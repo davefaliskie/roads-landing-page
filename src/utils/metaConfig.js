@@ -116,6 +116,14 @@ const metaConfig = {
     datePublished: '2026-03-29',
     cluster: 'Blind/VI',
   },
+  '/blogs/low-vision-apps': {
+    title: 'Low Vision Apps for Staying Connected | Roads Audio',
+    description:
+      'Find apps that work for low vision users. Learn what makes an app accessible for people with partial sight and why voice-first communication reduces eye strain.',
+    image: '/images/blogs/012/lowVisionHero.png',
+    datePublished: '2026-04-01',
+    cluster: 'Blind/VI',
+  },
 };
 
 export default metaConfig;
