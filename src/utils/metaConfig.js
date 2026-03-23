@@ -92,6 +92,14 @@ const metaConfig = {
     datePublished: '2026-03-18',
     cluster: 'Blind/VI',
   },
+  '/blogs/private-voice-messaging-apps': {
+    title: 'Private Voice Messaging Apps: Why Some Groups Stay Closed | Roads Audio',
+    description:
+      'Not every conversation needs an audience. Learn why private voice messaging apps work better for families, close friends, and small communities who want to talk without broadcasting to the world.',
+    image: '/images/blogs/009/privateVoiceHero.png',
+    datePublished: '2026-03-22',
+    cluster: 'Blind/VI',
+  },
 };
 
 export default metaConfig;
