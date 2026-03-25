@@ -98,7 +98,15 @@ const metaConfig = {
       'Not every conversation needs an audience. Learn why private voice messaging apps work better for families, close friends, and small communities who want to talk without broadcasting to the world.',
     image: '/images/blogs/009/privateVoiceHero.png',
     datePublished: '2026-03-22',
-    cluster: 'Blind/VI',
+    cluster: 'General',
+  },
+  '/blogs/what-is-a-micro-podcast': {
+    title: 'What is a Micro Podcast? The Private Audio Format for Groups | Roads Audio',
+    description:
+      'A micro podcast is a private, audio-first conversation for small groups. Learn how this format combines the best of podcasting and group chats for families, friends, and teams.',
+    image: '/images/blogs/010/microPodcastHero.png',
+    datePublished: '2026-03-25',
+    cluster: 'Private Podcasting',
   },
 };
 
