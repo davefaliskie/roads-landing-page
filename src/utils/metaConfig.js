@@ -113,7 +113,7 @@ const metaConfig = {
     description:
       'Learn what makes an Android app truly TalkBack compatible. Discover the difference between apps that technically work with screen readers and apps that are actually usable.',
     image: '/images/blogs/011/talkbackHero.png',
-    datePublished: '2026-03-29',
+    datePublished: '2026-04-05',
     cluster: 'Blind/VI',
   },
   '/blogs/low-vision-apps': {

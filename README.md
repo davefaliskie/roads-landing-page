@@ -23,7 +23,8 @@ This project is shared publicly primarily for educational purposes and to accomp
 npm run dev
 ```
 
-## Blog Links Until I add a /blogs page
+## Blog Links
+[View All](https://roadsaudio.com/blogs)
 
 1. [The Evolution of Audio: From Radio to Roads](https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads)
 2. [How to Start a Private Micro Podcast](https://roadsaudio.com/blogs/how-to-start-a-private-micro-podcast)
@@ -31,6 +32,8 @@ npm run dev
 4. [Voice Messaging for Grandparents](https://roadsaudio.com/blogs/voice-messaging-for-grandparents-simple-guide)
 5. [Military Families: Voice Messaging During Deployment](https://roadsaudio.com/blogs/military-families-voice-messages-deployment)
 6. [50 Questions to Ask Someone to Get to Know Them Better](https://roadsaudio.com/blogs/questions-to-ask-to-get-to-know-someone)
+7. [How Blind People Stay Connected](https://roadsaudio.com/blogs/how-blind-people-stay-connected)
+8. [VoiceOver Compatible Apps](https://roadsaudio.com/blogs/voiceover-compatible-apps)
 
 ## Use Case Specific Landing Pages
 
