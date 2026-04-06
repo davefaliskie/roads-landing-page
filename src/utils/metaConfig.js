@@ -121,7 +121,7 @@ const metaConfig = {
     description:
       'Find apps that work for low vision users. Learn what makes an app accessible for people with partial sight and why voice-first communication reduces eye strain.',
     image: '/images/blogs/012/lowVisionHero.png',
-    datePublished: '2026-04-01',
+    datePublished: '2026-04-08',
     cluster: 'Blind/VI',
   },
 };
