@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '@/styles/globals.scss';
 import '@/styles/blogs.scss';
-import { Montserrat } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import { useEffect } from 'react';
 import Head from 'next/head';
 import ReactGA from 'react-ga4';
@@ -9,7 +9,7 @@ import DynamicMeta from '@/components/DynamicMeta';
 import useDropShadow from '@/hooks/useDropShadow';
 import Layout from '@/components/Layout';
 
-const montserrat = Montserrat({ subsets: ['latin'] });
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
   useDropShadow();
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DynamicMeta />
-      <main className={montserrat.className}>
+      <main className={plusJakartaSans.className}>
         <Layout>
           <Component {...pageProps} />
         </Layout>

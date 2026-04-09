@@ -204,6 +204,7 @@ $hero-max-width: 1200px;
 
   .deviceImage {
     width: auto;
+    max-width: none;
     height: clamp(600px, 80vh, 850px);
   }
 }
