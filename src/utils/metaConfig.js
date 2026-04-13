@@ -132,6 +132,14 @@ const metaConfig = {
     datePublished: '2026-04-13',
     cluster: 'Async/B2B',
   },
+  '/blogs/stay-connected-long-distance-family': {
+    title: 'How to Stay Connected with Long Distance Family | Roads Audio',
+    description:
+      'Keep your family close despite the miles. Learn how voice messaging helps families share everyday moments across time zones and busy schedules.',
+    image: '/images/blogs/014/familyConnectionHero.png',
+    datePublished: '2026-04-16',
+    cluster: 'Family',
+  },
 };
 
 export default metaConfig;
