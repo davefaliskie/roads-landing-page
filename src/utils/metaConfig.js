@@ -124,6 +124,14 @@ const metaConfig = {
     datePublished: '2026-04-08',
     cluster: 'Blind/VI',
   },
+  '/blogs/async-standup-apps': {
+    title: 'Async Standup Apps: Voice Updates for Remote Teams | Roads Audio',
+    description:
+      'Replace daily standup meetings with async voice updates. Learn how distributed teams use voice messaging to stay aligned without scheduling headaches.',
+    image: '/images/blogs/013/asyncStandupHero.png',
+    datePublished: '2026-04-13',
+    cluster: 'Async/B2B',
+  },
 };
 
 export default metaConfig;
