@@ -140,6 +140,14 @@ const metaConfig = {
     datePublished: '2026-04-16',
     cluster: 'Family',
   },
+  '/blogs/internal-podcast-for-teams': {
+    title: 'Internal Podcasts for Teams: Company Updates Without Another Meeting | Roads Audio',
+    description:
+      'Create an internal podcast for your company. Share leadership updates, department news, and culture content through voice that employees can listen to on their own time.',
+    image: '/images/blogs/015/internalPodcastHero.png',
+    datePublished: '2026-04-21',
+    cluster: 'B2B',
+  },
 };
 
 export default metaConfig;
