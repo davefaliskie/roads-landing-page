@@ -148,6 +148,14 @@ const metaConfig = {
     datePublished: '2026-04-21',
     cluster: 'B2B',
   },
+  '/blogs/async-coaching-apps': {
+    title: 'Async Coaching Apps: Voice-Based Coaching Without Scheduling Hassles | Roads Audio',
+    description:
+      'Deliver coaching through async voice messages. Learn how coaches are building flexible practices that work across time zones without calendar friction.',
+    image: '/images/blogs/016/asyncCoachingHero.png',
+    datePublished: '2026-04-24',
+    cluster: 'Coaching',
+  },
 };
 
 export default metaConfig;
