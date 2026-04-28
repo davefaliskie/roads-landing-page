@@ -42,7 +42,7 @@ npm run dev
 14. [Stay Connected with Long Distance Family](https://roadsaudio.com/blogs/stay-connected-long-distance-family)
 15. [Internal Podcasts for Teams](https://roadsaudio.com/blogs/internal-podcast-for-teams)
 16. [Async Coaching Apps](https://roadsaudio.com/blogs/async-coaching-apps)
-
+17. [Long Distance Relationship App for Couples](https://roadsaudio.com/blogs/long-distance-relationship-apps)
 ## Use Case Specific Landing Pages
 
 1. [Travel](https://roadsaudio.com/travel)
