@@ -160,8 +160,16 @@ const metaConfig = {
     title: 'Best Long Distance Relationship Apps for Couples in 2026 | Roads Audio',
     description:
       'Stay connected with your partner across any distance. Discover why voice messaging works better than texting for long distance relationships.',
-    image: '/images/blogs/017/longDistanceHero.png',
+    image: '/images/blogs/017/longDistanceHero2.png',
     datePublished: '2026-04-28',
+    cluster: 'Relationships',
+  },
+  '/blogs/couples-communication-app': {
+    title: 'Couples Communication Apps: Finding the Right Way to Stay Connected | Roads Audio',
+    description:
+      'Find the best communication app for your relationship. Learn why voice messaging creates stronger connection than text for couples.',
+    image: '/images/blogs/018/couplesCommunicationHero.png',
+    datePublished: '2026-05-13',
     cluster: 'Relationships',
   },
 };

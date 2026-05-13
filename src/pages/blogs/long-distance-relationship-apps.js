@@ -35,8 +35,8 @@ export default function Blog() {
             <p className="text-sm">Published on {formattedDate}</p>
 
             <Image
-              src="/images/blogs/017/longDistanceHero.png"
-              alt="Couple staying connected through their phones while in different locations"
+              src="/images/blogs/017/longDistanceHero2.png"
+              alt="Couple hugging at train station with suitcases before one goes on a trip."
               width={0}
               height={0}
               sizes="100vw"
@@ -92,6 +92,16 @@ export default function Blog() {
               approximate that naturalness, not tools that make communication feel like
               correspondence.
             </p>
+
+            <Image
+              src="/images/blogs/017/longDistanceHero.png"
+              alt="Couple staying connected through their phones while in different locations"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+              priority
+            />
 
             <h2>Why Voice Changes Everything</h2>
 
