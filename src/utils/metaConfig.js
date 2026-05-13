@@ -172,6 +172,14 @@ const metaConfig = {
     datePublished: '2026-05-13',
     cluster: 'Relationships',
   },
+  '/blogs/book-club-app': {
+    title: 'Book Club Apps: How to Run a Virtual Book Club That Works | Roads Audio',
+    description:
+      "Start a book club that fits everyone's schedule. Learn how async voice discussion keeps book clubs alive without requiring everyone to meet at the same time.",
+    image: '/images/blogs/019/bookClubHero.png',
+    datePublished: '2026-05-19',
+    cluster: 'Communities',
+  },
 };
 
 export default metaConfig;
