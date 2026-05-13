@@ -180,6 +180,14 @@ const metaConfig = {
     datePublished: '2026-05-19',
     cluster: 'Communities',
   },
+  '/blogs/async-mentoring-apps': {
+    title: 'Async Mentoring Apps: Building Mentorship Without Scheduling Barriers | Roads Audio',
+    description:
+      'Maintain mentoring relationships that last. Learn how async voice messaging removes the scheduling friction that kills most mentorship programs.',
+    image: '/images/blogs/020/asyncMentoringHero.png',
+    datePublished: '2026-05-26',
+    cluster: 'Coaching',
+  },
 };
 
 export default metaConfig;
