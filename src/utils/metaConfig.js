@@ -204,6 +204,14 @@ const metaConfig = {
     datePublished: '2026-06-09',
     cluster: 'Relationships',
   },
+  '/blogs/executive-coaching-apps': {
+    title: 'Executive Coaching Apps: Tools for High-Level Leadership Development | Roads Audio',
+    description:
+      'Deliver executive coaching that fits demanding schedules. Learn how async voice coaching helps coaches maintain high-touch relationships with busy leaders.',
+    image: '/images/blogs/023/executiveCoachingHero.png',
+    datePublished: '2026-06-16',
+    cluster: 'Coaching',
+  },
 };
 
 export default metaConfig;
