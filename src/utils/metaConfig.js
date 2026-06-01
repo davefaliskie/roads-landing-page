@@ -220,6 +220,14 @@ const metaConfig = {
     datePublished: '2026-06-23',
     cluster: 'Coaching',
   },
+  '/blogs/life-coaching-apps': {
+    title: 'Life Coaching Apps: How Coaches Are Reaching More Clients | Roads Audio',
+    description:
+      'Build a life coaching practice that scales. Learn how async voice coaching lets you serve more clients without more hours while keeping the personal connection.',
+    image: '/images/blogs/025/lifeCoachingHero.png',
+    datePublished: '2026-06-30',
+    cluster: 'Coaching',
+  },
 };
 
 export default metaConfig;
