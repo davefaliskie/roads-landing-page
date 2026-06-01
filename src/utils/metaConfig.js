@@ -212,6 +212,14 @@ const metaConfig = {
     datePublished: '2026-06-16',
     cluster: 'Coaching',
   },
+  '/blogs/accountability-partner-app': {
+    title: 'Accountability Partner Apps: Staying on Track Together | Roads Audio',
+    description:
+      'Find an accountability partner app that actually works. Learn how voice-based check-ins create stronger accountability than text without the hassle of scheduling calls.',
+    image: '/images/blogs/024/accountabilityHero.png',
+    datePublished: '2026-06-23',
+    cluster: 'Coaching',
+  },
 };
 
 export default metaConfig;
