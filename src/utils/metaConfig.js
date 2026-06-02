@@ -188,6 +188,14 @@ const metaConfig = {
     datePublished: '2026-05-26',
     cluster: 'Coaching',
   },
+  '/blogs/dark-mode-accessibility-apps': {
+    title: 'Dark Mode Accessibility: Why It Matters More Than You Think | Roads Audio',
+    description:
+      'Dark mode is more than a preference for users with low vision and light sensitivity. Learn why dark mode support is an accessibility necessity and how Roads Audio now supports it.',
+    image: '/images/blogs/021/darkModeHero.png',
+    datePublished: '2026-06-02',
+    cluster: 'Accessibility',
+  },
 };
 
 export default metaConfig;
