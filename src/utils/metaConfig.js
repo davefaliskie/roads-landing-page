@@ -196,6 +196,14 @@ const metaConfig = {
     datePublished: '2026-06-02',
     cluster: 'Accessibility',
   },
+  '/blogs/feeling-disconnected-from-partner': {
+    title: 'Feeling Disconnected from Your Partner? How to Rebuild Daily Connection | Roads Audio',
+    description:
+      'Reconnect with your partner when life gets too busy. Learn how to rebuild daily sharing habits and why voice messages help couples who have drifted apart.',
+    image: '/images/blogs/022/disconnectedHero.png',
+    datePublished: '2026-06-09',
+    cluster: 'Relationships',
+  },
 };
 
 export default metaConfig;
