@@ -228,14 +228,14 @@ const metaConfig = {
     datePublished: '2026-06-30',
     cluster: 'Coaching',
   },
-  // '/blogs/conversation-practice-app': {
-  //   title: 'Conversation Practice Apps: Speaking Practice That Fits Your Schedule | Roads Audio',
-  //   description:
-  //     'Practice speaking a new language without scheduling pressure. Learn how async voice messaging with a language partner builds speaking skills on your own time.',
-  //   image: '/images/blogs/026/conversationPracticeHero.png',
-  //   datePublished: '2026-07-07',
-  //   cluster: 'Language Learning',
-  // },
+  '/blogs/conversation-practice-app': {
+    title: 'Conversation Practice Apps: Speaking Practice That Fits Your Schedule | Roads Audio',
+    description:
+      'Practice speaking a new language without scheduling pressure. Learn how async voice messaging with a language partner builds speaking skills on your own time.',
+    image: '/images/blogs/026/conversationPracticeHero.png',
+    datePublished: '2026-07-07',
+    cluster: 'Language Learning',
+  },
 };
 
 export default metaConfig;
