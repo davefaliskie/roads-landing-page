@@ -22,6 +22,40 @@
   }
 }
 
+.balanced {
+  text-wrap: balance;
+}
+
+.hero_accent {
+  background: linear-gradient(90deg, #a8380f 0%, #d2600f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cta_panel {
+  position: relative;
+  z-index: 3;
+  max-width: 960px;
+  margin: 0 1rem;
+  padding: 2.5rem 1rem 1.5rem;
+  border-radius: 32px;
+  background: radial-gradient(circle at 80% 15%, rgba(255, 209, 148, 0.5), transparent 55%),
+    radial-gradient(circle at 22% 12%, rgba(255, 194, 163, 0.4), transparent 60%),
+    linear-gradient(180deg, #fffaf2 0%, #ffe8cf 55%, #ffd5b2 100%);
+}
+
+// Sections ease in as they scroll into view. The hidden state is only ever
+// added by script (see index.js), so content is visible without it.
+.reveal {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal_pending {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
 #section_features {
   min-height: 100vh;
   width: 100%;
@@ -73,5 +107,10 @@
 
   #section_wait_list {
     margin-top: 5em;
+  }
+
+  .cta_panel {
+    margin: 0 auto;
+    padding: 4rem 2rem 3rem;
   }
 }

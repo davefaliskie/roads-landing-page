@@ -1,8 +1,8 @@
 const metaConfig = {
   default: {
-    title: 'Roads Audio - Stay Close, Even When Life Gets Busy',
+    title: 'Roads Audio: Collaborative Voice Memos for Friends',
     description:
-      'Send meaningful voice messages that feel more personal than texting. Roads helps you stay close to friends, partners, and family by letting you talk when it works for you.',
+      'Chat with friends and family through collaborative voice memos. Record on your time, reply to exact moments, and keep private conversations going.',
     image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
   },
   '/travel': {
