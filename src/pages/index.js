@@ -113,17 +113,49 @@ export default function Home() {
           subtitle="Roads Audio turns voice memos into ongoing conversations. Record when you have time, listen when you can, and reply when you’re ready."
         />
 
-        {/* <div className='text-center'>
-          <h2 className="h2-lg my-lg my-lg">Watch The Demo</h2>
-          
-          <iframe 
-            className="youtube-video"
-            src="https://www.youtube.com/embed/w_H7ooZYnAY" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            loading='eager'
+        <div id={styles.section_problem}>
+          <div className={`${styles.problem_inner} ${styles.reveal}`}>
+            <h2 className={`${styles.problem_title} h2-lg`}>You keep meaning to&nbsp;call.</h2>
+
+            <div
+              className={styles.thread}
+              role="img"
+              aria-label="A text thread between two friends who keep failing to schedule a call."
             >
-          </iframe>
-        </div> */}
+              <div className={styles.thread_day}>
+                <span className={styles.thread_label}>Monday</span>
+                <span className={`${styles.bubble} ${styles.bubble_out}`}>
+                  Call this week? I have news
+                </span>
+                <span className={styles.bubble}>Yes! Thursday?</span>
+              </div>
+              <div className={`${styles.thread_day} ${styles.thread_fade_1}`}>
+                <span className={styles.thread_label}>Thursday</span>
+                <span className={`${styles.bubble} ${styles.bubble_out}`}>
+                  Stuck at work. Tomorrow?
+                </span>
+                <span className={styles.bubble}>Flying out. Next week for sure</span>
+              </div>
+              <div className={`${styles.thread_day} ${styles.thread_fade_2}`}>
+                <span className={styles.thread_label}>Three weeks later</span>
+                <span className={`${styles.bubble} ${styles.bubble_out}`}>
+                  We really need to catch up
+                </span>
+                <span className={styles.bubble}>I know. Soon, I promise</span>
+              </div>
+            </div>
+
+            <div className={styles.problem_close}>
+              <h3>
+                Stay close, even when life gets <span className={styles.problem_accent}>busy.</span>
+              </h3>
+              <p>
+                With Roads, you talk when you have a few minutes and your friends reply when they
+                do. The conversation keeps going without anyone finding a time.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div id={styles.section_reviews}>
           <h2 className="h2-lg my-lg text-center">What People Are Saying</h2>
@@ -161,7 +193,7 @@ export default function Home() {
 
         <div id={styles.section_features}>
           <h2 className={`${styles.balanced} h2-lg my-lg text-center mx-2`}>
-            Voice memos that turn into real conversations
+            Voice memos that turn into conversations
           </h2>
 
           <div className="container">
@@ -178,8 +210,8 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`}>
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image
-                  src="/images/phones/device_15_player_response.png"
-                  alt="Screenshot of Roads app showing the main player with several comments."
+                  src="/images/phones/device_road_popup.png"
+                  alt="Screenshot of the Roads app asking 'Play This Road?' for a friend's reply at a specific moment in a voice memo."
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image} phone_shadow`}
@@ -187,10 +219,10 @@ export default function Home() {
               </div>
 
               <div className="col-md-6 col-lg-4 offset-lg-1 my-auto text-center text-md-start">
-                <h3>Start a Voice Thread</h3>
+                <h3>Replies land right in context</h3>
                 <p>
-                  Share a quick update or a long story. Friends listen and respond whenever it fits
-                  their day.
+                  Reply to the exact moment something catches your ear. Your reply stays pinned
+                  there, so friends hear it right where it belongs.
                 </p>
               </div>
             </div>
@@ -201,18 +233,18 @@ export default function Home() {
               >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image
-                  src="/images/phones/device_15_player_simple.png"
-                  alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
+                  src="/images/phones/device_channel.png"
+                  alt="Screenshot of the Roads app showing a private channel called 'Day Ones' with seven members and four conversations."
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image} phone_shadow`}
                 />
               </div>
               <div className="col-md-6 col-lg-4 my-auto order-md-first text-center text-md-start">
-                <h3>Reply to the exact moment</h3>
+                <h3>Private channels for your people</h3>
                 <p>
-                  Comment right where something catches your ear. Your reply stays tied to that
-                  moment, so the conversation never loses context.
+                  Make a space for your friend group, your family, or just the two of you. Only the
+                  people you invite can listen and reply.
                 </p>
               </div>
             </div>
@@ -221,8 +253,8 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`}>
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image
-                  src="/images/phones/device_15_channel.png"
-                  alt="Screenshot of Roads app showing private channel titled 'Friends from way back'"
+                  src="/images/phones/device_home.png"
+                  alt="Screenshot of the Roads app home screen listing channels and new conversations from friends."
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image} phone_shadow`}
@@ -230,10 +262,10 @@ export default function Home() {
               </div>
 
               <div className="col-md-6 col-lg-4 offset-lg-1 my-auto text-center text-md-start">
-                <h3>Keep it between your people</h3>
+                <h3>Every friendship in one place</h3>
                 <p>
-                  Create private spaces for friends or family. Only the people you invite can listen
-                  and reply.
+                  New memos and replies from all your channels show up on one home screen, ready to
+                  play whenever you have a few minutes.
                 </p>
               </div>
             </div>
@@ -246,12 +278,12 @@ export default function Home() {
           </h2>
           <div className="container">
             <div className={`${styles.reveal} row`}>
-              <UseCase imagePath="/images/icons/chat.svg" title="Catch up on different schedules" />
-              <UseCase imagePath="/images/icons/time.svg" title="Stay close across time zones" />
-              <UseCase imagePath="/images/icons/team.svg" title="Keep your friend group talking" />
-              <UseCase imagePath="/images/icons/update.svg" title="Send family updates" />
-              <UseCase imagePath="/images/icons/book.svg" title="Run a private book club" />
-              <UseCase imagePath="/images/icons/podcast.svg" title="Keep a shared audio journal" />
+              <UseCase imagePath="/images/icons/chat.svg" title="Your day-one friend group" />
+              <UseCase imagePath="/images/icons/time.svg" title="Friends in other time zones" />
+              <UseCase imagePath="/images/icons/team.svg" title="Just the two of you" />
+              <UseCase imagePath="/images/icons/update.svg" title="Family updates" />
+              <UseCase imagePath="/images/icons/book.svg" title="A private book club" />
+              <UseCase imagePath="/images/icons/podcast.svg" title="A shared audio journal" />
             </div>
           </div>
         </div>

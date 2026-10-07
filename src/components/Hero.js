@@ -7,7 +7,7 @@ import AppLinks from '@/components/AppLinks';
 class Hero extends Component {
   render() {
     const { title, subtitle, deviceImage, appleStoreUrl, googlePlayUrl } = this.props;
-    const deviceImagePath = deviceImage || '/images/phones/device_15_player_full.png';
+    const deviceImagePath = deviceImage || '/images/phones/device_player_full.png';
     return (
       <>
         <div id={styles.section_headline_container}>

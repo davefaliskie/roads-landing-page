@@ -68,7 +68,7 @@ export default function Travel() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`}>
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image
-                  src="/images/phones/device_15_player_response.png"
+                  src="/images/phones/device_player_full.png"
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
@@ -91,7 +91,7 @@ export default function Travel() {
               >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image
-                  src="/images/phones/device_15_player_simple.png"
+                  src="/images/phones/device_road_popup.png"
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
@@ -111,7 +111,7 @@ export default function Travel() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`}>
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image
-                  src="/images/phones/device_15_channel.png"
+                  src="/images/phones/device_channel.png"
                   alt="Screenshot of Roads app showing private channel titled 'Friends from way back'"
                   height={400}
                   width={200}
