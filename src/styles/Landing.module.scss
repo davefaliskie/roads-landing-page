@@ -1000,9 +1000,10 @@ $max-width: 1120px;
     font-size: 1.25rem;
   }
 
-  // The phone lines up with the right edge of the top bar, except on narrower
-  // screens where it steps left just enough to clear the QR code in the corner.
+  // The picture sits a little in from the right edge so it reads as one group
+  // with the headline, and steps further left on narrower screens to clear the
+  // QR code in the corner.
   .hero_visual {
-    margin-right: max(0px, calc(728px - 50vw));
+    margin-right: max(3.5rem, calc(728px - 50vw));
   }
 }
