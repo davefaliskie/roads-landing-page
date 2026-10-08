@@ -1,0 +1,1008 @@
+// Home page only. Warm cream page with navy type; amber, navy bands and
+// Plus Jakarta Sans ExtraBold headlines follow the App Store listing.
+$ink: #141a22;
+$navy-raised: #1c2430;
+$navy-glow: #24344a;
+$cream: #eeeee8;
+$paper: #fbf7ef;
+$paper-tint: #f4ecdd;
+$amber: #ffc676;
+$amber-soft: #ffe9c4;
+$muted: rgba(20, 26, 34, 0.72);
+$faint: rgba(20, 26, 34, 0.55);
+$line: rgba(20, 26, 34, 0.12);
+$max-width: 1120px;
+
+.page {
+  --text: #{$ink};
+  --muted: #{$muted};
+  --line: #{$line};
+
+  width: 100%;
+  overflow-x: clip;
+  background: $paper;
+  color: var(--text);
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    color: var(--muted);
+    line-height: 1.65;
+    text-wrap: pretty;
+  }
+}
+
+// One marked word per headline: a highlighter stroke on light, amber type on navy.
+.accent {
+  background: linear-gradient(transparent 58%, $amber 58%, $amber 92%, transparent 92%);
+}
+
+.dark {
+  --text: #{$cream};
+  --muted: rgba(238, 238, 232, 0.72);
+  --line: rgba(238, 238, 232, 0.14);
+
+  background: $ink;
+  color: var(--text);
+
+  .accent {
+    background: none;
+    color: $amber;
+  }
+}
+
+.tinted {
+  background: $paper-tint;
+}
+
+.section {
+  padding: 4.5rem 1.5rem;
+}
+
+.section_tight {
+  padding-top: 0;
+}
+
+.section_inner {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.section_title {
+  margin: 0 auto 1rem;
+  max-width: 46rem;
+  font-size: 2rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section_lead {
+  max-width: 38rem;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  text-align: center;
+  text-wrap: balance;
+}
+
+// Sections ease in as they scroll into view. The hidden state is only ever
+// added by script (see index.js), so content is visible without it.
+.reveal {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal_pending {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+// Hero ---------------------------------------------------------------------
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 4rem;
+  background: radial-gradient(ellipse 60% 70% at 85% 40%, #ffe3c2 0%, rgba(255, 227, 194, 0) 70%),
+    $paper;
+}
+
+.top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.top_cta {
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background: $amber;
+  color: $ink;
+  font-size: 0.95rem;
+  font-weight: 800;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $ink;
+    color: $cream;
+  }
+}
+
+.hero_inner {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.hero_text {
+  text-align: center;
+}
+
+.hero_title {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 1.05;
+}
+
+.hero_subtitle {
+  max-width: 30rem;
+  margin: 1.5rem auto 1.75rem;
+  font-size: 1.15rem;
+}
+
+.hero_download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.proof {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  color: $muted;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  li + li::before {
+    content: '·';
+    margin: 0 0.6rem;
+  }
+}
+
+.star {
+  color: #f5a623;
+}
+
+.qr {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.75rem;
+}
+
+.hero_visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_after {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Copy of the texts used for the load sequence on phones (see below).
+.texts.intro {
+  display: none;
+}
+
+// Plain captions over the two halves of the hero picture.
+.page .visual_label {
+  margin: 0 0 0.75rem;
+  color: $faint;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.page .visual_label_on {
+  margin: 1.25rem 0 0.4rem;
+  color: $ink;
+}
+
+.page .visual_caption {
+  margin: 0;
+  color: $muted;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+// The unanswered texts trail off above (or beside) the phone.
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 19rem;
+  margin-bottom: 2.5rem;
+}
+
+.text_stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.text_chip {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  border-radius: 18px 18px 18px 6px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(60, 40, 10, 0.12);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+
+  span {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: $faint;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &:nth-child(2) {
+    align-self: flex-end;
+    border-radius: 18px 18px 6px 18px;
+    opacity: 0.8;
+  }
+
+  &:nth-child(3) {
+    margin-left: 1.5rem;
+    opacity: 0.55;
+  }
+}
+
+.hero_phone {
+  display: block;
+  width: min(72vw, 290px);
+  height: auto;
+  filter: drop-shadow(0 30px 50px rgba(60, 40, 10, 0.28));
+}
+
+// On load the hero tells the story in order: "Before Roads", the three texts
+// one at a time, then "With Roads" and the phone. About 3.5 seconds in all.
+@media (prefers-reduced-motion: no-preference) {
+  .visual_label,
+  .text_chip {
+    animation: storyIn 0.5s ease-out backwards;
+  }
+
+  .visual_label {
+    animation-delay: 0.3s;
+  }
+
+  .text_chip {
+    animation-delay: 0.7s;
+
+    &:nth-child(2) {
+      animation-delay: 1.3s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 1.9s;
+    }
+  }
+
+  .visual_label_on,
+  .visual_caption {
+    animation: storyIn 0.5s ease-out 2.7s backwards;
+  }
+
+  .hero_phone {
+    animation: phoneIn 0.8s ease-out 2.7s backwards;
+  }
+}
+
+// Below the desktop layout the phone comes first and the texts rest under it.
+// So the story still plays in order, a copy of the texts appears in the
+// phone's spot on load and fades out as the phone arrives.
+@media (max-width: 991.98px) {
+  .hero_inner {
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .hero_after {
+    order: 1;
+  }
+
+  .texts {
+    order: 2;
+    margin: 2.5rem 0 0;
+  }
+
+  // "With Roads" and its caption sit above the phone here.
+  .page .visual_label_on {
+    order: -2;
+    margin: 0 0 0.4rem;
+  }
+
+  .page .visual_caption {
+    order: -1;
+    margin: 0 0 1rem;
+  }
+}
+
+@media (max-width: 991.98px) and (prefers-reduced-motion: no-preference) {
+  .texts.intro {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    margin: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+    animation: introOut 0.3s ease-in 2.3s forwards;
+  }
+}
+
+@keyframes introOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes storyIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes phoneIn {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+}
+
+// How it works ---------------------------------------------------------------
+
+.video_frame {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #0f141b;
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3840 / 1646;
+  }
+}
+
+.steps {
+  display: grid;
+  gap: 2rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+
+  li {
+    counter-increment: step;
+    text-align: center;
+  }
+
+  li::before {
+    content: counter(step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0.9rem;
+    border-radius: 50%;
+    background: rgba(255, 198, 118, 0.14);
+    color: $amber;
+    font-weight: 800;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// Feature rows ---------------------------------------------------------------
+
+.feature {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+
+  & + & {
+    margin-top: 4.5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 1.15;
+  }
+
+  p {
+    max-width: 26rem;
+    margin: 0.75rem auto 0;
+    font-size: 1.05rem;
+  }
+}
+
+.feature_media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  // Soft block behind the lower half of the phone.
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    width: min(88%, 400px);
+    height: 48%;
+    border-radius: 28px;
+    background: linear-gradient(180deg, $ink 0%, $navy-glow 100%);
+    transform: translateX(-50%);
+  }
+
+  img {
+    position: relative;
+    width: min(64vw, 250px);
+    height: auto;
+    filter: drop-shadow(0 20px 36px rgba(60, 40, 10, 0.25));
+  }
+}
+
+// Channels -------------------------------------------------------------------
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+
+  &:last-child {
+    grid-column: 1 / -1;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  h3 {
+    margin: 1rem 0 0.35rem;
+    font-size: 1.05rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+}
+
+.channel_link {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  color: $faint;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: $amber;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+
+  &:hover,
+  &:focus-visible {
+    color: $ink;
+  }
+}
+
+// Reviews --------------------------------------------------------------------
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0 0 2.5rem;
+  font-weight: 700;
+}
+
+.page .rating {
+  color: $ink;
+}
+
+.reviews {
+  display: grid;
+  gap: 1rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 1px 0 $line;
+
+  blockquote {
+    flex: 1 1 auto;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+
+  figcaption {
+    color: $faint;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+.review_extra {
+  display: none;
+}
+
+// Accessibility --------------------------------------------------------------
+
+.access {
+  display: grid;
+  gap: 2rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 28px;
+  background: $amber-soft;
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.15;
+  }
+
+  p {
+    margin: 1rem 0 0;
+  }
+
+  ul {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.75rem;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    top: 0.45em;
+    left: 0;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: $ink;
+  }
+
+  .accent {
+    background: none;
+  }
+}
+
+.text_link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: $ink;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+
+  &:hover,
+  &:focus-visible {
+    color: $ink;
+    text-decoration-thickness: 3px;
+  }
+}
+
+// FAQ ------------------------------------------------------------------------
+
+.faq {
+  max-width: 44rem;
+  margin: 0 auto;
+
+  :global(.accordion) {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-color: #{$muted};
+    --bs-accordion-border-color: #{$line};
+    --bs-accordion-btn-color: #{$ink};
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-active-color: #{$ink};
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-btn-padding-x: 0;
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23141a22' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+  }
+
+  :global(.accordion-header) {
+    margin: 0;
+    letter-spacing: 0;
+  }
+
+  :global(button.accordion-button),
+  :global(button.accordion-button:not(.collapsed)) {
+    background-color: transparent;
+    box-shadow: none;
+    color: $ink;
+    font-size: 1.05rem;
+  }
+
+  :global(.accordion-button:focus-visible) {
+    outline: 2px solid $ink;
+    outline-offset: 2px;
+  }
+
+  :global(.accordion-body a) {
+    color: $ink;
+    text-decoration: underline;
+  }
+}
+
+// Closing call to action -----------------------------------------------------
+
+.cta {
+  padding: 3.5rem 1.5rem;
+  border-radius: 32px;
+  background: radial-gradient(ellipse 70% 120% at 50% 100%, $navy-glow 0%, $ink 75%);
+  text-align: center;
+
+  h2 {
+    font-size: 2.1rem;
+    line-height: 1.1;
+  }
+
+  p {
+    max-width: 30rem;
+    margin: 1rem auto 1.5rem;
+  }
+}
+
+.cta_download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+// QR code popup (computers only; phones go straight to their store) ----------
+
+.qr_dialog {
+  visibility: visible;
+  width: min(22rem, calc(100vw - 2rem));
+  padding: 2.25rem 1.5rem 1.25rem;
+  border: 0;
+  border-radius: 28px;
+  background: $paper;
+  color: $ink;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(20, 26, 34, 0.35);
+
+  &::backdrop {
+    background: rgba(20, 26, 34, 0.6);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0.5rem 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+}
+
+.qr_dialog_close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  padding: 0 0.4rem;
+  border: 0;
+  background: none;
+  color: $faint;
+  font-size: 1.75rem;
+  line-height: 1;
+
+  &:hover,
+  &:focus-visible {
+    color: $ink;
+  }
+}
+
+// Mobile download bar ----------------------------------------------------------
+
+.sticky_bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+  background: rgba(20, 26, 34, 0.96);
+  color: $cream;
+  font-weight: 700;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s;
+}
+
+.sticky_bar_visible {
+  transform: none;
+  visibility: visible;
+}
+
+.sticky_button {
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: $amber;
+  color: $ink;
+  font-size: 0.95rem;
+  font-weight: 800;
+
+  &:hover,
+  &:focus-visible {
+    color: $ink;
+  }
+}
+
+// Wider screens ----------------------------------------------------------------
+
+@media (min-width: 576px) {
+  .hero_title {
+    font-size: 3.4rem;
+  }
+
+  .channels {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .channel:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6.5rem 2.5rem;
+  }
+
+  .section_tight {
+    padding-top: 0;
+  }
+
+  .section_title {
+    font-size: 3rem;
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: left;
+
+    & + & {
+      margin-top: 6rem;
+    }
+
+    &:nth-child(even) .feature_media {
+      order: 2;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      margin-left: 0;
+    }
+  }
+
+  .feature_media img {
+    width: 270px;
+  }
+
+  .reviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review_extra {
+    display: flex;
+  }
+
+  .access {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .cta {
+    padding: 5rem 2rem;
+
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    min-height: 100vh;
+    padding: 1.5rem 2.5rem 3rem;
+  }
+
+  .hero_inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  .hero_text {
+    flex: 1 1 0;
+    max-width: 32rem;
+    text-align: left;
+  }
+
+  .hero_title {
+    font-size: 4rem;
+  }
+
+  .hero_subtitle {
+    margin-left: 0;
+  }
+
+  .hero_download,
+  .proof {
+    justify-content: flex-start;
+  }
+
+  // Texts sit beside the phone.
+  .hero_visual {
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .texts {
+    align-items: flex-start;
+    width: 14.5rem;
+    margin: 4.5rem 3rem 0 0;
+  }
+
+  .text_stack {
+    gap: 1.5rem;
+  }
+
+  .text_chip {
+    font-size: 0.88rem;
+
+    &:nth-child(2) {
+      align-self: flex-start;
+      margin-left: 1.25rem;
+      border-radius: 18px 18px 18px 6px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 0;
+    }
+  }
+
+  .hero_phone {
+    width: auto;
+    height: clamp(460px, 72vh, 720px);
+  }
+
+  .channels {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .reviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero_title {
+    font-size: 4.75rem;
+  }
+
+  .hero_subtitle {
+    font-size: 1.25rem;
+  }
+
+  // The phone lines up with the right edge of the top bar, except on narrower
+  // screens where it steps left just enough to clear the QR code in the corner.
+  .hero_visual {
+    margin-right: max(0px, calc(728px - 50vw));
+  }
+}

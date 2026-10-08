@@ -1,9 +1,9 @@
 const metaConfig = {
   default: {
-    title: 'Roads Audio: Collaborative Voice Memos for Friends',
+    title: 'Roads Audio: Chat with Friends | Collaborative Voice Memos',
     description:
       'Chat with friends and family through collaborative voice memos. Record on your time, reply to exact moments, and keep private conversations going.',
-    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
+    image: '/images/RoadsAudio-VoiceMemosConversations.jpg',
   },
   '/travel': {
     title: 'Roads Audio - Stay Connected While Traveling',
@@ -20,13 +20,13 @@ const metaConfig = {
   '/delete-account': {
     title: 'Roads Audio - How to delete your account',
     description: 'See how to delete your account and data from Roads.',
-    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
+    image: '/images/RoadsAudio-VoiceMemosConversations.jpg',
   },
   '/blogs': {
     title: 'Roads Audio Blog - Voice Messaging Tips, Guides & Stories',
     description:
       'Discover how to use voice messaging for staying connected, accessibility tips for blind users, private podcasting guides, and more from the Roads Audio blog.',
-    image: 'https://roadsaudioassets.s3.us-east-1.amazonaws.com/Roads_Cover.jpg',
+    image: '/images/RoadsAudio-VoiceMemosConversations.jpg',
   },
   '/blogs/the-evolution-of-audio-from-radio-to-roads': {
     title: 'The Evolution of Audio: From Radio to Roads',
@@ -235,6 +235,14 @@ const metaConfig = {
     image: '/images/blogs/026/conversationPracticeHero.png',
     datePublished: '2026-07-07',
     cluster: 'Language Learning',
+  },
+  '/blogs/audio-journaling': {
+    title: 'Audio Journaling: How to Capture and Organize Ideas by Voice | Roads Audio',
+    description:
+      'Audio journaling lets you capture ideas out loud the moment you have them. Learn how to start an audio journal, organize your voice memos, and share them with friends.',
+    image: '/images/blogs/027/audioJournalHero.png',
+    datePublished: '2026-10-07',
+    cluster: 'Journaling',
   },
 };
 
