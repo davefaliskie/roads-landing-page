@@ -236,6 +236,14 @@ const metaConfig = {
     datePublished: '2026-07-07',
     cluster: 'Language Learning',
   },
+  '/blogs/audio-journaling': {
+    title: 'Audio Journaling: How to Capture and Organize Ideas by Voice | Roads Audio',
+    description:
+      'Audio journaling lets you capture ideas out loud the moment you have them. Learn how to start an audio journal, organize your voice memos, and share them with friends.',
+    image: '/images/blogs/027/audioJournalHero.png',
+    datePublished: '2026-10-07',
+    cluster: 'Journaling',
+  },
 };
 
 export default metaConfig;

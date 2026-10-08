@@ -56,93 +56,6 @@
   transform: translateY(32px);
 }
 
-// "You keep meaning to call" band, in the App Store palette (navy, cream, amber).
-#section_problem {
-  width: 100%;
-  padding: 4rem 1.5rem;
-  background: radial-gradient(ellipse at 70% 60%, #24344a 0%, #141a22 62%);
-  color: #eeeee8;
-}
-
-.problem_inner {
-  position: relative;
-  z-index: 3;
-  display: grid;
-  gap: 2.5rem;
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.problem_title {
-  margin: 0;
-  font-weight: 800 !important;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.problem_close {
-  h3 {
-    font-weight: 800;
-    letter-spacing: -0.01em;
-  }
-
-  p {
-    margin: 1rem 0 0;
-    color: rgba(238, 238, 232, 0.75);
-  }
-}
-
-.problem_accent {
-  color: #ffc676;
-}
-
-.thread {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  max-width: 22rem;
-  margin: 0 auto;
-}
-
-.thread_day {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.thread_label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(238, 238, 232, 0.5);
-}
-
-.bubble {
-  align-self: flex-start;
-  padding: 0.55rem 0.9rem;
-  border-radius: 18px;
-  background: #252f3c;
-  font-size: 0.95rem;
-  text-align: left;
-}
-
-.bubble_out {
-  align-self: flex-end;
-  background: #35445a;
-}
-
-.thread_fade_1 {
-  opacity: 0.7;
-}
-
-.thread_fade_2 {
-  opacity: 0.4;
-}
-
 #section_features {
   min-height: 100vh;
   width: 100%;
@@ -186,35 +99,6 @@
 }
 
 @media (min-width: 768px) {
-  #section_problem {
-    padding: 6rem 3rem;
-  }
-
-  .problem_inner {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'title thread'
-      'close thread';
-    column-gap: 4rem;
-    row-gap: 1.5rem;
-    align-items: center;
-    text-align: left;
-  }
-
-  .problem_title {
-    grid-area: title;
-    align-self: end;
-  }
-
-  .problem_close {
-    grid-area: close;
-    align-self: start;
-  }
-
-  .thread {
-    grid-area: thread;
-  }
-
   #section_features {
     .backsplash_container {
       margin-bottom: 0;

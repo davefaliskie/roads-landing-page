@@ -23,6 +23,16 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DynamicMeta />
+      {/* Apply the font to the whole document, including the footer rendered in _document. */}
+      <style jsx global>{`
+        :root {
+          --bs-body-font-family: ${plusJakartaSans.style.fontFamily};
+        }
+        html,
+        body {
+          font-family: ${plusJakartaSans.style.fontFamily};
+        }
+      `}</style>
       <main className={plusJakartaSans.className}>
         <Layout>
           <Component {...pageProps} />
