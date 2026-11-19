@@ -14,7 +14,6 @@ export default function BlackFridayBanner() {
         <b>Black Friday:</b> Roads Audio Plus for life, {DEAL_PRICE} once (then {LIFETIME_PRICE}).
         Nov 26 – Dec 1.
       </span>
-      <span className={styles.promo_cta}>See the deal</span>
     </Link>
   );
 }

@@ -348,20 +348,10 @@ $line: rgba(20, 26, 34, 0.12);
     text-decoration: none;
   }
 
-  &:hover .promo_cta,
-  &:focus-visible .promo_cta {
-    background: #fff;
+  &:hover span,
+  &:focus-visible span {
+    text-decoration: underline;
   }
-}
-
-.promo_cta {
-  padding: 0.2rem 0.75rem;
-  border-radius: 999px;
-  background: $amber;
-  color: $navy;
-  font-weight: 800;
-  white-space: nowrap;
-  transition: background 0.2s ease;
 }
 
 // Phones: the card sits between the headline and the price. Wider screens
