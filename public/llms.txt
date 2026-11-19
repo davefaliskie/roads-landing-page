@@ -1,0 +1,77 @@
+# Roads Audio
+
+> Roads Audio is a voice messaging app for iPhone and Android built around collaborative voice memos. Friends and family share recordings in private, invite-only channels, listen on their own time, and reply to specific moments in a recording, so conversations keep their context.
+
+Key facts:
+
+- Roads is asynchronous. Nobody needs to be online at the same time.
+- A Voice Thread is an ongoing audio conversation: one person starts with a recording and others add replies over time.
+- Replies can be attached to an exact moment in a recording.
+- Channels are private. Only invited members can hear the recordings.
+- There is no time limit on recordings. Users can delete anything they've made, but editing isn't available yet.
+- Roads works with VoiceOver on iPhone and TalkBack on Android. It is shaped by direct feedback from blind and visually impaired users.
+
+Pricing (USD):
+
+- All core features are free.
+- Roads Audio Plus adds premium tools and is available as:
+  - Monthly: $4.99 per month, with a 3-day free trial
+  - Yearly: $39.99 per year
+  - Lifetime: $99.99 one-time purchase
+- Prices are in US dollars. The App Store and Google Play show the local price in other regions.
+
+## Main pages
+
+- [Home](https://roadsaudio.com/): Overview of Roads Audio, how collaborative voice memos work, and the FAQ
+- [Stay connected while traveling](https://roadsaudio.com/travel): Keep in touch with friends and family across time zones
+- [Stay connected with college friends](https://roadsaudio.com/college): Keep college friendships going as life gets busy
+- [Blog](https://roadsaudio.com/blogs): Guides and stories about voice messaging, accessibility, and staying connected
+
+## Get the app
+
+- [iOS App Store](https://apps.apple.com/us/app/roads-audio-voice-threads/id6443961864): Roads Audio for iPhone
+- [Google Play](https://play.google.com/store/apps/details?id=com.onemanstartup.roads): Roads Audio for Android
+
+## Accessibility
+
+- [Audio app for blind users](https://roadsaudio.com/blogs/audio-app-for-blind-users): Voice-only messaging that works with screen readers
+- [How blind people stay connected](https://roadsaudio.com/blogs/how-blind-people-stay-connected): Voice-first messaging without typing or screen reader fatigue
+- [VoiceOver compatible apps](https://roadsaudio.com/blogs/voiceover-compatible-apps): What real VoiceOver support means, beyond technical compliance
+- [TalkBack compatible apps](https://roadsaudio.com/blogs/talkback-compatible-apps): What makes an Android app usable with TalkBack
+- [Low vision apps](https://roadsaudio.com/blogs/low-vision-apps): Apps for people with partial sight and how voice reduces eye strain
+- [Dark mode accessibility](https://roadsaudio.com/blogs/dark-mode-accessibility-apps): Why dark mode matters for low vision and light sensitivity
+
+## Relationships and family
+
+- [Long distance relationship apps](https://roadsaudio.com/blogs/long-distance-relationship-apps): Why voice works better than text for couples apart
+- [Couples communication apps](https://roadsaudio.com/blogs/couples-communication-app): Finding the right way for a couple to stay connected
+- [Feeling disconnected from your partner](https://roadsaudio.com/blogs/feeling-disconnected-from-partner): Rebuilding daily sharing habits
+- [Stay connected with long distance family](https://roadsaudio.com/blogs/stay-connected-long-distance-family): Sharing everyday moments across time zones
+- [Voice messaging for grandparents](https://roadsaudio.com/blogs/voice-messaging-for-grandparents-simple-guide): A simple setup guide for older family members
+- [Military families and deployment](https://roadsaudio.com/blogs/military-families-voice-messages-deployment): Staying connected through deployment
+- [50 questions to get to know someone](https://roadsaudio.com/blogs/questions-to-ask-to-get-to-know-someone): Conversation starters for deeper connection
+
+## Private podcasting and communities
+
+- [What is a micro podcast?](https://roadsaudio.com/blogs/what-is-a-micro-podcast): A private, audio-first format for small groups
+- [How to start a private micro podcast](https://roadsaudio.com/blogs/how-to-start-a-private-micro-podcast): Invite-only audio discussions without a studio
+- [Private voice messaging apps](https://roadsaudio.com/blogs/private-voice-messaging-apps): Why some groups stay closed
+- [Book club apps](https://roadsaudio.com/blogs/book-club-app): Running a virtual book club with async voice discussion
+- [Audio journaling](https://roadsaudio.com/blogs/audio-journaling): Capturing and organizing ideas by voice
+
+## Coaching, mentoring, and teams
+
+- [Async coaching apps](https://roadsaudio.com/blogs/async-coaching-apps): Voice-based coaching without scheduling hassles
+- [Life coaching apps](https://roadsaudio.com/blogs/life-coaching-apps): Reaching more clients with async voice coaching
+- [Executive coaching apps](https://roadsaudio.com/blogs/executive-coaching-apps): Coaching busy leaders on their schedule
+- [Async mentoring apps](https://roadsaudio.com/blogs/async-mentoring-apps): Mentorship without scheduling barriers
+- [Accountability partner apps](https://roadsaudio.com/blogs/accountability-partner-app): Voice check-ins for staying on track
+- [Conversation practice apps](https://roadsaudio.com/blogs/conversation-practice-app): Language speaking practice with an async partner
+- [Async standup apps](https://roadsaudio.com/blogs/async-standup-apps): Voice updates for remote teams
+- [Internal podcasts for teams](https://roadsaudio.com/blogs/internal-podcast-for-teams): Company updates without another meeting
+
+## Optional
+
+- [The evolution of audio](https://roadsaudio.com/blogs/the-evolution-of-audio-from-radio-to-roads): From radio to podcasts to Roads
+- [Black Friday deal](https://roadsaudio.com/black-friday): Roads Audio Plus Lifetime promotion, Nov 26 to Dec 1, 2026
+- [Delete your account](https://roadsaudio.com/delete-account): How to delete a Roads account and its data
