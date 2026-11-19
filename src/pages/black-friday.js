@@ -185,8 +185,8 @@ export default function BlackFriday() {
             </h2>
             <p className={landing.section_lead}>
               {ended
-                ? 'Lifetime costs about the same as two and a half years of Plus, and you never renew.'
-                : 'At the Black Friday price, Lifetime costs about the same as a year and a quarter of Plus, and you never renew.'}
+                ? 'Lifetime costs about two and a half years of Plus, and you never pay again.'
+                : 'Lifetime costs less than two years of Plus, and you never pay again.'}
             </p>
             <div className={styles.plans}>
               <div className={styles.plan}>
