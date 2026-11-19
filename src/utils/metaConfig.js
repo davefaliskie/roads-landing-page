@@ -17,6 +17,12 @@ const metaConfig = {
       'Roads is a voice messaging app that helps you stay close to your college friends as life gets busy. Send voice updates and catch up on your own time.',
     image: '/images/RoadsAudio-StayCloseToCollegeFriends.jpg',
   },
+  '/black-friday': {
+    title: 'Roads Audio Plus Lifetime: Black Friday Deal | Roads Audio',
+    description:
+      'Black Friday: Roads Audio Plus Lifetime is $49.99 once, Nov 26 – Dec 1, 2026. Every Plus feature, no subscription. Lifetime goes up to $99.99 after Dec 1.',
+    image: '/images/RoadsAudio-BlackFriday2026.jpg',
+  },
   '/delete-account': {
     title: 'Roads Audio - How to delete your account',
     description: 'See how to delete your account and data from Roads.',

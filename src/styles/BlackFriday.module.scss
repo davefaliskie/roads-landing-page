@@ -1,0 +1,424 @@
+// /black-friday only. Builds on Landing.module.scss (same cream, navy and
+// amber); the gold card follows the end screen of the Black Friday reels.
+$ink: #141a22;
+$navy: #12202f;
+$cream: #eeeee8;
+$paper: #fbf7ef;
+$amber: #ffc676;
+$muted: rgba(20, 26, 34, 0.72);
+$line: rgba(20, 26, 34, 0.12);
+
+.hero {
+  background: radial-gradient(ellipse 55% 65% at 80% 45%, #ffdcae 0%, rgba(255, 220, 174, 0) 70%),
+    $paper;
+}
+
+.hero_inner {
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: $ink;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+// Price ----------------------------------------------------------------------
+
+.hero .price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem 0.75rem;
+  margin: 0 0 0.5rem;
+  color: $ink;
+}
+
+.price_was {
+  color: $muted;
+  font-size: clamp(1.25rem, 5.5vw, 1.6rem);
+  font-weight: 700;
+
+  s {
+    text-decoration-thickness: 2px;
+  }
+}
+
+.price_now {
+  font-size: clamp(2.5rem, 12vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.price_once {
+  color: $muted;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero .after {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+
+  b {
+    color: $ink;
+  }
+}
+
+.hero .countdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.25rem 0 1.5rem;
+  color: $ink;
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    flex: none;
+    border-radius: 50%;
+    background: #f0a33a;
+    box-shadow: 0 0 0 4px rgba(255, 198, 118, 0.45);
+  }
+}
+
+.hero .how {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+
+// Gold card --------------------------------------------------------------------
+
+.card_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  perspective: 1400px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 30rem);
+  overflow: hidden;
+  padding: 7% 7.5%;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    #ffe7b3 0%,
+    $amber 32%,
+    #e9a54c 62%,
+    #ffd58f 82%,
+    #f3b565 100%
+  );
+  box-shadow: 0 30px 70px rgba(20, 26, 34, 0.28), inset 0 0 0 2px rgba(255, 255, 255, 0.45),
+    inset 0 -6px 0 rgba(120, 70, 10, 0.18);
+  color: $navy;
+  transform: rotate(-3deg);
+}
+
+// Rings echo the Roads logo.
+.card_rings {
+  position: absolute;
+  top: 50%;
+  right: -26%;
+  width: 62%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 14px solid rgba(18, 32, 47, 0.07);
+  box-shadow: 0 0 0 26px rgba(18, 32, 47, 0.05), 0 0 0 52px rgba(18, 32, 47, 0.04),
+    inset 0 0 0 26px rgba(18, 32, 47, 0.05);
+  transform: translateY(-50%);
+}
+
+.card_top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  img {
+    border-radius: 12px;
+  }
+}
+
+.card_brand {
+  flex: 1;
+  white-space: nowrap;
+  font-size: clamp(1rem, 3.6vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.card_tag {
+  font-size: clamp(0.6rem, 2vw, 0.75rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.card .card_title {
+  color: $navy;
+  position: relative;
+  margin: 6% 0 0;
+  font-size: clamp(3rem, 14vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-shadow: 0 2px 0 rgba(255, 240, 205, 0.6);
+}
+
+.card .card_sub {
+  color: $navy;
+  position: relative;
+  margin: 0.4rem 0 1.5rem;
+  font-size: clamp(0.9rem, 3vw, 1.15rem);
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.card_pill {
+  position: relative;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: $navy;
+  color: $amber;
+  font-size: clamp(0.7rem, 2.4vw, 0.9rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.card_shine {
+  position: absolute;
+  top: -30%;
+  bottom: -30%;
+  left: -40%;
+  width: 30%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+  transform: skewX(-18deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    animation: card-in 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  .card_shine {
+    animation: shine 1.4s ease-in-out 0.9s both;
+  }
+
+  @keyframes card-in {
+    from {
+      opacity: 0;
+      transform: translateY(40px) rotateX(24deg) rotate(-7deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-3deg);
+    }
+  }
+
+  @keyframes shine {
+    from {
+      left: -40%;
+    }
+    to {
+      left: 130%;
+    }
+  }
+}
+
+// Plus features ------------------------------------------------------------------
+
+.features {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+  }
+
+  h3 {
+    margin: 0 0 0.4rem;
+    color: $amber;
+    font-size: 1.15rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// Plans ----------------------------------------------------------------------------
+
+.plans {
+  display: grid;
+  gap: 1rem;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.plan {
+  padding: 1.75rem;
+  border: 1px solid $line;
+  border-radius: 24px;
+  background: #fff;
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.plan_best {
+  border: 2px solid $ink;
+  background: linear-gradient(135deg, #fff6e3 0%, #ffe9c4 100%);
+}
+
+.plan .plan_price {
+  margin: 0 0 0.5rem;
+  color: $ink;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+
+  s {
+    color: $muted;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  span {
+    color: $muted;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.fine_print {
+  margin: 1.25rem 0 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+// Home page banner ---------------------------------------------------------------
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem 0.75rem;
+  padding: 0.7rem 1rem;
+  background: $navy;
+  color: $cream;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: center;
+
+  b {
+    color: $amber;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $cream;
+    text-decoration: none;
+  }
+
+  &:hover .promo_cta,
+  &:focus-visible .promo_cta {
+    background: #fff;
+  }
+}
+
+.promo_cta {
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  background: $amber;
+  color: $navy;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+// Phones: the card sits between the headline and the price. Wider screens
+// put it beside the text.
+.card_inline {
+  margin: 2rem 0 2.25rem;
+}
+
+.card_side {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .desktop_only {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .card_inline {
+    display: none;
+  }
+
+  .card_side {
+    display: flex;
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    min-height: 18.5rem;
+  }
+}
+
+@media (max-width: 419.98px) {
+  .card_tag {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .plans {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero .price {
+    justify-content: flex-start;
+  }
+
+  .card_wrap {
+    flex: 1 1 0;
+    justify-content: flex-end;
+  }
+}

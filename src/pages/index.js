@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useEffect, useRef } from 'react';
 import AppLinks from '@/components/AppLinks';
 import HomeHero from '@/components/home/HomeHero';
+import BlackFridayBanner from '@/components/home/BlackFridayBanner';
 import StickyDownload from '@/components/home/StickyDownload';
 import { generateFAQSchema, renderSchemaScript } from '@/utils/schema';
 
@@ -235,6 +236,7 @@ export default function Home() {
       <Head>
         <script {...renderSchemaScript(faqSchema)} />
       </Head>
+      <BlackFridayBanner />
       <div id="main-content" className={styles.page}>
         <HomeHero />
 
